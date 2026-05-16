@@ -1,6 +1,9 @@
 /**
- * Reorders the existing "App Support / アプリに関するお問い合わせ" Google Form
- * without deleting or recreating existing question items.
+ * Updates the existing "App Support / アプリに関するお問い合わせ" Google Form.
+ *
+ * This keeps existing fields whenever possible. The only intentional rebuild is
+ * the app-name field: the old dropdown is replaced with a text field because the
+ * app name is normally prefilled from each app.
  *
  * Run this from Apps Script bound to the target Google Form:
  * Extensions > Apps Script > paste this file > run reorderSupportFormForLowerCognitiveLoad().
@@ -10,7 +13,7 @@ const SUPPORT_FORM_ITEM_IDS = {
   jaPage: 1040451078,
   enPage: 1470373665,
   ja: {
-    app: 1571161321,
+    legacyAppDropdown: 1571161321,
     inquiryType: 1579835177,
     details: 1206706401,
     deviceModel: 450691478,
@@ -22,7 +25,7 @@ const SUPPORT_FORM_ITEM_IDS = {
     email: 633578283,
   },
   en: {
-    app: 598771427,
+    legacyAppDropdown: 598771427,
     inquiryType: 1816890723,
     details: 534860064,
     deviceModel: 2073931760,
@@ -74,8 +77,8 @@ function reorderSupportFormForLowerCognitiveLoad() {
   jaPage.setTitle('日本語');
   enPage.setTitle('English').setGoToPage(FormApp.PageNavigationType.SUBMIT);
 
-  const ja = getLocalizedItems_(itemsById, SUPPORT_FORM_ITEM_IDS.ja);
-  const en = getLocalizedItems_(itemsById, SUPPORT_FORM_ITEM_IDS.en);
+  const ja = getLocalizedItems_(form, itemsById, SUPPORT_FORM_ITEM_IDS.ja);
+  const en = getLocalizedItems_(form, itemsById, SUPPORT_FORM_ITEM_IDS.en);
 
   configureJapaneseItems_(ja);
   configureEnglishItems_(en);
@@ -100,7 +103,7 @@ function reorderSupportFormForLowerCognitiveLoad() {
     SUPPORT_FORM_ITEM_IDS.ja.details,
     SUPPORT_FORM_ITEM_IDS.ja.email,
     jaAutoHeader.getId(),
-    SUPPORT_FORM_ITEM_IDS.ja.app,
+    ja.app.getId(),
     SUPPORT_FORM_ITEM_IDS.ja.os,
     SUPPORT_FORM_ITEM_IDS.ja.osVersion,
     SUPPORT_FORM_ITEM_IDS.ja.appVersion,
@@ -112,7 +115,7 @@ function reorderSupportFormForLowerCognitiveLoad() {
     SUPPORT_FORM_ITEM_IDS.en.details,
     SUPPORT_FORM_ITEM_IDS.en.email,
     enAutoHeader.getId(),
-    SUPPORT_FORM_ITEM_IDS.en.app,
+    en.app.getId(),
     SUPPORT_FORM_ITEM_IDS.en.os,
     SUPPORT_FORM_ITEM_IDS.en.osVersion,
     SUPPORT_FORM_ITEM_IDS.en.appVersion,
@@ -126,6 +129,7 @@ function reorderSupportFormForLowerCognitiveLoad() {
   });
 
   logSupportFormOrder();
+  logSupportFormPrefillUrl();
   Logger.log('Published URL: ' + form.getPublishedUrl());
 }
 
@@ -154,9 +158,9 @@ function requireItem_(itemsById, id) {
   return item;
 }
 
-function getLocalizedItems_(itemsById, ids) {
+function getLocalizedItems_(form, itemsById, ids) {
   return {
-    app: requireItem_(itemsById, ids.app).asListItem(),
+    app: ensureTextItem_(form, itemsById, ids.legacyAppDropdown),
     inquiryType: requireItem_(itemsById, ids.inquiryType).asMultipleChoiceItem(),
     details: requireItem_(itemsById, ids.details).asParagraphTextItem(),
     deviceModel: requireItem_(itemsById, ids.deviceModel).asTextItem(),
@@ -187,7 +191,10 @@ function configureJapaneseItems_(items) {
     .setHelpText('返信をご希望の場合のみご記入ください。')
     .setRequired(false);
 
-  items.app.setTitle('アプリ').setRequired(false);
+  items.app
+    .setTitle('アプリ')
+    .setHelpText('アプリ内から開いた場合は自動入力されます。必要な場合のみ修正してください。')
+    .setRequired(false);
   items.os.setTitle('OS').setRequired(false);
   items.osVersion.setTitle('OSバージョン').setRequired(false);
   items.appVersion.setTitle('アプリバージョン').setRequired(false);
@@ -214,7 +221,10 @@ function configureEnglishItems_(items) {
     .setHelpText('Please enter this only if you would like a reply.')
     .setRequired(false);
 
-  items.app.setTitle('App').setRequired(false);
+  items.app
+    .setTitle('App')
+    .setHelpText('This is filled in automatically when opened from the app. Edit it only if necessary.')
+    .setRequired(false);
   items.os.setTitle('Operating system').setRequired(false);
   items.osVersion.setTitle('OS version').setRequired(false);
   items.appVersion.setTitle('App version').setRequired(false);
@@ -234,4 +244,98 @@ function findOrAddSectionHeader_(form, title, helpText, legacyTitles) {
   }
 
   return form.addSectionHeaderItem().setTitle(title).setHelpText(helpText);
+}
+
+function ensureTextItem_(form, itemsById, legacyItemId) {
+  const legacyItem = itemsById[legacyItemId];
+  if (legacyItem) {
+    if (legacyItem.getType() === FormApp.ItemType.TEXT) {
+      return legacyItem.asTextItem();
+    }
+
+    form.deleteItem(legacyItem);
+  }
+
+  const expectedTitle = legacyItemId === SUPPORT_FORM_ITEM_IDS.ja.legacyAppDropdown ? 'アプリ' : 'App';
+  const existingTextItem = findTextItemByTitle_(form, expectedTitle);
+  if (existingTextItem) {
+    return existingTextItem;
+  }
+
+  return form.addTextItem().setTitle(expectedTitle);
+}
+
+function findTextItemByTitle_(form, title) {
+  const textItems = form.getItems(FormApp.ItemType.TEXT).map((item) => item.asTextItem());
+  return textItems.find((item) => item.getTitle() === title) || null;
+}
+
+function logSupportFormPrefillUrl() {
+  const form = FormApp.getActiveForm();
+  const items = getCurrentSupportItemsForPrefill_(form);
+  requirePrefillTextItem_(items.ja.app, 'アプリ');
+  requirePrefillTextItem_(items.en.app, 'App');
+  const response = form.createResponse();
+
+  response.withItemResponse(items.language.createResponse('English'));
+  response.withItemResponse(items.ja.inquiryType.createResponse('質問'));
+  response.withItemResponse(items.ja.details.createResponse('__JA_DETAILS__'));
+  response.withItemResponse(items.ja.email.createResponse('ja@example.com'));
+  response.withItemResponse(items.ja.app.createResponse('__JA_APP__'));
+  response.withItemResponse(items.ja.os.createResponse('__JA_OS__'));
+  response.withItemResponse(items.ja.osVersion.createResponse('__JA_OS_VERSION__'));
+  response.withItemResponse(items.ja.appVersion.createResponse('__JA_APP_VERSION__'));
+  response.withItemResponse(items.ja.buildNumber.createResponse('__JA_BUILD_NUMBER__'));
+  response.withItemResponse(items.ja.store.createResponse('__JA_STORE__'));
+  response.withItemResponse(items.ja.deviceModel.createResponse('__JA_DEVICE_MODEL__'));
+
+  response.withItemResponse(items.en.inquiryType.createResponse('Question'));
+  response.withItemResponse(items.en.details.createResponse('__EN_DETAILS__'));
+  response.withItemResponse(items.en.email.createResponse('en@example.com'));
+  response.withItemResponse(items.en.app.createResponse('__EN_APP__'));
+  response.withItemResponse(items.en.os.createResponse('__EN_OS__'));
+  response.withItemResponse(items.en.osVersion.createResponse('__EN_OS_VERSION__'));
+  response.withItemResponse(items.en.appVersion.createResponse('__EN_APP_VERSION__'));
+  response.withItemResponse(items.en.buildNumber.createResponse('__EN_BUILD_NUMBER__'));
+  response.withItemResponse(items.en.store.createResponse('__EN_STORE__'));
+  response.withItemResponse(items.en.deviceModel.createResponse('__EN_DEVICE_MODEL__'));
+
+  Logger.log('Prefilled URL for entry ID extraction: ' + response.toPrefilledUrl());
+}
+
+function requirePrefillTextItem_(item, title) {
+  if (!item) {
+    throw new Error('事前入力URL生成に必要なテキスト項目が見つかりません: ' + title);
+  }
+}
+
+function getCurrentSupportItemsForPrefill_(form) {
+  const itemsById = getItemsById_(form);
+  return {
+    language: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.language).asMultipleChoiceItem(),
+    ja: {
+      inquiryType: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.inquiryType).asMultipleChoiceItem(),
+      details: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.details).asParagraphTextItem(),
+      email: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.email).asTextItem(),
+      app: findTextItemByTitle_(form, 'アプリ'),
+      os: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.os).asTextItem(),
+      osVersion: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.osVersion).asTextItem(),
+      appVersion: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.appVersion).asTextItem(),
+      buildNumber: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.buildNumber).asTextItem(),
+      store: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.store).asTextItem(),
+      deviceModel: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.ja.deviceModel).asTextItem(),
+    },
+    en: {
+      inquiryType: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.inquiryType).asMultipleChoiceItem(),
+      details: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.details).asParagraphTextItem(),
+      email: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.email).asTextItem(),
+      app: findTextItemByTitle_(form, 'App'),
+      os: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.os).asTextItem(),
+      osVersion: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.osVersion).asTextItem(),
+      appVersion: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.appVersion).asTextItem(),
+      buildNumber: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.buildNumber).asTextItem(),
+      store: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.store).asTextItem(),
+      deviceModel: requireItem_(itemsById, SUPPORT_FORM_ITEM_IDS.en.deviceModel).asTextItem(),
+    },
+  };
 }
