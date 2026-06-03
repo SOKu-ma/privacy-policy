@@ -89,58 +89,132 @@
                 This Privacy Policy describes how Batting Stats Tracker (hereinafter referred to as "the App")
                 handles user information to ensure safe and secure usage.
             </p>
+            <p>Last updated: June 2, 2026</p>
 
             <h2>1. Information We Collect</h2>
             <p>The App may collect the following information:</p>
             <ul>
-                <li>Anonymous app usage data collected through Firebase Analytics</li>
-                <li>Crash reports and device diagnostics collected through Firebase Crashlytics</li>
-                <li>Anonymized user ID and purchase history required to manage subscription status through RevenueCat</li>
+                <li>Game records, plate appearance records, practice records, player names, dates, opponents, notes, and related data entered by users in the App</li>
+                <li>Data necessary to display batting results, practice results, and statistics calculated from the above records</li>
+                <li>Account information necessary for Apple or Google sign-in through Supabase Auth, such as Supabase user ID, authentication provider, email address, display name, and authentication/session information provided by the provider</li>
+                <li>Anonymous Supabase Auth user ID used when a viewer joins shared data without Apple or Google sign-in</li>
+                <li>Information necessary for the read-only data sharing feature, including shared publication ID, shared data version, publication date, invite expiration date, access role, access status, and invite acceptance attempts</li>
+                <li>Camera access when scanning invite QR codes inside the App. Camera images are used for QR code reading and are not stored or sent to the server by the App; only the extracted invite code is used for joining shared data.</li>
+                <li>Subscription and purchase status information required to manage premium features through RevenueCat and Supabase Edge Functions/Webhooks</li>
+                <li>App usage data collected through Firebase Analytics when analytics collection is enabled</li>
+                <li>Crash reports and device diagnostics collected through Firebase Crashlytics when crash reporting is enabled</li>
             </ul>
 
-            <h2>2. Use of Third-Party Services</h2>
+            <h2>2. Local Records and Shared Data</h2>
             <p>
-                <strong>Apple (App Store):</strong> In-app purchase payment processing is handled by Apple. Credit card
-                information and other billing information are processed by Apple, and the App does not store such
-                information.<br>
-                <strong>RevenueCat:</strong> The App uses RevenueCat to securely manage subscription status. Only an
-                anonymized user ID and purchase history are transmitted to and stored by RevenueCat, and they are not
-                used to personally identify users.<br>
-                <strong>Firebase Analytics (Google):</strong> The App uses Firebase Analytics to collect anonymous usage
-                data in order to analyze how the App is used and improve features and usability.<br>
-                <strong>Firebase Crashlytics (Google):</strong> The App uses Firebase Crashlytics to collect crash
-                reports and technical diagnostic information for bug fixing and stability improvements. This information
-                is not used to personally identify users.
+                The App is designed as a local-first record app. Records entered by users are primarily stored on the
+                user's device using the App's local database. When a user issues an invite code, QR code, or invite
+                link for the sharing feature, the latest snapshot of the selected records owned by the user is saved to
+                Supabase as a read-only shared copy. The shared copy may include game results, plate appearance details,
+                practice records, and related data necessary to display statistics.
+            </p>
+            <p>
+                Shared data is for viewing only by invited viewers. Viewers cannot edit, add, or delete the owner's
+                records through the sharing feature. The sharing feature is not a full cloud backup, cross-device sync,
+                team collaboration, or real-time editing service.
             </p>
 
-            <h2>3. Purpose of Use</h2>
+            <h2>3. Invite Codes, QR Codes, and Invite Links</h2>
+            <p>
+                Users can invite others by sharing an invite code, QR code, or invite link. Anyone who receives a valid
+                invite code or link may be able to join and view the shared data, so users are responsible for managing
+                who they share it with. Invite codes are stored on the server as hashed values, but the code itself may
+                be displayed in the App, copied, shared through the operating system's share sheet, or stored temporarily
+                on the user's device.
+            </p>
+
+            <h2>4. Stopping Sharing, Sign-Out, and Account Deletion</h2>
+            <p>
+                Stopping sharing, signing out, and deleting a sharing account are separate actions.
+            </p>
+            <ul>
+                <li>Stopping sharing invalidates the relevant invite and viewer access on the server. After access is revoked, viewers can no longer retrieve that shared data online.</li>
+                <li>Signing out only removes the local sign-in state from the device. It does not automatically stop sharing that has already been enabled on the server.</li>
+                <li>Deleting a sharing account deletes the Supabase account and server-side data associated with that account, including shared publications, invite records, viewer access records, premium entitlement mirror data, and shared snapshot data, except where retention is necessary for security, fraud prevention, or legal compliance.</li>
+            </ul>
+            <p>
+                Deleting a sharing account does not delete records stored locally on the user's device. Local records
+                remain on the device unless the user deletes them in the App, removes the App, or deletes them through
+                device or operating system functions.
+            </p>
+            <p>
+                After sharing is stopped or an account is deleted, viewers may temporarily see previously retrieved
+                information on their device, in screen history, notifications, screenshots, backups, or other places
+                outside the App's direct control. The App cannot delete copies that viewers have independently saved,
+                captured, or forwarded.
+            </p>
+
+            <h2>5. Use of Third-Party Services</h2>
+            <p>
+                <strong>Apple (App Store and Sign in with Apple):</strong> In-app purchase payment processing is handled
+                by Apple. Credit card information and other billing information are processed by Apple, and the App does
+                not store such information. The App may also use Sign in with Apple for sharing account authentication.<br>
+                <strong>Google (Google Play, Google sign-in, and Firebase):</strong> In-app purchase payment processing
+                on Android is handled by Google Play. The App may use Google sign-in through Supabase Auth and may use
+                Firebase services for analytics and crash reporting.<br>
+                <strong>Supabase:</strong> The App uses Supabase Auth, database, and Edge Functions for sharing account
+                authentication, anonymous viewer authentication, invite management, access control, shared snapshot
+                storage, account deletion, and subscription status synchronization.<br>
+                <strong>RevenueCat:</strong> The App uses RevenueCat to manage subscription status. RevenueCat customer
+                identifiers, product information, subscription status, expiration date, renewal status, and related
+                purchase events may be used by the App and Supabase Edge Functions/Webhooks to verify premium features.<br>
+                <strong>Firebase Analytics (Google):</strong> The App uses Firebase Analytics to collect app usage data
+                when analytics collection is enabled, in order to analyze how the App is used and improve features and
+                usability.<br>
+                <strong>Firebase Crashlytics (Google):</strong> The App uses Firebase Crashlytics to collect crash
+                reports and technical diagnostic information when crash reporting is enabled, for bug fixing and
+                stability improvements. Analytics and crash data are not used for the purpose of directly identifying
+                individual users.
+            </p>
+
+            <h2>6. Purpose of Use</h2>
             <p>The collected information is used solely for the following purposes:</p>
             <ul>
-                <li>Providing and maintaining the App and premium features</li>
+                <li>Providing, maintaining, and improving the App</li>
+                <li>Saving and displaying records, results, practice logs, and statistics</li>
+                <li>Providing the read-only sharing feature, including invite creation, invite acceptance, access control, shared data display, and sharing management</li>
                 <li>Verifying purchase status and restoring subscription benefits</li>
+                <li>Synchronizing premium entitlement status between RevenueCat and Supabase</li>
                 <li>Analyzing usage trends and improving functionality</li>
-                <li>Investigating crashes, defects, and abuse</li>
+                <li>Investigating crashes, defects, unauthorized access, abuse, and security issues</li>
+                <li>Responding to inquiries, account deletion requests, and user support</li>
             </ul>
 
-            <h2>4. External Links</h2>
+            <h2>7. Data Retention and Deletion</h2>
+            <p>
+                Local records are stored on the user's device until the user deletes them in the App, removes the App,
+                or deletes them through device or operating system functions. Server-side account-related data and shared
+                data are retained as long as necessary to provide the sharing feature, manage subscription status, respond
+                to support requests, prevent abuse, or comply with applicable requirements. Users can delete their sharing
+                account from within the App where the account deletion feature is available.
+            </p>
+
+            <h2>8. External Links</h2>
             <p>
                 For more information on how each provider handles data, please refer to their respective privacy
                 policies.<br>
                 <a href="https://www.apple.com/legal/privacy/" target="_blank"
                     rel="noopener noreferrer">Apple Privacy Policy</a><br>
-                <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat
-                    Privacy Policy</a><br>
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy
-                    Policy</a>
+                    Policy</a><br>
+                <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy
+                    Policy</a><br>
+                <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat
+                    Privacy Policy</a>
             </p>
 
-            <h2>5. Contact Us</h2>
+            <h2>9. Contact Us</h2>
             <p>If you have any questions regarding this Privacy Policy, please contact us via the form below.</p>
             <p>
                 <a href="https://forms.gle/cqF3mJDi3aNyjR7x6" target="_blank" rel="noopener noreferrer">Contact Form</a>
             </p>
 
-            <h2>6. Changes to This Policy</h2>
+            <h2>10. Changes to This Policy</h2>
             <p>This policy may be updated without notice in response to changes in laws or service content. If
                 significant changes are made, we will notify users within the App or on this page.</p>
         </section>
@@ -152,50 +226,108 @@
             <p>
                 野球打率ノート（以下、「本アプリ」）では、ユーザーの皆様に安心してご利用いただくために、以下の通り個人情報の取り扱いについて定めます。
             </p>
+            <p>最終更新日：2026年6月2日</p>
 
             <h2>1. 収集する情報</h2>
             <p>本アプリでは以下の情報を収集することがあります：</p>
             <ul>
-                <li>Firebase Analytics による匿名のアプリ利用状況データ</li>
-                <li>Firebase Crashlytics によるクラッシュレポートおよび端末の技術情報</li>
-                <li>RevenueCat による課金ステータス管理に必要な匿名化ユーザーIDと購入履歴</li>
+                <li>ユーザーが本アプリに入力した試合記録、打席記録、練習記録、選手名、日付、対戦相手、メモ等の情報</li>
+                <li>打撃結果、練習結果、成績表示に必要な関連データおよび集計データ</li>
+                <li>Supabase Auth を通じた Apple または Google ログインに必要な Supabase ユーザーID、認証プロバイダ、メールアドレス、表示名、認証・セッション情報</li>
+                <li>閲覧者が Apple または Google ログインを行わずに共有へ参加する場合に利用する Supabase 匿名ユーザーID</li>
+                <li>閲覧専用のデータ共有機能に必要な共有ID、共有データのバージョン、公開日時、招待コードの有効期限、閲覧権限、参加状態、招待コード入力試行履歴等</li>
+                <li>アプリ内で招待QRコードを読み取る場合のカメラ利用。カメラ画像はQRコード読み取りのために使用され、本アプリから保存またはサーバー送信されることはありません。読み取った招待コードのみが共有参加のために使用されます。</li>
+                <li>RevenueCat および Supabase Edge Functions/Webhook を通じたプレミアム機能管理に必要な課金状態、商品ID、有効期限、更新状態、購入イベント等</li>
+                <li>Firebase Analytics が有効な場合のアプリ利用状況データ</li>
+                <li>Firebase Crashlytics が有効な場合のクラッシュレポートおよび端末の技術情報</li>
             </ul>
 
-            <h2>2. 第三者サービスの利用について</h2>
+            <h2>2. 端末内の記録と共有データについて</h2>
             <p>
-                <strong>Apple（App Store）:</strong> アプリ内課金の決済処理にはAppleを利用しています。クレジットカード情報その他の決済情報はAppleにより処理され、本アプリでは保持しません。<br>
-                <strong>RevenueCat:</strong> サブスクリプションの状態を安全に管理するためにRevenueCatを利用しています。RevenueCatには匿名化されたユーザーIDと購入履歴のみが送信・保存され、個人の特定には使用しません。<br>
-                <strong>Firebase Analytics（Google）:</strong> アプリの利用状況を分析し、機能改善や利便性向上を行うため、匿名のアクセスデータを収集します。<br>
-                <strong>Firebase Crashlytics（Google）:</strong> クラッシュレポートや技術情報を収集し、不具合の調査および安定性向上に役立てます。これらの情報は個人を特定する目的では使用しません。
+                本アプリは、ローカルファーストの記録アプリとして設計されています。ユーザーが入力した記録は、主にユーザーの端末内のローカルデータベースに保存されます。
+                ユーザーが共有機能で招待コード、QRコード、招待リンクを発行した場合、共有対象として選択された自分の記録の最新スナップショットが、閲覧専用の共有コピーとして Supabase 上に保存されます。
+                共有コピーには、試合結果、打席内容、練習記録、成績表示に必要な関連データが含まれる場合があります。
+            </p>
+            <p>
+                共有先は閲覧のみであり、共有されたユーザーが共有元の記録を編集、追加、削除することはできません。
+                共有機能は、完全なクラウドバックアップ、複数端末間の完全同期、チーム共同編集、リアルタイム編集を目的とするものではありません。
             </p>
 
-            <h2>3. 利用目的</h2>
+            <h2>3. 招待コード、QRコード、招待リンクについて</h2>
+            <p>
+                ユーザーは、招待コード、QRコード、招待リンクを共有することで、他のユーザーを共有データの閲覧に招待できます。
+                有効な招待コードまたはリンクを受け取った第三者は、共有データを閲覧できる可能性があります。そのため、ユーザーは共有先を自身で管理する必要があります。
+                招待コードはサーバー上ではハッシュ化された値として保存されますが、コード自体はアプリ内に表示され、コピー、OSの共有機能での送信、端末内での一時保存が行われる場合があります。
+            </p>
+
+            <h2>4. 共有停止、ログアウト、アカウント削除について</h2>
+            <p>
+                共有停止、ログアウト、共有アカウント削除は、それぞれ別の操作です。
+            </p>
+            <ul>
+                <li>共有停止を行うと、対象の招待コードおよび閲覧権限がサーバー上で無効化されます。無効化後、閲覧者はオンラインでその共有データを取得できなくなります。</li>
+                <li>ログアウトは、この端末のログイン状態を解除する操作です。すでにサーバー上で有効になっている共有を自動的に停止するものではありません。</li>
+                <li>共有アカウント削除を行うと、Supabase 上のアカウントおよびそのアカウントに紐づく共有データ、招待情報、閲覧権限、課金状態の同期情報等を削除対象とします。ただし、セキュリティ、不正利用防止、法令遵守等のために必要な情報は、必要な範囲で保持される場合があります。</li>
+            </ul>
+            <p>
+                共有アカウントを削除しても、ユーザーの端末内に保存されているマイデータの記録は削除されません。
+                端末内の記録を削除したい場合は、本アプリ内のデータ削除機能、アプリの削除、または端末・OSの機能により別途削除する必要があります。
+            </p>
+            <p>
+                共有停止またはアカウント削除後であっても、閲覧者の端末に以前取得した情報が一時的に表示される場合があります。また、画面履歴、通知、スクリーンショット、バックアップ、その他本アプリが直接管理できない場所に情報が残る場合があります。
+                閲覧者が独自に保存、撮影、転送した情報を、本アプリから削除することはできません。
+            </p>
+
+            <h2>5. 第三者サービスの利用について</h2>
+            <p>
+                <strong>Apple（App Store および Sign in with Apple）:</strong> アプリ内課金の決済処理には Apple を利用しています。クレジットカード情報その他の決済情報は Apple により処理され、本アプリでは保持しません。また、共有アカウントの認証に Sign in with Apple を利用する場合があります。<br>
+                <strong>Google（Google Play、Google ログイン、Firebase）:</strong> Android におけるアプリ内課金の決済処理には Google Play を利用します。また、Supabase Auth を通じた Google ログイン、および Firebase Analytics / Firebase Crashlytics を利用する場合があります。<br>
+                <strong>Supabase:</strong> 共有アカウントの認証、閲覧者の匿名認証、招待コード管理、閲覧権限管理、共有スナップショットの保存、アカウント削除、課金状態の同期等のために Supabase Auth、データベース、Edge Functions を利用します。<br>
+                <strong>RevenueCat:</strong> サブスクリプションの状態を管理するために RevenueCat を利用しています。RevenueCat のユーザーID、商品情報、課金状態、有効期限、更新状態、購入イベント等は、プレミアム機能の確認のため、本アプリおよび Supabase Edge Functions/Webhook で利用される場合があります。<br>
+                <strong>Firebase Analytics（Google）:</strong> Firebase Analytics が有効な場合、アプリの利用状況を分析し、機能改善や利便性向上を行うため、利用状況データを収集します。<br>
+                <strong>Firebase Crashlytics（Google）:</strong> Firebase Crashlytics が有効な場合、クラッシュレポートや技術情報を収集し、不具合の調査および安定性向上に役立てます。これらの分析・クラッシュ情報は、個人を直接特定する目的では使用しません。
+            </p>
+
+            <h2>6. 利用目的</h2>
             <p>収集した情報は、以下の目的の範囲で利用します。</p>
             <ul>
-                <li>本アプリおよびプレミアム機能の提供、維持のため</li>
+                <li>本アプリの提供、維持、改善のため</li>
+                <li>試合記録、打席記録、練習記録、成績を保存・表示するため</li>
+                <li>招待コードの発行、招待の受け入れ、閲覧権限の管理、共有データの表示、共有停止等の閲覧専用共有機能を提供するため</li>
                 <li>購入状況の確認およびサブスクリプション特典の復元のため</li>
+                <li>RevenueCat と Supabase の間でプレミアム権限の状態を同期するため</li>
                 <li>利用傾向の分析および機能改善のため</li>
-                <li>クラッシュ、不具合、不正利用の調査対応のため</li>
+                <li>クラッシュ、不具合、不正アクセス、不正利用、セキュリティ上の問題の調査対応のため</li>
+                <li>お問い合わせ、アカウント削除依頼、サポート対応のため</li>
             </ul>
 
-            <h2>4. 外部サービスのポリシー</h2>
+            <h2>7. データの保存期間および削除について</h2>
+            <p>
+                端末内の記録は、ユーザーが本アプリ内で削除する、アプリを削除する、または端末・OSの機能により削除するまで端末内に保存されます。
+                サーバー上のアカウント関連データおよび共有データは、共有機能の提供、課金状態の管理、サポート対応、不正利用防止、法令等への対応に必要な期間保存されます。
+                共有アカウント削除機能が利用できる場合、ユーザーは本アプリ内から共有アカウントの削除を行うことができます。
+            </p>
+
+            <h2>8. 外部サービスのポリシー</h2>
             <p>
                 各事業者によるデータの取り扱いについては、それぞれのプライバシーポリシーをご確認ください。<br>
                 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple
                     プライバシーポリシー</a><br>
-                <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat
-                    Privacy Policy</a><br>
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google
+                    プライバシーポリシー</a><br>
+                <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase
+                    Privacy Policy</a><br>
+                <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat
                     プライバシーポリシー</a>
             </p>
 
-            <h2>5. お問い合わせ</h2>
+            <h2>9. お問い合わせ</h2>
             <p>プライバシーポリシーに関するご質問は、以下のフォームよりご連絡ください。</p>
             <p>
                 <a href="https://forms.gle/cqF3mJDi3aNyjR7x6" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>
             </p>
 
-            <h2>6. 改訂について</h2>
+            <h2>10. 改訂について</h2>
             <p>本ポリシーは、法令やサービス内容の変更に応じて予告なく更新される場合があります。重要な変更がある場合には、本アプリ内または本ページにて告知いたします。</p>
         </section>
 

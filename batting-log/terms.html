@@ -89,6 +89,7 @@
                 These Terms of Use (hereinafter referred to as the "Terms") define the conditions for using Batting
                 Stats Tracker (hereinafter referred to as the "App").
             </p>
+            <p>Last updated: June 2, 2026</p>
 
             <h2>1. Agreement to Terms</h2>
             <p>By using the App, you agree to these Terms. If you do not agree, please refrain from using the App.</p>
@@ -96,46 +97,104 @@
             <h2>2. Premium Plan (Auto-Renewable Subscription)</h2>
             <p>
                 <strong>Paid Plan:</strong> The App offers a premium plan through an auto-renewable subscription.<br>
-                <strong>Payment:</strong> Payment will be charged to your Apple ID account at the time your purchase is
-                confirmed.<br>
+                <strong>Payment:</strong> Payment will be charged to your Apple ID account or Google Play account at the
+                time your purchase is confirmed.<br>
                 <strong>Automatic Renewal:</strong> Unless auto-renew is turned off at least 24 hours before the end of
                 the current subscription period, your subscription will renew automatically, and your account will be
                 charged within 24 hours prior to the end of the current period.<br>
-                <strong>Managing or Cancelling:</strong> You can manage or cancel your subscription from your device
-                settings at Apple ID &gt; Subscriptions. Deleting the App does not automatically cancel your
-                subscription.<br>
-                <strong>Restore:</strong> If you use the same Apple ID as the one used for purchase, you may restore
-                your subscription through the App where supported.
+                <strong>Managing or Cancelling:</strong> You can manage or cancel your subscription from the App Store or
+                Google Play account settings. Deleting the App, signing out, stopping sharing, or deleting a sharing
+                account does not automatically cancel your subscription.<br>
+                <strong>Restore:</strong> If you use the same store account as the one used for purchase, you may restore
+                your subscription through the App where supported.<br>
+                <strong>Purchase Verification:</strong> Subscription status may be verified and synchronized through
+                RevenueCat and Supabase Edge Functions/Webhooks in order to provide premium features.
             </p>
 
-            <h2>3. Prohibited Conduct</h2>
+            <h2>3. Read-Only Data Sharing Feature</h2>
+            <p>
+                The App may provide a feature that allows users to share their records for read-only viewing by invite
+                code, QR code, or invite link. When a user issues an invite, the latest snapshot of the selected records
+                owned by the user may be saved to Supabase as a shared copy. Shared data may include game results,
+                plate appearance details, practice records, and related data necessary to display statistics.
+            </p>
+            <p>
+                Invited viewers can view shared data only. They cannot edit, add, or delete the owner's records through
+                the sharing feature. The shared copy is not a full cloud backup, cross-device sync, team collaboration,
+                or real-time editing service. Records stored locally on the owner's device remain the primary data.
+            </p>
+            <p>
+                Shared data may not always reflect the latest local records. In the current design, shared data is
+                updated when the owner reflects the latest data to the sharing feature. The owner is responsible for
+                deciding when to update shared data.
+            </p>
+
+            <h2>4. Invite Codes, Shared Links, and Viewer Access</h2>
+            <p>
+                Anyone who receives a valid invite code, QR code, or invite link may be able to join and view the shared
+                data. Users are responsible for managing invite recipients and should not share codes or links with
+                unintended recipients. If a code or link may have been shared with an unintended person, the owner should
+                stop sharing and issue a new invite if necessary.
+            </p>
+            <p>
+                Stopping sharing invalidates the relevant invite and viewer access on the server. However, information
+                that viewers have already displayed, temporarily cached, captured, saved, backed up, or forwarded may
+                remain outside the App's control.
+            </p>
+
+            <h2>5. Sign-Out, Stopping Sharing, and Account Deletion</h2>
+            <p>
+                Signing out, stopping sharing, and deleting a sharing account are separate actions.
+            </p>
+            <ul>
+                <li>Signing out removes the local sign-in state from the device. It does not automatically stop sharing that has already been enabled on the server.</li>
+                <li>Stopping sharing invalidates the relevant invite and viewer access. It does not delete the owner's local records or cancel any subscription.</li>
+                <li>Deleting a sharing account deletes server-side account-related data and shared data associated with that account, except where retention is necessary for security, fraud prevention, or legal compliance.</li>
+            </ul>
+            <p>
+                Deleting a sharing account does not delete local records stored on the user's device. Local records must
+                be deleted separately through the App, by deleting the App, or through device or operating system
+                functions.
+            </p>
+
+            <h2>6. Prohibited Conduct</h2>
             <p>Users shall not engage in the following acts when using the App:</p>
             <ul>
                 <li>Acts that violate laws, public order, or these Terms</li>
                 <li>Acts that interfere with the operation of the App</li>
                 <li>Unauthorized access, reverse engineering, or attempts to exploit vulnerabilities</li>
+                <li>Using another person's invite code, QR code, or invite link without permission</li>
+                <li>Attempting to bypass read-only restrictions, access controls, subscription verification, or rate limits</li>
+                <li>Sharing, publishing, or using records in a manner that infringes the rights or privacy of another person</li>
                 <li>Acts that infringe the rights or interests of the developer or any third party</li>
             </ul>
 
-            <h2>4. Intellectual Property</h2>
+            <h2>7. Intellectual Property</h2>
             <p>All copyrights and other intellectual property rights related to the App belong to the developer or the
                 rightful owners. Users may not reproduce, modify, distribute, or otherwise use App content beyond the
                 scope permitted by law.</p>
 
-            <h2>5. Disclaimer</h2>
+            <h2>8. Disclaimer</h2>
             <p>The developer does not guarantee that the App will be uninterrupted, error-free, or suitable for a
-                particular purpose. The developer shall not be liable for any damages, loss of data, or disputes arising
-                from the use of the App, except where liability cannot be excluded under applicable law.</p>
+                particular purpose. The developer does not guarantee that locally stored records, shared data, invite
+                codes, subscription status, analytics results, or cached data will always be accurate, complete, available,
+                or recoverable. The developer shall not be liable for any damages, loss of data, disclosure caused by
+                sharing invite information with unintended recipients, or disputes arising from the use of the App, except
+                where liability cannot be excluded under applicable law.</p>
 
-            <h2>6. Suspension or Changes to the App</h2>
+            <h2>9. Suspension or Changes to the App</h2>
             <p>The developer may change, suspend, or terminate all or part of the App without prior notice when deemed
                 necessary.</p>
 
-            <h2>7. Changes to Terms</h2>
+            <h2>10. Privacy Policy</h2>
+            <p>The handling of user information in the App is described in the Privacy Policy. Users should review the
+                Privacy Policy together with these Terms.</p>
+
+            <h2>11. Changes to Terms</h2>
             <p>We reserve the right to modify these Terms at any time without prior notice. The modified Terms will
                 become effective once posted.</p>
 
-            <h2>8. Contact Us</h2>
+            <h2>12. Contact Us</h2>
             <p>If you have any questions regarding these Terms, please contact us via the form below.</p>
             <p>
                 <a href="https://forms.gle/cqF3mJDi3aNyjR7x6" target="_blank" rel="noopener noreferrer">Contact Form</a>
@@ -149,6 +208,7 @@
             <p>
                 この利用規約（以下、「本規約」）は、野球打率ノート（以下、「本アプリ」）の利用条件を定めるものです。
             </p>
+            <p>最終更新日：2026年6月2日</p>
 
             <h2>1. 規約への同意</h2>
             <p>ユーザーは、本アプリを利用することにより、本規約に同意したものとみなされます。同意いただけない場合は、本アプリの利用をお控えください。</p>
@@ -156,34 +216,85 @@
             <h2>2. プレミアムプラン（自動更新サブスクリプション）について</h2>
             <p>
                 <strong>有料プランの提供:</strong> 本アプリでは、プレミアムプランを自動更新サブスクリプションとして提供しています。<br>
-                <strong>支払い:</strong> 購入が確定すると、料金はお客様のApple IDアカウントに請求されます。<br>
+                <strong>支払い:</strong> 購入が確定すると、料金はお客様の Apple ID アカウントまたは Google Play アカウントに請求されます。<br>
                 <strong>自動更新:</strong> 現在の契約期間が終了する24時間以上前に自動更新をオフにしない限り、サブスクリプションは自動的に更新され、期間終了前24時間以内に更新料金が請求されます。<br>
-                <strong>管理および解約方法:</strong> サブスクリプションは、お使いの端末の設定画面にある「Apple ID &gt; サブスクリプション」から管理および解約できます。アプリを削除しただけでは解約されません。<br>
-                <strong>復元:</strong> 購入時と同一のApple IDを利用している場合、対応する機能があるときはアプリ内から購入状態を復元できます。
+                <strong>管理および解約方法:</strong> サブスクリプションは、App Store または Google Play のアカウント設定から管理および解約できます。アプリの削除、ログアウト、共有停止、共有アカウント削除を行っても、サブスクリプションは自動的には解約されません。<br>
+                <strong>復元:</strong> 購入時と同一のストアアカウントを利用している場合、対応する機能があるときはアプリ内から購入状態を復元できます。<br>
+                <strong>購入状態の確認:</strong> プレミアム機能を提供するため、購入状態は RevenueCat および Supabase Edge Functions/Webhook を通じて確認・同期される場合があります。
             </p>
 
-            <h2>3. 禁止事項</h2>
+            <h2>3. 閲覧専用のデータ共有機能について</h2>
+            <p>
+                本アプリでは、招待コード、QRコード、招待リンクを利用して、ユーザー自身の記録を閲覧専用で共有する機能を提供する場合があります。
+                ユーザーが招待を発行した場合、共有対象として選択された自分の記録の最新スナップショットが、共有コピーとして Supabase 上に保存されることがあります。
+                共有されるデータには、試合結果、打席内容、練習記録、成績表示に必要な関連データが含まれる場合があります。
+            </p>
+            <p>
+                招待された閲覧者は、共有データを閲覧することのみできます。閲覧者が共有元の記録を編集、追加、削除することはできません。
+                共有コピーは、完全なクラウドバックアップ、複数端末間の完全同期、チーム共同編集、リアルタイム編集を目的とするものではありません。
+                ユーザーの端末内に保存されているローカル記録が、ユーザー本人の主な記録データです。
+            </p>
+            <p>
+                共有データは、常に端末内の最新記録と一致するとは限りません。現時点では、共有元のユーザーが共有相手へ最新データを反映したタイミングで共有データが更新されます。
+                いつ共有データを更新するかは、共有元のユーザーが管理するものとします。
+            </p>
+
+            <h2>4. 招待コード、共有リンク、閲覧権限について</h2>
+            <p>
+                有効な招待コード、QRコード、招待リンクを受け取った人は、共有データを閲覧できる可能性があります。
+                ユーザーは、招待コードやリンクの共有先を自身の責任で管理し、意図しない相手に共有しないよう注意するものとします。
+                招待コードやリンクが意図しない相手に渡った可能性がある場合、共有元のユーザーは共有停止を行い、必要に応じて新しい招待を発行してください。
+            </p>
+            <p>
+                共有停止を行うと、対象の招待コードおよび閲覧権限はサーバー上で無効化されます。ただし、閲覧者がすでに表示した情報、一時的にキャッシュされた情報、スクリーンショット、保存、バックアップ、転送された情報などは、本アプリが直接管理できない場所に残る場合があります。
+            </p>
+
+            <h2>5. ログアウト、共有停止、アカウント削除について</h2>
+            <p>
+                ログアウト、共有停止、共有アカウント削除は、それぞれ別の操作です。
+            </p>
+            <ul>
+                <li>ログアウトは、この端末のログイン状態を解除する操作です。すでにサーバー上で有効になっている共有を自動的に停止するものではありません。</li>
+                <li>共有停止は、対象の招待コードおよび閲覧権限を無効化する操作です。共有元ユーザーの端末内の記録は削除されず、サブスクリプションも解約されません。</li>
+                <li>共有アカウント削除は、サーバー上のアカウント関連データおよび共有データを削除対象とする操作です。ただし、セキュリティ、不正利用防止、法令遵守等のために必要な情報は、必要な範囲で保持される場合があります。</li>
+            </ul>
+            <p>
+                共有アカウントを削除しても、ユーザーの端末内に保存されているローカル記録は削除されません。
+                端末内の記録を削除する場合は、本アプリ内の削除機能、アプリの削除、または端末・OSの機能により別途削除してください。
+            </p>
+
+            <h2>6. 禁止事項</h2>
             <p>ユーザーは、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
             <ul>
                 <li>法令、本規約または公序良俗に反する行為</li>
                 <li>本アプリの運営を妨害する行為</li>
                 <li>不正アクセス、リバースエンジニアリング、脆弱性の悪用を試みる行為</li>
+                <li>他人の招待コード、QRコード、招待リンクを許可なく利用する行為</li>
+                <li>閲覧専用の制限、アクセス権限、課金状態の確認、利用回数制限等を回避しようとする行為</li>
+                <li>他人の権利またはプライバシーを侵害する形で記録を共有、公開、利用する行為</li>
                 <li>開発者または第三者の権利利益を侵害する行為</li>
             </ul>
 
-            <h2>4. 著作権等</h2>
+            <h2>7. 著作権等</h2>
             <p>本アプリに関する著作権その他の知的財産権は、開発者または正当な権利を有する者に帰属します。ユーザーは、法令で認められる範囲を超えて、本アプリの内容を複製、改変、配布その他利用してはなりません。</p>
 
-            <h2>5. 免責事項</h2>
-            <p>開発者は、本アプリについて、中断がないこと、エラーがないこと、特定の目的に適合することを保証しません。法令上免責が認められない場合を除き、本アプリの利用に起因して生じた損害、データ消失、紛争等について一切の責任を負いません。</p>
+            <h2>8. 免責事項</h2>
+            <p>
+                開発者は、本アプリについて、中断がないこと、エラーがないこと、特定の目的に適合することを保証しません。
+                また、端末内の記録、共有データ、招待コード、課金状態、分析結果、キャッシュされた情報が常に正確、完全、利用可能、復元可能であることを保証しません。
+                法令上免責が認められない場合を除き、本アプリの利用に起因して生じた損害、データ消失、意図しない相手への招待情報の共有による情報閲覧、紛争等について一切の責任を負いません。
+            </p>
 
-            <h2>6. 本アプリの変更・中断等</h2>
+            <h2>9. 本アプリの変更・中断等</h2>
             <p>開発者は、必要と判断した場合、事前の通知なく本アプリの全部または一部を変更、中断または終了できるものとします。</p>
 
-            <h2>7. 規約の変更</h2>
+            <h2>10. プライバシーポリシー</h2>
+            <p>本アプリにおけるユーザー情報の取り扱いについては、別途定めるプライバシーポリシーに記載します。ユーザーは、本規約とあわせてプライバシーポリシーを確認するものとします。</p>
+
+            <h2>11. 規約の変更</h2>
             <p>開発者は、必要と判断した場合には、事前の通知なく本規約を変更することができるものとします。変更後の利用規約は、掲示された時点から効力を生じるものとします。</p>
 
-            <h2>8. お問い合わせ</h2>
+            <h2>12. お問い合わせ</h2>
             <p>本規約に関するご質問は、以下のフォームよりご連絡ください。</p>
             <p>
                 <a href="https://forms.gle/cqF3mJDi3aNyjR7x6" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>
