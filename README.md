@@ -6,6 +6,8 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 
 ## Public Pages
 
+- `motiontag/privacy.html`
+- `motiontag/terms.html`
 - `batting-log/privacy.html`
 - `batting-log/terms.html`
 - `soccer-lineup-board/privacy.html`
