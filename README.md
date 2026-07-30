@@ -12,6 +12,8 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `batting-log/terms.html`
 - `soccer-lineup-board/privacy.html`
 - `soccer-lineup-board/terms.html`
+- `futsal-lineup-board/privacy.html`
+- `futsal-lineup-board/terms.html`
 - `baseball-order.html`
 - `baseball-order-terms.html`
 - `comic-merge.html`
