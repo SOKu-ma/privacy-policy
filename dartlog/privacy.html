@@ -132,8 +132,7 @@
                 <li>Practice records, including the selected target, number of rounds, dart landing coordinates, hit or miss results, intended target information, and round notes.</li>
                 <li>Game records for X01, Count-Up, Cricket, and Around the Clock, including scores, turns, dart landing coordinates when available, game settings, intended or system-recommended target information, and notes.</li>
                 <li>History, dates, identifiers, in-progress game data, and statistics or analysis calculated from the records above.</li>
-                <li>App settings such as the selected theme and, where shown during development, a language preference.</li>
-                <li>If the future Auto Capture concept screen is available, the user's optional multiple-choice interest, expected use location, and candidate price response. These responses are stored on the device only; the camera feature itself is not provided in the initial release.</li>
+                <li>App settings such as the selected theme.</li>
                 <li>Purchase and subscription status information needed to provide Premium features through Apple App Store, Google Play, and RevenueCat.</li>
                 <li>Information the user chooses to enter and submit through the inquiry form.</li>
             </ul>
@@ -146,7 +145,7 @@
             <p>
                 DartLog is designed as a local-first app. Practice records, game records, landing coordinates, scores,
                 notes, intended targets, history, and locally calculated analysis are stored in the App's local database
-                on the user's device. The initial release has no developer-operated account system, cloud sync, or
+                on the user's device. The current version has no developer-operated account system, cloud sync, or
                 server feature for uploading these records. The developer does not receive the raw records through the
                 App.
             </p>
@@ -170,12 +169,14 @@
                 purpose. This service is not used to receive the App's practice or game records.
             </p>
             <p>
-                <strong>Firebase Analytics and Firebase Crashlytics:</strong> These services are not integrated into
-                the initial release. Accordingly, the initial release does not send DartLog usage events or crash
-                reports to Firebase Analytics or Firebase Crashlytics. If this changes, this Policy will be updated
-                before the relevant processing begins.
+                <strong>Firebase Analytics and Firebase Crashlytics:</strong> The App uses these services for
+                aggregated product-usage measurement and crash diagnosis. Firebase Analytics may receive the
+                low-cardinality event names and enum values defined by the App, together with technical information
+                needed for the SDK, such as app, OS, and device information. Crashlytics may receive crash
+                diagnostics such as stack traces and app, OS, and device information. The App does not send raw
+                practice or game records, dart landing coordinates, scores, notes, intended targets, target,
+                session, or game identifiers, passwords, payment information, or inquiry text to these services.
             </p>
-
             <h2>4. Inquiry Form and Device or App Information</h2>
             <p>
                 When the user chooses Contact us, the App opens the common Google Form used for app support. The App
@@ -190,21 +191,7 @@
                 and privacy policy.
             </p>
 
-            <h2>5. Information and Permissions Not Used in the Initial Release</h2>
-            <ul>
-                <li>No advertising SDK or interest-based advertising is used.</li>
-                <li>No precise or background location is collected.</li>
-                <li>No contacts or address book data is collected.</li>
-                <li>No camera, photo library, or video recording/analysis is provided or used in the initial release.</li>
-                <li>No cross-app or cross-site tracking technology is used by the App.</li>
-            </ul>
-            <p>
-                The optional Auto Capture interest responses are limited to the choices shown on that screen and are
-                saved locally. They are not a camera recording feature, a survey submission to an external service, or
-                a transmission of dartboard images.
-            </p>
-
-            <h2>6. Retention and Deletion</h2>
+            <h2>5. Retention and Deletion</h2>
             <p>
                 Local records and local settings are retained on the device until the user deletes the App data or
                 uninstalls the App. The current release does not provide a developer-side account or server copy to
@@ -218,6 +205,8 @@
                 developer, only for as long as reasonably necessary to respond, maintain support records, and address
                 related quality or legal matters; information that is no longer needed is deleted or anonymized where
                 reasonably practicable.
+                Firebase Analytics and Firebase Crashlytics may retain analytics and crash-diagnostic information
+                according to their policies and as needed to provide, secure, and improve their services.
             </p>
             <p>
                 To ask about an inquiry submission or request handling under applicable law, use the Contact Form below.
@@ -225,23 +214,25 @@
                 device or through its operating-system storage controls.
             </p>
 
-            <h2>7. Third-Party Disclosure and Processing Outside Japan</h2>
+            <h2>6. Third-Party Disclosure and Processing Outside Japan</h2>
             <p>
                 We do not sell the App's records and do not provide them to third parties for their own advertising.
                 Information is disclosed only when the user submits it to an external service, when necessary to
                 provide store-based subscriptions, or when disclosure is required by law or necessary to protect
-                rights, safety, or prevent fraud. Apple, Google, RevenueCat, and Google Forms may process information
+                rights, safety, or prevent fraud. Apple, Google, RevenueCat, Google Forms, Firebase Analytics, and
+                Firebase Crashlytics may process information
                 outside Japan in accordance with their own operations and policies. We do not operate a separate server
-                for DartLog records in the initial release.
+                for DartLog records in the current version.
             </p>
             <p>
                 Please review the providers' policies for details about their processing:
                 <br><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>
                 <br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
                 <br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>
+                <br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>
             </p>
 
-            <h2>8. Security</h2>
+            <h2>7. Security</h2>
             <p>
                 We take reasonable measures appropriate to the current design, including limiting records to local
                 storage and keeping payment processing within the stores. No method of storage or transmission is
@@ -249,21 +240,21 @@
                 third-party providers are governed by their policies.
             </p>
 
-            <h2>9. Children and Minors</h2>
+            <h2>8. Children and Minors</h2>
             <p>
                 The App is not directed specifically to children. Minors should use the App with the consent and
                 supervision of a parent or legal guardian where required by applicable law. If a minor submits an
                 inquiry, the guardian may contact us through the form below.
             </p>
 
-            <h2>10. Changes to This Policy</h2>
+            <h2>9. Changes to This Policy</h2>
             <p>
                 We may update this Policy when the App, third-party services, laws, or data practices change. The
                 latest version will be posted on this page with its updated date. Material changes will be announced in
                 the App or by another appropriate method where required by law.
             </p>
 
-            <h2>11. Contact</h2>
+            <h2>10. Contact</h2>
             <p>If you have questions about this Policy or the handling of your information, please contact us through:</p>
             <p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header"
@@ -287,8 +278,7 @@
                 <li>Trainingsaufzeichnungen mit Ziel, Rundenzahl, Koordinaten der Dartlandungen, Treffer- oder Fehlwurfstatus, beabsichtigtem Ziel und Rundennotizen.</li>
                 <li>Spielaufzeichnungen für X01, Count-Up, Cricket und Around the Clock mit Punkten, Runden, verfügbaren Landekoordinaten, Spieleinstellungen, beabsichtigten oder systemseitig empfohlenen Zielen und Notizen.</li>
                 <li>Verlauf, Datum, technische Datensatzkennungen sowie Statistiken und Analysen, die lokal aus diesen Aufzeichnungen berechnet werden.</li>
-                <li>App-Einstellungen wie das gewählte Design und, soweit während der Entwicklung angezeigt, die Spracheinstellung.</li>
-                <li>Falls der Bildschirm zum künftigen Konzept Auto Capture verfügbar ist: optionale Multiple-Choice-Antworten zu Interesse, vermutetem Einsatzort und einem Preisvorschlag. Diese Antworten bleiben auf dem Gerät; die Kamerafunktion wird in der ersten Version nicht angeboten.</li>
+                <li>App-Einstellungen wie das gewählte Design.</li>
                 <li>Kauf- und Abonnementstatus, die für Premium über Apple App Store, Google Play und RevenueCat erforderlich sind.</li>
                 <li>Angaben, die der Nutzer freiwillig in das Kontaktformular eingibt und absendet.</li>
             </ul>
@@ -298,7 +288,7 @@
             <p>
                 DartLog ist als lokal arbeitende App konzipiert. Trainings- und Spieldaten, Landekoordinaten, Punkte,
                 Notizen, Ziele, Verlauf und lokal berechnete Analysen werden in der lokalen Datenbank auf dem Gerät
-                gespeichert. Die erste Version hat kein vom Entwickler betriebenes Konto, keine Cloud-Synchronisierung
+                gespeichert. Die aktuelle Version hat kein vom Entwickler betriebenes Konto, keine Cloud-Synchronisierung
                 und keinen Server zum Hochladen dieser Aufzeichnungen. Rohdaten werden über die App nicht an den
                 Entwickler übermittelt.
             </p>
@@ -307,41 +297,30 @@
             <h2>3. Dienste Dritter</h2>
             <p><strong>Apple App Store und Google Play:</strong> Apple oder Google verarbeitet Zahlungen und Abonnements. Konto-, Bestell-, Beleg-, Abonnement- und Zahlungsinformationen unterliegen den jeweiligen Bedingungen und Datenschutzrichtlinien. Die App und der Entwickler speichern keine Karten- oder sonstigen Zahlungszugangsdaten.</p>
             <p><strong>RevenueCat:</strong> RevenueCat verwaltet den Premium-Berechtigungsstatus und die Wiederherstellung von Käufen. Dabei können eine vom SDK erzeugte appbezogene Kennung sowie Store-, Produkt-, Kauf-, Abonnement-, Berechtigungs-, Verlängerungs- und Ablaufdaten verarbeitet werden. Trainings- und Spieldaten werden nicht an diesen Dienst übermittelt.</p>
-            <p><strong>Firebase Analytics und Firebase Crashlytics:</strong> Diese Dienste sind in der ersten Version nicht integriert. Es werden daher keine DartLog-Nutzungsereignisse oder Absturzberichte an Firebase gesendet. Bei einer Änderung wird diese Erklärung vorher aktualisiert.</p>
-
+            <p><strong>Firebase Analytics und Firebase Crashlytics:</strong> Die App nutzt diese Dienste zur aggregierten Messung der Produktnutzung und zur Diagnose von Abstürzen. Firebase Analytics kann die von der App definierten Ereignisnamen und Enum-Werte mit geringer Kardinalität sowie technische Informationen verarbeiten, die für das SDK erforderlich sind, etwa Informationen zu App, Betriebssystem und Gerät. Crashlytics kann Absturzdiagnosen wie Stacktraces sowie App-, Betriebssystem- und Geräteinformationen verarbeiten. Die App übermittelt keine Trainings- oder Spieldaten, Landekoordinaten, Punkte, Notizen, Ziele, Ziel-, Sitzungs- oder Spielkennungen, Passwörter, Zahlungsinformationen oder Anfrageinhalte an diese Dienste.</p>
             <h2>4. Kontaktformular sowie Geräte- und App-Informationen</h2>
             <p>Wenn der Nutzer Kontakt aufnimmt, öffnet die App das gemeinsame Google-Formular für den App-Support. App-Name, Betriebssystem, OS-Version, App-Version, Build-Nummer, Store und Gerätemodell können sichtbar und bearbeitbar vorausgefüllt werden. Der Nutzer kann freiwillig Kategorie, Details, E-Mail-Adresse oder weitere Angaben eintragen und entscheidet über das Absenden.</p>
             <p>Die App fügt keine Trainings- oder Spieldaten, Koordinaten, Punkte, Notizen, Ziele, Passwörter, Zahlungsdaten oder verborgenen Kennungen an. Die Übermittlung erfolgt an den Formularbetreiber, derzeit Google, nach dessen Bedingungen und Datenschutzrichtlinie.</p>
 
-            <h2>5. Nicht verwendete Informationen und Berechtigungen</h2>
-            <ul>
-                <li>Keine Werbe-SDKs und keine interessenbezogene Werbung.</li>
-                <li>Keine Erfassung des genauen oder im Hintergrund ermittelten Standorts.</li>
-                <li>Keine Erfassung von Kontakten oder Adressbuchdaten.</li>
-                <li>Keine Kamera-, Foto- oder Videoaufnahme bzw. -analyse in der ersten Version.</li>
-                <li>Kein Cross-App- oder Cross-Site-Tracking durch die App.</li>
-            </ul>
-            <p>Die optionalen Auto-Capture-Antworten sind nur Auswahlwerte, werden lokal gespeichert und übertragen weder Kamerabilder noch Antworten an einen externen Dienst.</p>
-
-            <h2>6. Speicherdauer und Löschung</h2>
+            <h2>5. Speicherdauer und Löschung</h2>
             <p>Lokale Aufzeichnungen und Einstellungen bleiben auf dem Gerät, bis der Nutzer App-Daten löscht oder die App deinstalliert. Eine Entwicklerdatenbank und ein serverseitiges Konto zum Löschen existieren in der aktuellen Version nicht. Betriebssystem-Backups folgen deren eigenen Einstellungen und Aufbewahrungsfristen.</p>
-            <p>Apple, Google und RevenueCat bewahren Kauf- und Abonnementdaten nach ihren Richtlinien und soweit für Transaktionen, Berechtigungen, Sicherheit, Betrugsprävention oder gesetzliche Pflichten erforderlich auf. Kontaktformular-Antworten werden vom Formularbetreiber und, wenn sie beim Entwickler eingehen, nur so lange aufbewahrt, wie dies für die Bearbeitung, Supportdokumentation sowie damit verbundene Qualitäts- oder Rechtsfragen erforderlich ist; nicht mehr benötigte Daten werden gelöscht oder, soweit sinnvoll, anonymisiert.</p>
+            <p>Apple, Google und RevenueCat bewahren Kauf- und Abonnementdaten nach ihren Richtlinien und soweit für Transaktionen, Berechtigungen, Sicherheit, Betrugsprävention oder gesetzliche Pflichten erforderlich auf. Firebase Analytics und Firebase Crashlytics können Nutzungs- und Absturzdiagnosedaten nach ihren Richtlinien und so lange aufbewahren, wie dies für die Bereitstellung, Sicherheit und Verbesserung ihrer Dienste erforderlich ist. Kontaktformular-Antworten werden vom Formularbetreiber und, wenn sie beim Entwickler eingehen, nur so lange aufbewahrt, wie dies für die Bearbeitung, Supportdokumentation sowie damit verbundene Qualitäts- oder Rechtsfragen erforderlich ist; nicht mehr benötigte Daten werden gelöscht oder, soweit sinnvoll, anonymisiert.</p>
             <p>Fragen zu einer Kontaktformular-Antwort können über das unten verlinkte Formular gestellt werden. Lokale Aufzeichnungen müssen vom Nutzer auf dem Gerät oder über dessen Speicherverwaltung gelöscht werden.</p>
 
-            <h2>7. Weitergabe und Verarbeitung außerhalb Japans</h2>
-            <p>Wir verkaufen keine Aufzeichnungen und geben sie nicht für eigene Werbung Dritter weiter. Eine Offenlegung erfolgt nur bei einer Übermittlung durch den Nutzer, soweit sie für Store-Abonnements erforderlich ist oder wenn sie gesetzlich vorgeschrieben bzw. zum Schutz von Rechten und Sicherheit oder zur Betrugsprävention erforderlich ist. Apple, Google, RevenueCat und Google Forms können Daten außerhalb Japans nach ihren Richtlinien verarbeiten. Für DartLog-Aufzeichnungen betreiben wir in der ersten Version keinen separaten Server.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Datenschutz</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Datenschutz</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Datenschutz</a></p>
+            <h2>6. Weitergabe und Verarbeitung außerhalb Japans</h2>
+            <p>Wir verkaufen keine Aufzeichnungen und geben sie nicht für eigene Werbung Dritter weiter. Eine Offenlegung erfolgt nur bei einer Übermittlung durch den Nutzer, soweit sie für Store-Abonnements erforderlich ist oder wenn sie gesetzlich vorgeschrieben bzw. zum Schutz von Rechten und Sicherheit oder zur Betrugsprävention erforderlich ist. Apple, Google, RevenueCat, Google Forms, Firebase Analytics und Firebase Crashlytics können Daten außerhalb Japans nach ihren Richtlinien verarbeiten. Für DartLog-Aufzeichnungen betreiben wir in der aktuellen Version keinen separaten Server.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Datenschutz</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Datenschutz</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Datenschutz</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Datenschutz</a></p>
 
-            <h2>8. Sicherheit</h2>
+            <h2>7. Sicherheit</h2>
             <p>Wir treffen dem aktuellen Design angemessene Maßnahmen, insbesondere die Beschränkung der Aufzeichnungen auf den lokalen Speicher und die Abwicklung von Zahlungen über die Stores. Absolute Sicherheit kann nicht garantiert werden. Für die Sicherheit und Aufbewahrung bei Drittanbietern gelten deren Richtlinien.</p>
 
-            <h2>9. Kinder und Minderjährige</h2>
+            <h2>8. Kinder und Minderjährige</h2>
             <p>Die App richtet sich nicht speziell an Kinder. Minderjährige sollen die App, soweit gesetzlich erforderlich, mit Zustimmung und unter Aufsicht eines Elternteils oder gesetzlichen Vertreters nutzen.</p>
 
-            <h2>10. Änderungen dieser Erklärung</h2>
+            <h2>9. Änderungen dieser Erklärung</h2>
             <p>Wir können diese Erklärung ändern, wenn sich App, Dienste Dritter, Gesetze oder Datenverarbeitung ändern. Die aktuelle Fassung mit Datum wird auf dieser Seite veröffentlicht; wesentliche Änderungen werden, soweit erforderlich, in der App oder auf andere geeignete Weise mitgeteilt.</p>
 
-            <h2>11. Kontakt</h2>
+            <h2>10. Kontakt</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Kontaktformular</a></p>
         </section>
 
@@ -358,55 +337,43 @@
                 <li>Registros de práctica: objetivo elegido, rondas, coordenadas de aterrizaje, acierto o fallo, objetivo previsto y notas de ronda.</li>
                 <li>Registros de X01, Count-Up, Cricket y Around the Clock: puntuaciones, turnos, coordenadas disponibles, configuración, objetivos previstos o recomendados por el sistema y notas.</li>
                 <li>Historial, fechas, identificadores técnicos y estadísticas o análisis calculados localmente a partir de esos registros.</li>
-                <li>Ajustes de la aplicación, como el tema y, cuando se muestra durante el desarrollo, el idioma.</li>
-                <li>Si aparece la pantalla del concepto futuro Auto Capture, respuestas opcionales de selección sobre interés, lugar de uso y precio orientativo. Se guardan solo en el dispositivo; la función de cámara no se ofrece en la primera versión.</li>
+                <li>Ajustes de la aplicación, como el tema.</li>
                 <li>Información de compra y suscripción necesaria para Premium mediante Apple App Store, Google Play y RevenueCat.</li>
                 <li>La información que el usuario decida escribir y enviar mediante el formulario de contacto.</li>
             </ul>
             <p>La aplicación no requiere una cuenta y, durante el uso normal, no recopila intencionadamente nombre, correo electrónico, contactos, fotos, vídeos ni ubicación precisa.</p>
 
             <h2>2. Registros locales y servidor del desarrollador</h2>
-            <p>DartLog está diseñada para funcionar principalmente de forma local. Los registros de práctica y juego, coordenadas, puntuaciones, notas, objetivos, historial y análisis se guardan en la base de datos del dispositivo. La primera versión no tiene cuentas, sincronización en la nube ni un servidor del desarrollador para subir estos registros, por lo que la aplicación no envía los registros originales al desarrollador.</p>
+            <p>DartLog está diseñada para funcionar principalmente de forma local. Los registros de práctica y juego, coordenadas, puntuaciones, notas, objetivos, historial y análisis se guardan en la base de datos del dispositivo. La versión actual no tiene cuentas, sincronización en la nube ni un servidor del desarrollador para subir estos registros, por lo que la aplicación no envía los registros originales al desarrollador.</p>
             <p>Las copias de seguridad, migraciones o acciones de compartir iniciadas por el usuario pueden tratar los datos según el sistema operativo o el destinatario correspondiente.</p>
 
             <h2>3. Servicios de terceros</h2>
             <p><strong>Apple App Store y Google Play:</strong> Apple o Google procesan los pagos y las suscripciones. La información de cuenta, pedido, recibo, suscripción y facturación se trata según sus condiciones y políticas de privacidad. La aplicación y el desarrollador no guardan el número de tarjeta ni otras credenciales de pago de la tienda.</p>
             <p><strong>RevenueCat:</strong> Se utiliza para gestionar el estado de Premium y restaurar compras. Puede tratar un identificador específico de la aplicación generado por el SDK y datos de tienda, producto, compra, suscripción, entitlement, renovación y vencimiento necesarios para ese fin. No recibe los registros de práctica o juego.</p>
-            <p><strong>Firebase Analytics y Firebase Crashlytics:</strong> No están integrados en la primera versión. Por tanto, la primera versión no envía eventos de uso ni informes de fallos de DartLog a Firebase. Si esto cambia, actualizaremos esta Política antes de iniciar ese tratamiento.</p>
-
+            <p><strong>Firebase Analytics y Firebase Crashlytics:</strong> La aplicación utiliza estos servicios para medir de forma agregada el uso del producto y diagnosticar fallos. Firebase Analytics puede recibir los nombres de eventos y valores enumerados de baja cardinalidad definidos por la aplicación, junto con información técnica necesaria para el SDK, como datos de la aplicación, del sistema operativo y del dispositivo. Crashlytics puede recibir diagnósticos de fallos, como trazas de pila e información de la aplicación, del sistema operativo y del dispositivo. La aplicación no envía a estos servicios registros de práctica o juego, coordenadas de aterrizaje, puntuaciones, notas, objetivos, identificadores de objetivo, sesión o partida, contraseñas, información de pago ni el texto de las consultas.</p>
             <h2>4. Formulario de contacto e información del dispositivo o la aplicación</h2>
             <p>Al elegir Contacto, la aplicación abre el formulario común de Google para soporte. Puede completar de forma visible y editable el nombre de la aplicación, sistema operativo, versión del sistema, versión de la aplicación, número de compilación, tienda y modelo del dispositivo. El usuario puede añadir voluntariamente el tipo y detalle de la consulta, correo electrónico u otros datos, y decide si envía el formulario.</p>
             <p>La aplicación no adjunta registros, coordenadas, puntuaciones, notas, objetivos, contraseñas, credenciales de pago ni identificadores ocultos. Lo enviado se remite al operador del formulario, actualmente Google, conforme a sus condiciones y política de privacidad.</p>
 
-            <h2>5. Información y permisos que no se usan en la primera versión</h2>
-            <ul>
-                <li>No se usan SDK publicitarios ni publicidad basada en intereses.</li>
-                <li>No se recopila ubicación precisa ni en segundo plano.</li>
-                <li>No se recopilan contactos ni datos de la agenda.</li>
-                <li>No se ofrece ni usa cámara, biblioteca de fotos o grabación/análisis de vídeo.</li>
-                <li>La aplicación no usa seguimiento entre aplicaciones o sitios.</li>
-            </ul>
-            <p>Las respuestas opcionales de Auto Capture solo contienen las opciones mostradas, se guardan localmente y no transmiten imágenes ni respuestas a un servicio externo.</p>
-
-            <h2>6. Conservación y eliminación</h2>
+            <h2>5. Conservación y eliminación</h2>
             <p>Los registros y ajustes locales se conservan en el dispositivo hasta que el usuario elimina los datos de la aplicación o la desinstala. La versión actual no tiene una cuenta ni una copia en un servidor del desarrollador que pueda eliminarse. Las copias del sistema operativo siguen sus propios ajustes y ciclo de conservación.</p>
-            <p>Apple, Google y RevenueCat conservan la información de compra y suscripción según sus políticas y durante el tiempo necesario para transacciones, derechos, seguridad, prevención del fraude u obligaciones legales. Las respuestas del formulario se conservan por el operador y, si las recibe el desarrollador, solo durante el tiempo razonablemente necesario para responder, mantener registros de soporte y atender cuestiones de calidad o legales; después se eliminan o anonimizan cuando sea razonable.</p>
+            <p>Apple, Google y RevenueCat conservan la información de compra y suscripción según sus políticas y durante el tiempo necesario para transacciones, derechos, seguridad, prevención del fraude u obligaciones legales. Firebase Analytics y Firebase Crashlytics pueden conservar los datos de uso y diagnóstico de fallos según sus políticas y durante el tiempo necesario para prestar, proteger y mejorar sus servicios. Las respuestas del formulario se conservan por el operador y, si las recibe el desarrollador, solo durante el tiempo razonablemente necesario para responder, mantener registros de soporte y atender cuestiones de calidad o legales; después se eliminan o anonimizan cuando sea razonable.</p>
             <p>Para consultar una respuesta del formulario o ejercer derechos previstos por la ley, utilice el formulario de contacto. Los registros locales deben eliminarse en el dispositivo o mediante los controles de almacenamiento del sistema operativo.</p>
 
-            <h2>7. Comunicación a terceros y tratamiento fuera de Japón</h2>
-            <p>No vendemos los registros ni los cedemos para publicidad propia de terceros. Solo se comunican cuando el usuario los envía a un servicio externo, cuando es necesario para suscripciones de las tiendas o cuando la ley lo exige o resulta necesario para proteger derechos, seguridad o prevenir fraude. Apple, Google, RevenueCat y Google Forms pueden tratar información fuera de Japón según sus políticas. En la primera versión no operamos un servidor separado para los registros de DartLog.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política de privacidad de Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de RevenueCat</a></p>
+            <h2>6. Comunicación a terceros y tratamiento fuera de Japón</h2>
+            <p>No vendemos los registros ni los cedemos para publicidad propia de terceros. Solo se comunican cuando el usuario los envía a un servicio externo, cuando es necesario para suscripciones de las tiendas o cuando la ley lo exige o resulta necesario para proteger derechos, seguridad o prevenir fraude. Apple, Google, RevenueCat, Google Forms, Firebase Analytics y Firebase Crashlytics pueden tratar información fuera de Japón según sus políticas. En la versión actual no operamos un servidor separado para los registros de DartLog.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política de privacidad de Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de RevenueCat</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Firebase</a></p>
 
-            <h2>8. Seguridad</h2>
+            <h2>7. Seguridad</h2>
             <p>Aplicamos medidas razonables acordes con el diseño actual, como mantener los registros en el dispositivo y tramitar los pagos en las tiendas. No es posible garantizar una seguridad absoluta. La seguridad y conservación de terceros se rigen por sus propias políticas.</p>
 
-            <h2>9. Niños y menores</h2>
+            <h2>8. Niños y menores</h2>
             <p>La aplicación no está dirigida específicamente a niños. Los menores deben utilizarla con el consentimiento y la supervisión de sus padres o tutores cuando la ley lo requiera.</p>
 
-            <h2>10. Cambios en esta Política</h2>
+            <h2>9. Cambios en esta Política</h2>
             <p>Podemos modificar esta Política si cambian la aplicación, los servicios de terceros, las leyes o las prácticas de datos. Publicaremos la versión vigente y su fecha en esta página y comunicaremos los cambios importantes cuando la ley lo exija.</p>
 
-            <h2>11. Contacto</h2>
+            <h2>10. Contacto</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Formulario de contacto</a></p>
         </section>
 
@@ -423,55 +390,43 @@
                 <li>Les séances d’entraînement : cible choisie, nombre de manches, coordonnées d’impact, réussite ou échec, cible visée et notes de manche.</li>
                 <li>Les parties X01, Count-Up, Cricket et Around the Clock : scores, tours, coordonnées disponibles, réglages, cibles visées ou recommandées par le système et notes.</li>
                 <li>L’historique, les dates, les identifiants techniques et les statistiques ou analyses calculées localement à partir de ces données.</li>
-                <li>Les réglages de l’application, comme le thème et, lorsqu’il est affiché pendant le développement, la langue.</li>
-                <li>Si l’écran du concept futur Auto Capture est disponible, les réponses facultatives à choix concernant l’intérêt, le lieu d’utilisation et un prix indicatif. Elles restent sur l’appareil ; la fonction caméra n’est pas fournie dans la première version.</li>
+                <li>Les réglages de l’application, comme le thème.</li>
                 <li>Les informations d’achat et d’abonnement nécessaires à Premium via Apple App Store, Google Play et RevenueCat.</li>
                 <li>Les informations que l’utilisateur choisit de saisir et d’envoyer via le formulaire de contact.</li>
             </ul>
             <p>L’application ne nécessite pas de compte et ne collecte pas intentionnellement, lors de l’usage normal, le nom, l’adresse e-mail, les contacts, les photos, les vidéos ou la localisation précise de l’utilisateur.</p>
 
             <h2>2. Données locales et serveur du développeur</h2>
-            <p>DartLog est conçue pour fonctionner localement. Les séances, parties, coordonnées, scores, notes, cibles, historique et analyses sont enregistrés dans la base de données de l’appareil. La première version ne comprend ni compte, ni synchronisation cloud, ni serveur exploité par le développeur pour téléverser ces données. Les données brutes ne sont donc pas envoyées au développeur par l’application.</p>
+            <p>DartLog est conçue pour fonctionner localement. Les séances, parties, coordonnées, scores, notes, cibles, historique et analyses sont enregistrés dans la base de données de l’appareil. La version actuelle ne comprend ni compte, ni synchronisation cloud, ni serveur exploité par le développeur pour téléverser ces données. Les données brutes ne sont donc pas envoyées au développeur par l’application.</p>
             <p>Une sauvegarde, une migration ou un partage lancé par l’utilisateur peut traiter les données selon le système d’exploitation ou le destinataire concerné.</p>
 
             <h2>3. Services tiers</h2>
             <p><strong>Apple App Store et Google Play :</strong> Apple ou Google traitent les paiements et abonnements. Les informations de compte, commande, reçu, abonnement et facturation sont soumises à leurs conditions et politiques de confidentialité. L’application et le développeur ne stockent pas le numéro de carte ni les autres identifiants de paiement de la boutique.</p>
             <p><strong>RevenueCat :</strong> Ce service gère l’état des droits Premium et la restauration des achats. Il peut traiter un identifiant propre à l’application généré par le SDK ainsi que les données de boutique, produit, achat, abonnement, droit, renouvellement et expiration nécessaires à cette gestion. Les données d’entraînement et de jeu ne lui sont pas transmises.</p>
-            <p><strong>Firebase Analytics et Firebase Crashlytics :</strong> Ces services ne sont pas intégrés dans la première version. Aucun événement d’utilisation ni rapport de plantage de DartLog n’est donc envoyé à Firebase dans cette version. En cas de changement, la présente politique sera mise à jour avant le début du traitement.</p>
-
+            <p><strong>Firebase Analytics et Firebase Crashlytics :</strong> L’application utilise ces services pour mesurer de manière agrégée l’utilisation du produit et diagnostiquer les plantages. Firebase Analytics peut recevoir les noms d’événements et valeurs d’énumération à faible cardinalité définis par l’application, ainsi que les informations techniques nécessaires au SDK, comme celles de l’application, du système et de l’appareil. Crashlytics peut recevoir des diagnostics de plantage, tels que les traces de pile et les informations de l’application, du système et de l’appareil. L’application n’envoie pas à ces services les données brutes d’entraînement ou de jeu, coordonnées d’impact, scores, notes, cibles, identifiants de cible, de session ou de partie, mots de passe, informations de paiement ni le texte des demandes.</p>
             <h2>4. Formulaire de contact et informations de l’appareil ou de l’application</h2>
             <p>Lorsque l’utilisateur choisit Contact, l’application ouvre le formulaire Google commun de support. Le nom de l’application, le système, sa version, la version de l’application, le numéro de build, la boutique et le modèle de l’appareil peuvent être préremplis de façon visible et modifiable. L’utilisateur peut saisir volontairement le type et le détail de sa demande, son adresse e-mail ou d’autres informations, puis choisit de l’envoyer ou non.</p>
             <p>L’application n’ajoute pas de séances, parties, coordonnées, scores, notes, cibles, mots de passe, données de paiement ni identifiants cachés. Les informations envoyées sont transmises à l’opérateur du formulaire, actuellement Google, selon ses conditions et sa politique de confidentialité.</p>
 
-            <h2>5. Informations et autorisations non utilisées dans la première version</h2>
-            <ul>
-                <li>Aucun SDK publicitaire ni publicité ciblée par centres d’intérêt.</li>
-                <li>Aucune collecte de localisation précise ou en arrière-plan.</li>
-                <li>Aucune collecte de contacts ou de carnet d’adresses.</li>
-                <li>Aucune caméra, photothèque, capture ou analyse vidéo n’est fournie ou utilisée.</li>
-                <li>Aucun suivi inter-applications ou inter-sites par l’application.</li>
-            </ul>
-            <p>Les réponses facultatives d’Auto Capture sont limitées aux choix affichés, restent locales et ne transmettent ni images ni réponses à un service externe.</p>
-
-            <h2>6. Conservation et suppression</h2>
+            <h2>5. Conservation et suppression</h2>
             <p>Les données locales sont conservées sur l’appareil jusqu’à la suppression des données de l’application ou à sa désinstallation. La version actuelle ne possède ni compte ni copie serveur du développeur à supprimer. Les sauvegardes du système d’exploitation suivent leurs propres réglages et durées.</p>
-            <p>Apple, Google et RevenueCat conservent les informations d’achat et d’abonnement selon leurs politiques et aussi longtemps que nécessaire pour les transactions, les droits, la sécurité, la prévention de la fraude ou les obligations légales. Les réponses du formulaire sont conservées par son opérateur et, lorsqu’elles nous parviennent, seulement le temps raisonnablement nécessaire pour répondre, assurer le support et traiter les questions de qualité ou juridiques ; elles sont ensuite supprimées ou anonymisées lorsque cela est raisonnable.</p>
+            <p>Apple, Google et RevenueCat conservent les informations d’achat et d’abonnement selon leurs politiques et aussi longtemps que nécessaire pour les transactions, les droits, la sécurité, la prévention de la fraude ou les obligations légales. Firebase Analytics et Firebase Crashlytics peuvent conserver les données d’utilisation et de diagnostic des plantages selon leurs politiques et pendant la durée nécessaire à la fourniture, à la sécurité et à l’amélioration de leurs services. Les réponses du formulaire sont conservées par son opérateur et, lorsqu’elles nous parviennent, seulement le temps raisonnablement nécessaire pour répondre, assurer le support et traiter les questions de qualité ou juridiques ; elles sont ensuite supprimées ou anonymisées lorsque cela est raisonnable.</p>
             <p>Pour toute question concernant une réponse du formulaire ou l’exercice de droits prévus par la loi, utilisez le formulaire ci-dessous. Les données locales doivent être supprimées sur l’appareil ou via ses réglages de stockage.</p>
 
-            <h2>7. Divulgation et traitement hors du Japon</h2>
-            <p>Nous ne vendons pas les données et ne les communiquons pas à des tiers pour leur propre publicité. Elles ne sont divulguées que si l’utilisateur les envoie à un service externe, si cela est nécessaire aux abonnements des boutiques, ou si la loi l’exige ou si cela est nécessaire pour protéger des droits et la sécurité ou prévenir la fraude. Apple, Google, RevenueCat et Google Forms peuvent traiter des informations hors du Japon selon leurs politiques. La première version ne comporte pas de serveur séparé pour les données DartLog.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Politique Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Politique RevenueCat</a></p>
+            <h2>6. Divulgation et traitement hors du Japon</h2>
+            <p>Nous ne vendons pas les données et ne les communiquons pas à des tiers pour leur propre publicité. Elles ne sont divulguées que si l’utilisateur les envoie à un service externe, si cela est nécessaire aux abonnements des boutiques, ou si la loi l’exige ou si cela est nécessaire pour protéger des droits et la sécurité ou prévenir la fraude. Apple, Google, RevenueCat, Google Forms, Firebase Analytics et Firebase Crashlytics peuvent traiter des informations hors du Japon selon leurs politiques. La version actuelle ne comporte pas de serveur séparé pour les données DartLog.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Politique Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politique Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Politique RevenueCat</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Politique de confidentialité Firebase</a></p>
 
-            <h2>8. Sécurité</h2>
+            <h2>7. Sécurité</h2>
             <p>Nous prenons des mesures raisonnables adaptées à la conception actuelle, notamment le stockage local et le traitement des paiements par les boutiques. Une sécurité absolue ne peut être garantie. Les pratiques des tiers sont régies par leurs propres politiques.</p>
 
-            <h2>9. Enfants et mineurs</h2>
+            <h2>8. Enfants et mineurs</h2>
             <p>L’application ne s’adresse pas spécialement aux enfants. Les mineurs doivent l’utiliser avec le consentement et sous la surveillance d’un parent ou représentant légal lorsque la loi l’exige.</p>
 
-            <h2>10. Modifications de la présente politique</h2>
+            <h2>9. Modifications de la présente politique</h2>
             <p>Nous pouvons modifier cette politique en cas de changement de l’application, de services tiers, de loi ou de pratiques de données. La version actuelle et sa date seront publiées ici ; les changements importants seront signalés lorsque la loi l’exige.</p>
 
-            <h2>11. Contact</h2>
+            <h2>10. Contact</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Formulaire de contact</a></p>
         </section>
 
@@ -488,55 +443,43 @@
                 <li>Registri di allenamento con bersaglio, numero di round, coordinate di atterraggio, esito, bersaglio scelto e note del round.</li>
                 <li>Registri delle partite X01, Count-Up, Cricket e Around the Clock con punteggi, turni, coordinate disponibili, impostazioni, bersagli scelti o consigliati dal sistema e note.</li>
                 <li>Cronologia, date, identificativi tecnici e statistiche o analisi calcolate localmente da tali registri.</li>
-                <li>Impostazioni dell’app, come il tema e, quando mostrata durante lo sviluppo, la lingua.</li>
-                <li>Se è disponibile la schermata del futuro concetto Auto Capture, risposte opzionali a scelta su interesse, luogo di utilizzo e prezzo indicativo. Restano sul dispositivo; la funzione fotocamera non è fornita nella prima versione.</li>
+                <li>Impostazioni dell’app, come il tema.</li>
                 <li>Informazioni su acquisti e abbonamenti necessarie per Premium tramite Apple App Store, Google Play e RevenueCat.</li>
                 <li>Le informazioni che l’utente sceglie di inserire e inviare tramite il modulo di contatto.</li>
             </ul>
             <p>L’app non richiede un account e nell’uso normale non raccoglie intenzionalmente nome, indirizzo e-mail, contatti, foto, video o posizione precisa.</p>
 
             <h2>2. Registri locali e server dello sviluppatore</h2>
-            <p>DartLog è progettata per funzionare localmente. Registri di allenamento e partite, coordinate, punteggi, note, bersagli, cronologia e analisi sono salvati nel database del dispositivo. La prima versione non include account, sincronizzazione cloud o un server gestito dallo sviluppatore per caricare questi registri; i dati grezzi non vengono inviati allo sviluppatore dall’app.</p>
+            <p>DartLog è progettata per funzionare localmente. Registri di allenamento e partite, coordinate, punteggi, note, bersagli, cronologia e analisi sono salvati nel database del dispositivo. La versione attuale non include account, sincronizzazione cloud o un server gestito dallo sviluppatore per caricare questi registri; i dati grezzi non vengono inviati allo sviluppatore dall’app.</p>
             <p>Backup, migrazioni o condivisioni avviati dall’utente possono trattare i dati secondo il sistema operativo o il destinatario.</p>
 
             <h2>3. Servizi di terze parti</h2>
             <p><strong>Apple App Store e Google Play:</strong> Apple o Google gestiscono pagamenti e abbonamenti. Dati di account, ordine, ricevuta, abbonamento e fatturazione sono trattati secondo le rispettive condizioni e informative. L’app e lo sviluppatore non conservano il numero della carta o altre credenziali di pagamento dello store.</p>
             <p><strong>RevenueCat:</strong> viene usato per gestire lo stato Premium e ripristinare gli acquisti. Può trattare un identificativo specifico dell’app generato dall’SDK e dati di store, prodotto, acquisto, abbonamento, entitlement, rinnovo e scadenza necessari a tale scopo. Non riceve i registri di allenamento o di gioco.</p>
-            <p><strong>Firebase Analytics e Firebase Crashlytics:</strong> non sono integrati nella prima versione. Questa versione non invia quindi eventi di utilizzo o rapporti di arresto anomalo a Firebase. In caso di cambiamento, l’informativa sarà aggiornata prima dell’inizio del trattamento.</p>
-
+            <p><strong>Firebase Analytics e Firebase Crashlytics:</strong> l’app utilizza questi servizi per misurare in forma aggregata l’uso del prodotto e diagnosticare gli arresti anomali. Firebase Analytics può ricevere i nomi degli eventi e i valori enum a bassa cardinalità definiti dall’app, insieme alle informazioni tecniche necessarie all’SDK, come quelle sull’app, sul sistema operativo e sul dispositivo. Crashlytics può ricevere dati diagnostici sugli arresti anomali, come stack trace e informazioni sull’app, sul sistema operativo e sul dispositivo. L’app non invia a questi servizi registri grezzi di allenamento o gioco, coordinate di atterraggio, punteggi, note, bersagli, identificativi di bersaglio, sessione o partita, password, informazioni di pagamento o testo delle richieste.</p>
             <h2>4. Modulo di contatto e informazioni sul dispositivo o sull’app</h2>
             <p>Quando l’utente sceglie Contatti, l’app apre il modulo Google comune per l’assistenza. Nome dell’app, sistema operativo, versione del sistema, versione dell’app, numero build, store e modello del dispositivo possono essere precompilati in modo visibile e modificabile. L’utente può inserire volontariamente tipo e dettagli della richiesta, e-mail o altre informazioni, decidendo se inviare il modulo.</p>
             <p>L’app non allega registri, coordinate, punteggi, note, bersagli, password, dati di pagamento o identificativi nascosti. Le informazioni inviate vanno al gestore del modulo, attualmente Google, secondo le sue condizioni e informative.</p>
 
-            <h2>5. Informazioni e autorizzazioni non usate nella prima versione</h2>
-            <ul>
-                <li>Nessun SDK pubblicitario e nessuna pubblicità basata sugli interessi.</li>
-                <li>Nessuna raccolta della posizione precisa o in background.</li>
-                <li>Nessuna raccolta di contatti o rubrica.</li>
-                <li>Nessuna fotocamera, galleria, registrazione o analisi video fornita o usata.</li>
-                <li>Nessun tracciamento tra app o siti.</li>
-            </ul>
-            <p>Le risposte facoltative di Auto Capture sono limitate alle opzioni visualizzate, restano locali e non inviano immagini o risposte a servizi esterni.</p>
-
-            <h2>6. Conservazione e cancellazione</h2>
+            <h2>5. Conservazione e cancellazione</h2>
             <p>I registri e le impostazioni locali restano sul dispositivo finché l’utente elimina i dati dell’app o la disinstalla. La versione attuale non ha un account o una copia sul server dello sviluppatore da cancellare. I backup del sistema operativo seguono le proprie impostazioni e durate.</p>
-            <p>Apple, Google e RevenueCat conservano i dati di acquisto e abbonamento secondo le proprie informative e per il tempo necessario a transazioni, diritti, sicurezza, prevenzione delle frodi o obblighi di legge. Le risposte al modulo sono conservate dal gestore e, quando ricevute dallo sviluppatore, solo per il tempo ragionevolmente necessario a rispondere, gestire l’assistenza e questioni di qualità o legali; poi vengono cancellate o anonimizzate quando ragionevole.</p>
+            <p>Apple, Google e RevenueCat conservano i dati di acquisto e abbonamento secondo le proprie informative e per il tempo necessario a transazioni, diritti, sicurezza, prevenzione delle frodi o obblighi di legge. Firebase Analytics e Firebase Crashlytics possono conservare i dati di utilizzo e diagnostica degli arresti anomali secondo le proprie informative e per il tempo necessario a fornire, proteggere e migliorare i loro servizi. Le risposte al modulo sono conservate dal gestore e, quando ricevute dallo sviluppatore, solo per il tempo ragionevolmente necessario a rispondere, gestire l’assistenza e questioni di qualità o legali; poi vengono cancellate o anonimizzate quando ragionevole.</p>
             <p>Per domande su una risposta o per esercitare diritti previsti dalla legge, usare il modulo sotto. I registri locali vanno cancellati dal dispositivo o dalle sue impostazioni di archiviazione.</p>
 
-            <h2>7. Comunicazione a terzi e trattamento fuori dal Giappone</h2>
-            <p>Non vendiamo i registri e non li forniamo a terzi per la loro pubblicità. Sono comunicati solo quando l’utente li invia a un servizio esterno, quando necessario per gli abbonamenti degli store o quando richiesto dalla legge o necessario per proteggere diritti e sicurezza o prevenire frodi. Apple, Google, RevenueCat e Google Forms possono trattare informazioni fuori dal Giappone secondo le loro informative. Nella prima versione non gestiamo un server separato per i registri DartLog.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Informativa Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Informativa Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Informativa RevenueCat</a></p>
+            <h2>6. Comunicazione a terzi e trattamento fuori dal Giappone</h2>
+            <p>Non vendiamo i registri e non li forniamo a terzi per la loro pubblicità. Sono comunicati solo quando l’utente li invia a un servizio esterno, quando necessario per gli abbonamenti degli store o quando richiesto dalla legge o necessario per proteggere diritti e sicurezza o prevenire frodi. Apple, Google, RevenueCat, Google Forms, Firebase Analytics e Firebase Crashlytics possono trattare informazioni fuori dal Giappone secondo le loro informative. Nella versione attuale non gestiamo un server separato per i registri DartLog.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Informativa Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Informativa Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Informativa RevenueCat</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Informativa Firebase</a></p>
 
-            <h2>8. Sicurezza</h2>
+            <h2>7. Sicurezza</h2>
             <p>Adottiamo misure ragionevoli in base al design attuale, tra cui archiviazione locale e pagamenti gestiti dagli store. Non è possibile garantire la sicurezza assoluta. Le pratiche dei terzi sono disciplinate dalle loro informative.</p>
 
-            <h2>9. Minori</h2>
+            <h2>8. Minori</h2>
             <p>L’app non è rivolta specificamente ai bambini. I minori devono usarla con il consenso e sotto la supervisione di un genitore o tutore quando richiesto dalla legge.</p>
 
-            <h2>10. Modifiche alla presente informativa</h2>
+            <h2>9. Modifiche alla presente informativa</h2>
             <p>Possiamo modificare questa informativa se cambiano l’app, i servizi terzi, la legge o le pratiche sui dati. La versione aggiornata e la data saranno pubblicate qui; le modifiche importanti saranno comunicate quando richiesto dalla legge.</p>
 
-            <h2>11. Contatti</h2>
+            <h2>10. Contatti</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Modulo di contatto</a></p>
         </section>
 
@@ -555,8 +498,7 @@
                 <li>練習記録（選択したターゲット、ラウンド数、ダーツの着弾座標、命中・ミスの結果、狙ったターゲット、ラウンドごとのメモ等）</li>
                 <li>X01、カウントアップ、クリケット、アラウンド・ザ・クロックのゲーム記録（得点、ターン、入力可能な着弾座標、ゲーム設定、狙ったターゲットまたはシステムが推奨したターゲット、メモ等）</li>
                 <li>上記の記録に関する履歴、日付、記録を管理するための識別子、および端末内で記録から算出する統計・分析結果</li>
-                <li>選択したテーマなどのアプリ設定、および開発中に表示される場合の言語設定</li>
-                <li>将来機能の検討画面「Auto Capture」が表示される場合の、興味度、想定利用場所、候補価格に関する任意の選択式回答。回答は端末内だけに保存され、カメラ機能自体は初回リリースでは提供しません。</li>
+                <li>選択したテーマなどのアプリ設定</li>
                 <li>Premium機能を提供するためにApple App Store、Google PlayおよびRevenueCatを通じて取り扱う購入・サブスクリプション状態の情報</li>
                 <li>ユーザーが問い合わせフォームに任意に入力し、送信する情報</li>
             </ul>
@@ -564,48 +506,37 @@
 
             <h2>2. 端末内の記録と開発者のサーバー</h2>
             <p>
-                DartLogは端末内保存を基本とするアプリです。練習記録、ゲーム記録、着弾座標、得点、メモ、狙い、履歴および端末内で算出した分析結果は、本アプリの端末内データベースに保存されます。初回リリースには、開発者が運営するアカウント機能、クラウド同期、これらの記録をアップロードするサーバー機能はありません。本アプリが生の記録を開発者へ送信することはありません。
+                DartLogは端末内保存を基本とするアプリです。練習記録、ゲーム記録、着弾座標、得点、メモ、狙い、履歴および端末内で算出した分析結果は、本アプリの端末内データベースに保存されます。現行版には、開発者が運営するアカウント機能、クラウド同期、これらの記録をアップロードするサーバー機能はありません。本アプリが生の記録を開発者へ送信することはありません。
             </p>
             <p>ユーザーが開始するOSのバックアップ、機種変更・移行、共有操作では、OSまたは共有先の仕組みにより本アプリのデータが取り扱われることがあります。</p>
 
             <h2>3. 外部サービスの利用</h2>
             <p><strong>Apple App StoreおよびGoogle Play：</strong> 決済およびサブスクリプションの処理はAppleまたはGoogleが行います。ストアアカウント、注文、レシート、サブスクリプション、請求に関する情報は、各社の規約およびプライバシーポリシーに従って取り扱われます。本アプリおよび開発者は、クレジットカード番号その他のストア決済用認証情報を取得・保存しません。</p>
             <p><strong>RevenueCat：</strong> Premiumの権限状態の管理および購入の復元のためにRevenueCatを利用します。RevenueCatには、SDKが生成するアプリ固有の識別子、ストア、商品、購入、サブスクリプション、権限、更新、有効期限等、目的に必要な情報が取り扱われる場合があります。練習記録やゲーム記録はRevenueCatへ送信しません。</p>
-            <p><strong>Firebase AnalyticsおよびFirebase Crashlytics：</strong> 初回リリースには組み込まれていません。そのため、初回リリースではDartLogの利用イベントやクラッシュレポートをFirebaseへ送信しません。将来この取り扱いを変更する場合は、処理を開始する前に本ポリシーを更新します。</p>
-
+            <p><strong>Firebase AnalyticsおよびFirebase Crashlytics：</strong> 本アプリでは、利用状況の集計とクラッシュ原因の調査のためにこれらのサービスを利用します。Firebase Analyticsには、本アプリが定義する低カーディナリティのイベント名・列挙値と、SDKの動作に必要なアプリ、OS、端末等の技術情報が送信されることがあります。Crashlyticsには、スタックトレース、アプリ、OS、端末等のクラッシュ診断情報が送信されることがあります。練習・ゲーム記録、着弾座標、得点、メモ、狙い、ターゲットID・セッションID・ゲームID、パスワード、決済情報、問い合わせ本文等の生データは、これらのサービスへ送信しません。</p>
             <h2>4. 問い合わせフォームと端末・アプリ情報</h2>
             <p>ユーザーが「お問い合わせ」を選択すると、本アプリは現在、アプリサポート用の共通Googleフォームを開きます。アプリ名、OS、OSバージョン、アプリバージョン、ビルド番号、ストア、端末名が、ユーザーに見える編集可能な項目として事前入力されることがあります。ユーザーは問い合わせの種類、詳細、メールアドレスその他の情報を任意に入力でき、送信するかどうかを自ら決めます。</p>
             <p>本アプリは、練習記録、ゲーム記録、着弾座標、得点、メモ、狙い、パスワード、決済情報、隠れた識別子を問い合わせフォームに添付しません。送信した情報は、現在のフォーム運営者であるGoogleへ送信され、Googleの規約およびプライバシーポリシーに従って取り扱われます。</p>
 
-            <h2>5. 初回リリースで利用しない情報・権限</h2>
-            <ul>
-                <li>広告SDKおよび興味関心に基づく広告は利用しません。</li>
-                <li>正確な位置情報やバックグラウンド位置情報は収集しません。</li>
-                <li>連絡先・アドレス帳の情報は収集しません。</li>
-                <li>カメラ、写真ライブラリ、動画の撮影・解析は初回リリースで提供・利用しません。</li>
-                <li>アプリ間・サイト間のトラッキング技術は利用しません。</li>
-            </ul>
-            <p>任意のAuto Capture回答は画面に表示された選択肢だけで構成され、端末内に保存されます。カメラ撮影機能、外部アンケートへの送信、盤面画像の送信ではありません。</p>
-
-            <h2>6. 保存期間と削除方法</h2>
-            <p>端末内の記録および設定は、ユーザーが本アプリのデータを削除するか、本アプリをアンインストールするまで端末内に保存されます。現在のリリースには、開発者側のアカウントや削除対象となるサーバー上の記録はありません。OSのバックアップに含まれるデータは、OS側の設定および保存期間に従います。</p>
-            <p>Apple、GoogleおよびRevenueCatが取り扱う購入・サブスクリプション情報は、各社のポリシーおよび取引、権限管理、安全管理、不正利用防止、法令遵守に必要な期間保存されます。問い合わせフォームの回答は、フォーム運営者が保存します。当方が受領した回答は、問い合わせ対応、サポート記録、関連する品質確認・法務対応に合理的に必要な期間だけ保存し、不要になった情報は合理的な範囲で削除または匿名化します。</p>
+            <h2>5. 保存期間と削除方法</h2>
+            <p>端末内の記録および設定は、ユーザーが本アプリのデータを削除するか、本アプリをアンインストールするまで端末内に保存されます。現行版には、開発者側のアカウントや削除対象となるサーバー上の記録はありません。OSのバックアップに含まれるデータは、OS側の設定および保存期間に従います。</p>
+            <p>Apple、GoogleおよびRevenueCatが取り扱う購入・サブスクリプション情報は、各社のポリシーおよび取引、権限管理、安全管理、不正利用防止、法令遵守に必要な期間保存されます。Firebase AnalyticsおよびFirebase Crashlyticsが取り扱う利用状況・クラッシュ診断情報は、各社のポリシーおよびサービスの提供、安全管理、改善に必要な期間保存されることがあります。問い合わせフォームの回答は、フォーム運営者が保存します。当方が受領した回答は、問い合わせ対応、サポート記録、関連する品質確認・法務対応に合理的に必要な期間だけ保存し、不要になった情報は合理的な範囲で削除または匿名化します。</p>
             <p>問い合わせ回答や法令上の取り扱いについて確認・請求を行う場合は、下記フォームからご連絡ください。端末内の記録は、ユーザー自身が端末またはOSのストレージ設定から削除してください。</p>
 
-            <h2>7. 第三者提供と国外での処理</h2>
-            <p>当方は本アプリの記録を販売せず、第三者の広告目的で提供しません。第三者提供は、ユーザーが外部サービスへ送信した場合、ストア経由のサブスクリプション提供に必要な場合、または法令上必要な場合、権利・安全の保護や不正利用防止に必要な場合に限ります。Apple、Google、RevenueCat、Google Formsは、それぞれの運用およびポリシーに従い、日本国外で情報を処理することがあります。初回リリースでは、DartLogの記録のための独自サーバーを運営していません。</p>
-            <p>各サービスの取り扱いは、以下もご確認ください。<br><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleプライバシーポリシー</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCatプライバシーポリシー</a></p>
+            <h2>6. 第三者提供と国外での処理</h2>
+            <p>当方は本アプリの記録を販売せず、第三者の広告目的で提供しません。第三者提供は、ユーザーが外部サービスへ送信した場合、ストア経由のサブスクリプション提供に必要な場合、または法令上必要な場合、権利・安全の保護や不正利用防止に必要な場合に限ります。Apple、Google、RevenueCat、Google Forms、Firebase AnalyticsおよびFirebase Crashlyticsは、それぞれの運用およびポリシーに従い、日本国外で情報を処理することがあります。現行版では、DartLogの記録のための独自サーバーを運営していません。</p>
+            <p>各サービスの取り扱いは、以下もご確認ください。<br><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleプライバシーポリシー</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCatプライバシーポリシー</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseプライバシーポリシー</a></p>
 
-            <h2>8. 安全管理</h2>
+            <h2>7. 安全管理</h2>
             <p>現在の設計に応じ、記録を端末内に限定すること、決済を各ストアで処理することなど、合理的な安全管理措置を講じます。ただし、保存・送信の方法について完全な安全性を保証するものではありません。第三者サービスの安全管理および保存については各社のポリシーが適用されます。</p>
 
-            <h2>9. 未成年者の利用</h2>
+            <h2>8. 未成年者の利用</h2>
             <p>本アプリは特に児童を対象としたものではありません。未成年者は、法令上必要な場合、保護者または法定代理人の同意および監督のもとで利用してください。</p>
 
-            <h2>10. ポリシーの改定</h2>
+            <h2>9. ポリシーの改定</h2>
             <p>本アプリ、外部サービス、法令またはデータの取り扱いに変更がある場合、本ポリシーを改定することがあります。最新版と更新日は本ページに掲載し、法令上必要な場合は重要な変更を本アプリその他適切な方法でお知らせします。</p>
 
-            <h2>11. お問い合わせ</h2>
+            <h2>10. お問い合わせ</h2>
             <p>本ポリシーまたは情報の取り扱いに関するご質問は、以下のフォームよりご連絡ください。</p>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></p>
         </section>
@@ -623,55 +554,43 @@
                 <li>선택한 목표, 라운드 수, 다트 착탄 좌표, 명중 또는 실패 결과, 의도한 목표와 라운드 메모를 포함한 연습 기록</li>
                 <li>X01, Count-Up, Cricket, Around the Clock의 점수, 턴, 가능한 경우의 착탄 좌표, 게임 설정, 의도했거나 시스템이 추천한 목표와 메모</li>
                 <li>기록의 이력, 날짜, 기술적 식별자 및 위 기록으로부터 기기에서 계산되는 통계와 분석</li>
-                <li>테마와 같은 앱 설정 및 개발 중 표시되는 경우의 언어 설정</li>
-                <li>향후 기능 Auto Capture 화면이 제공되는 경우의 관심도, 사용 장소, 후보 가격에 대한 선택형 답변. 답변은 기기에만 저장되며 카메라 기능은 최초 출시에서 제공되지 않습니다.</li>
+                <li>테마와 같은 앱 설정</li>
                 <li>Apple App Store, Google Play 및 RevenueCat을 통한 Premium 제공에 필요한 구매 및 구독 상태 정보</li>
                 <li>사용자가 문의 양식에 직접 입력하고 제출하기로 선택한 정보</li>
             </ul>
             <p>앱은 계정 등록을 요구하지 않으며, 일반적인 사용 중 이름, 이메일 주소, 연락처, 사진, 동영상 또는 정확한 위치를 의도적으로 수집하지 않습니다.</p>
 
             <h2>2. 기기 내 기록과 개발자 서버</h2>
-            <p>DartLog는 기기 내 처리를 우선하는 앱입니다. 연습 및 게임 기록, 착탄 좌표, 점수, 메모, 목표, 이력과 분석 결과는 기기의 로컬 데이터베이스에 저장됩니다. 최초 출시에는 개발자가 운영하는 계정, 클라우드 동기화 또는 이 기록을 업로드하는 서버가 없으며, 앱은 원시 기록을 개발자에게 전송하지 않습니다.</p>
+            <p>DartLog는 기기 내 처리를 우선하는 앱입니다. 연습 및 게임 기록, 착탄 좌표, 점수, 메모, 목표, 이력과 분석 결과는 기기의 로컬 데이터베이스에 저장됩니다. 현재 버전에는 개발자가 운영하는 계정, 클라우드 동기화 또는 이 기록을 업로드하는 서버가 없으며, 앱은 원시 기록을 개발자에게 전송하지 않습니다.</p>
             <p>사용자가 시작한 운영체제 백업, 기기 이전 또는 공유 과정에서는 운영체제나 수신자의 정책에 따라 앱 데이터가 처리될 수 있습니다.</p>
 
             <h2>3. 제3자 서비스</h2>
             <p><strong>Apple App Store 및 Google Play:</strong> 결제와 구독은 Apple 또는 Google이 처리합니다. 계정, 주문, 영수증, 구독 및 결제 정보는 각 회사의 약관과 개인정보 처리방침에 따릅니다. 앱과 개발자는 카드 번호나 스토어 결제 인증 정보를 저장하지 않습니다.</p>
             <p><strong>RevenueCat:</strong> Premium 권한 상태 관리와 구매 복원을 위해 사용합니다. SDK가 생성한 앱별 식별자와 스토어, 상품, 구매, 구독, 권한, 갱신 및 만료 정보가 목적에 필요한 범위에서 처리될 수 있습니다. 연습 및 게임 기록은 RevenueCat으로 전송되지 않습니다.</p>
-            <p><strong>Firebase Analytics 및 Firebase Crashlytics:</strong> 최초 출시 버전에는 통합되어 있지 않습니다. 따라서 해당 버전은 DartLog 사용 이벤트나 충돌 보고서를 Firebase로 보내지 않습니다. 변경되는 경우 처리 시작 전에 이 방침을 갱신합니다.</p>
-
+            <p><strong>Firebase Analytics 및 Firebase Crashlytics:</strong> 앱 사용 현황을 집계하고 충돌 원인을 진단하기 위해 사용합니다. Firebase Analytics에는 앱이 정의한 낮은 카디널리티의 이벤트 이름과 열거형 값, 그리고 SDK에 필요한 앱·운영체제·기기 등의 기술 정보가 전송될 수 있습니다. Crashlytics에는 스택 트레이스와 앱·운영체제·기기 정보 등 충돌 진단 정보가 전송될 수 있습니다. 연습·게임 기록, 착탄 좌표, 점수, 메모, 목표, 목표·세션·게임 식별자, 비밀번호, 결제 정보 및 문의 내용 등의 원시 데이터는 이 서비스로 보내지 않습니다.</p>
             <h2>4. 문의 양식과 기기·앱 정보</h2>
             <p>사용자가 문의를 선택하면 앱은 현재 공통 Google 지원 양식을 엽니다. 앱 이름, 운영체제, OS 버전, 앱 버전, 빌드 번호, 스토어와 기기 모델이 보이고 수정 가능한 상태로 미리 입력될 수 있습니다. 사용자는 문의 종류, 상세 내용, 이메일 주소 등을 자발적으로 입력할 수 있으며 제출 여부를 결정합니다.</p>
             <p>앱은 기록, 좌표, 점수, 메모, 목표, 비밀번호, 결제 정보 또는 숨겨진 식별자를 양식에 첨부하지 않습니다. 제출 정보는 현재 양식 운영자인 Google에 전송되며 Google의 약관과 개인정보 처리방침이 적용됩니다.</p>
 
-            <h2>5. 최초 출시에서 사용하지 않는 정보와 권한</h2>
-            <ul>
-                <li>광고 SDK와 관심 기반 광고를 사용하지 않습니다.</li>
-                <li>정확한 위치 또는 백그라운드 위치를 수집하지 않습니다.</li>
-                <li>연락처나 주소록을 수집하지 않습니다.</li>
-                <li>카메라, 사진 보관함, 동영상 촬영·분석을 제공하거나 사용하지 않습니다.</li>
-                <li>앱 간 또는 사이트 간 추적 기술을 사용하지 않습니다.</li>
-            </ul>
-            <p>Auto Capture 선택형 답변은 화면에 표시된 선택지로만 구성되고 기기에 저장되며, 이미지나 답변을 외부 서비스로 전송하지 않습니다.</p>
-
-            <h2>6. 보존 기간과 삭제</h2>
+            <h2>5. 보존 기간과 삭제</h2>
             <p>로컬 기록과 설정은 사용자가 앱 데이터를 삭제하거나 앱을 제거할 때까지 기기에 보존됩니다. 현재 버전에는 삭제할 개발자 계정이나 서버 복사본이 없습니다. 운영체제 백업은 해당 백업의 설정과 보존 주기를 따릅니다.</p>
-            <p>Apple, Google 및 RevenueCat의 구매·구독 정보는 거래, 권한, 보안, 사기 방지 또는 법적 의무에 필요한 기간과 각 회사의 정책에 따라 보존됩니다. 문의 답변은 양식 운영자가 보존하며, 개발자가 받는 경우 답변, 지원 기록, 관련 품질 또는 법률 문제에 합리적으로 필요한 기간 동안만 보존한 뒤 가능한 범위에서 삭제하거나 익명화합니다.</p>
+            <p>Apple, Google 및 RevenueCat의 구매·구독 정보는 거래, 권한, 보안, 사기 방지 또는 법적 의무에 필요한 기간과 각 회사의 정책에 따라 보존됩니다. Firebase Analytics 및 Firebase Crashlytics의 사용·충돌 진단 정보는 각 서비스의 정책과 서비스 제공, 보안 및 개선에 필요한 기간에 따라 보존될 수 있습니다. 문의 답변은 양식 운영자가 보존하며, 개발자가 받는 경우 답변, 지원 기록, 관련 품질 또는 법률 문제에 합리적으로 필요한 기간 동안만 보존한 뒤 가능한 범위에서 삭제하거나 익명화합니다.</p>
             <p>문의 답변에 대한 질문이나 법률상 요청은 아래 문의 양식을 이용해 주세요. 로컬 기록은 기기 또는 운영체제 저장공간 설정에서 직접 삭제해야 합니다.</p>
 
-            <h2>7. 제3자 제공과 일본 외 처리</h2>
-            <p>당사는 기록을 판매하거나 제3자의 자체 광고를 위해 제공하지 않습니다. 사용자가 외부 서비스에 제출한 경우, 스토어 구독 제공에 필요한 경우, 법률상 요구되는 경우 또는 권리·안전 보호와 사기 방지에 필요한 경우에만 공개됩니다. Apple, Google, RevenueCat 및 Google Forms는 각 정책에 따라 일본 외 지역에서 정보를 처리할 수 있습니다. 최초 출시에는 DartLog 기록을 위한 별도 서버가 없습니다.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 개인정보 처리방침</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보 처리방침</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 개인정보 처리방침</a></p>
+            <h2>6. 제3자 제공과 일본 외 처리</h2>
+            <p>당사는 기록을 판매하거나 제3자의 자체 광고를 위해 제공하지 않습니다. 사용자가 외부 서비스에 제출한 경우, 스토어 구독 제공에 필요한 경우, 법률상 요구되는 경우 또는 권리·안전 보호와 사기 방지에 필요한 경우에만 공개됩니다. Apple, Google, RevenueCat, Google Forms, Firebase Analytics 및 Firebase Crashlytics는 각 정책에 따라 일본 외 지역에서 정보를 처리할 수 있습니다. 현재 버전에는 DartLog 기록을 위한 별도 서버가 없습니다.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 개인정보 처리방침</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 개인정보 처리방침</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 개인정보 처리방침</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 개인정보 처리방침</a></p>
 
-            <h2>8. 보안</h2>
+            <h2>7. 보안</h2>
             <p>현재 설계에 맞춰 기록을 기기에 저장하고 결제를 스토어에서 처리하는 등 합리적인 조치를 취합니다. 절대적인 보안을 보장할 수는 없으며, 제3자 서비스에는 해당 서비스의 정책이 적용됩니다.</p>
 
-            <h2>9. 아동 및 미성년자</h2>
+            <h2>8. 아동 및 미성년자</h2>
             <p>앱은 특별히 아동을 대상으로 하지 않습니다. 법률상 필요한 경우 미성년자는 부모 또는 법정대리인의 동의와 감독 아래 사용해야 합니다.</p>
 
-            <h2>10. 방침의 변경</h2>
+            <h2>9. 방침의 변경</h2>
             <p>앱, 제3자 서비스, 법률 또는 데이터 처리 방식이 변경되면 이 방침을 갱신할 수 있습니다. 최신 버전과 날짜를 이 페이지에 게시하고, 법률상 필요한 경우 중요한 변경을 알립니다.</p>
 
-            <h2>11. 문의</h2>
+            <h2>10. 문의</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">문의 양식</a></p>
         </section>
 
@@ -688,55 +607,43 @@
                 <li>Trainingsgegevens met het gekozen doel, het aantal rondes, landingscoördinaten, raak- of misresultaten, het beoogde doel en notities per ronde.</li>
                 <li>Spelgegevens voor X01, Count-Up, Cricket en Around the Clock, met scores, beurten, beschikbare landingscoördinaten, spelinstellingen, beoogde of door het systeem aanbevolen doelen en notities.</li>
                 <li>Geschiedenis, datums, technische identificatiegegevens en lokaal berekende statistieken of analyses.</li>
-                <li>App-instellingen, zoals het thema en, wanneer dit tijdens de ontwikkeling wordt getoond, de taal.</li>
-                <li>Als het scherm voor het toekomstige concept Auto Capture beschikbaar is: vrijwillige meerkeuzeantwoorden over interesse, gebruikslocatie en een richtprijs. Deze blijven op het apparaat; de camerafunctie wordt niet in de eerste versie aangeboden.</li>
+                <li>App-instellingen, zoals het thema.</li>
                 <li>Aankoop- en abonnementsinformatie die nodig is voor Premium via Apple App Store, Google Play en RevenueCat.</li>
                 <li>Informatie die de gebruiker zelf in het contactformulier invult en verzendt.</li>
             </ul>
             <p>De app vereist geen account en verzamelt bij normaal gebruik niet opzettelijk de naam, het e-mailadres, contacten, foto’s, video’s of precieze locatie van de gebruiker.</p>
 
             <h2>2. Lokale gegevens en server van de ontwikkelaar</h2>
-            <p>DartLog is ontworpen als een lokaal werkende app. Trainings- en spelgegevens, coördinaten, scores, notities, doelen, geschiedenis en analyses worden in de lokale database op het apparaat opgeslagen. De eerste versie bevat geen account, cloudsync of server van de ontwikkelaar om deze gegevens te uploaden. Ruwe gegevens worden niet via de app naar de ontwikkelaar gestuurd.</p>
+            <p>DartLog is ontworpen als een lokaal werkende app. Trainings- en spelgegevens, coördinaten, scores, notities, doelen, geschiedenis en analyses worden in de lokale database op het apparaat opgeslagen. De huidige versie bevat geen account, cloudsync of server van de ontwikkelaar om deze gegevens te uploaden. Ruwe gegevens worden niet via de app naar de ontwikkelaar gestuurd.</p>
             <p>Een door de gebruiker gestarte back-up, migratie of deelactie kan gegevens verwerken volgens het besturingssysteem of de ontvanger.</p>
 
             <h2>3. Diensten van derden</h2>
             <p><strong>Apple App Store en Google Play:</strong> Apple of Google verwerkt betalingen en abonnementen. Account-, bestel-, ontvangst-, abonnements- en factuurgegevens vallen onder hun voorwaarden en privacybeleid. De app en ontwikkelaar bewaren geen kaartnummer of andere betaalgegevens van de winkel.</p>
             <p><strong>RevenueCat:</strong> wordt gebruikt voor het beheren van de Premium-status en het herstellen van aankopen. RevenueCat kan een door de SDK gegenereerde app-specifieke identifier en winkel-, product-, aankoop-, abonnements-, rechten-, verlengings- en vervalgegevens verwerken die daarvoor nodig zijn. Trainings- en spelgegevens worden niet naar RevenueCat gestuurd.</p>
-            <p><strong>Firebase Analytics en Firebase Crashlytics:</strong> zijn niet geïntegreerd in de eerste versie. Deze versie stuurt daarom geen gebruiksgebeurtenissen of crashrapporten van DartLog naar Firebase. Bij een wijziging wordt dit beleid vóór de verwerking bijgewerkt.</p>
-
+            <p><strong>Firebase Analytics en Firebase Crashlytics:</strong> de app gebruikt deze diensten voor geaggregeerde meting van productgebruik en diagnose van crashes. Firebase Analytics kan de door de app gedefinieerde eventnamen en enumwaarden met een lage cardinaliteit ontvangen, samen met technische informatie die nodig is voor de SDK, zoals informatie over app, besturingssysteem en apparaat. Crashlytics kan crashdiagnostiek ontvangen, zoals stacktraces en informatie over app, besturingssysteem en apparaat. De app stuurt geen ruwe trainings- of spelgegevens, landingscoördinaten, scores, notities, doelen, doel-, sessie- of spel-ID's, wachtwoorden, betalingsinformatie of tekst van contactverzoeken naar deze diensten.</p>
             <h2>4. Contactformulier en apparaat- of appgegevens</h2>
             <p>Wanneer de gebruiker Contact kiest, opent de app het gemeenschappelijke Google-formulier voor ondersteuning. Appnaam, besturingssysteem, OS-versie, appversie, buildnummer, winkel en apparaatmodel kunnen zichtbaar en bewerkbaar vooraf worden ingevuld. De gebruiker kan vrijwillig het type en de details van de vraag, e-mailadres of andere informatie toevoegen en beslist zelf over verzending.</p>
             <p>De app voegt geen records, coördinaten, scores, notities, doelen, wachtwoorden, betaalgegevens of verborgen identifiers toe. Verzonden informatie gaat naar de beheerder van het formulier, momenteel Google, volgens diens voorwaarden en privacybeleid.</p>
 
-            <h2>5. Informatie en toestemmingen die niet worden gebruikt</h2>
-            <ul>
-                <li>Geen advertentie-SDK en geen op interesses gebaseerde reclame.</li>
-                <li>Geen verzameling van precieze of achtergrondlocatie.</li>
-                <li>Geen verzameling van contacten of adresboekgegevens.</li>
-                <li>Geen camera, fotobibliotheek of video-opname/-analyse in de eerste versie.</li>
-                <li>Geen tracking tussen apps of websites.</li>
-            </ul>
-            <p>De optionele Auto Capture-antwoorden bestaan alleen uit de getoonde keuzes, worden lokaal opgeslagen en sturen geen afbeeldingen of antwoorden naar een externe dienst.</p>
-
-            <h2>6. Bewaartermijn en verwijdering</h2>
+            <h2>5. Bewaartermijn en verwijdering</h2>
             <p>Lokale gegevens en instellingen blijven op het apparaat totdat de gebruiker appgegevens verwijdert of de app verwijdert. De huidige versie heeft geen ontwikkelaarsaccount of serverkopie die moet worden verwijderd. Back-ups van het besturingssysteem volgen hun eigen instellingen en bewaartermijnen.</p>
-            <p>Apple, Google en RevenueCat bewaren aankoop- en abonnementsinformatie volgens hun beleid en zolang dat nodig is voor transacties, rechten, veiligheid, fraudepreventie of wettelijke verplichtingen. Antwoorden in het formulier worden door de formulierbeheerder bewaard en, wanneer de ontwikkelaar ze ontvangt, alleen zo lang als redelijkerwijs nodig is voor beantwoording, supportregistratie en gerelateerde kwaliteits- of juridische kwesties; daarna worden ze waar redelijk verwijderd of geanonimiseerd.</p>
+            <p>Apple, Google en RevenueCat bewaren aankoop- en abonnementsinformatie volgens hun beleid en zolang dat nodig is voor transacties, rechten, veiligheid, fraudepreventie of wettelijke verplichtingen. Firebase Analytics en Firebase Crashlytics kunnen gebruiks- en crashdiagnostische gegevens bewaren volgens hun beleid en zolang dat nodig is om hun diensten te leveren, te beveiligen en te verbeteren. Antwoorden in het formulier worden door de formulierbeheerder bewaard en, wanneer de ontwikkelaar ze ontvangt, alleen zo lang als redelijkerwijs nodig is voor beantwoording, supportregistratie en gerelateerde kwaliteits- of juridische kwesties; daarna worden ze waar redelijk verwijderd of geanonimiseerd.</p>
             <p>Gebruik het formulier hieronder voor vragen over een formulierantwoord of wettelijke verzoeken. Lokale gegevens moet de gebruiker op het apparaat of via de opslaginstellingen van het besturingssysteem verwijderen.</p>
 
-            <h2>7. Verstrekking aan derden en verwerking buiten Japan</h2>
-            <p>Wij verkopen geen records en verstrekken ze niet aan derden voor hun eigen reclame. Informatie wordt alleen verstrekt wanneer de gebruiker deze naar een externe dienst stuurt, dit nodig is voor winkelabonnementen, of wanneer de wet dit vereist of dit nodig is ter bescherming van rechten en veiligheid of ter voorkoming van fraude. Apple, Google, RevenueCat en Google Forms kunnen informatie buiten Japan verwerken volgens hun beleid. De eerste versie heeft geen afzonderlijke server voor DartLog-records.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacybeleid Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacybeleid Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Privacybeleid RevenueCat</a></p>
+            <h2>6. Verstrekking aan derden en verwerking buiten Japan</h2>
+            <p>Wij verkopen geen records en verstrekken ze niet aan derden voor hun eigen reclame. Informatie wordt alleen verstrekt wanneer de gebruiker deze naar een externe dienst stuurt, dit nodig is voor winkelabonnementen, of wanneer de wet dit vereist of dit nodig is ter bescherming van rechten en veiligheid of ter voorkoming van fraude. Apple, Google, RevenueCat, Google Forms, Firebase Analytics en Firebase Crashlytics kunnen informatie buiten Japan verwerken volgens hun beleid. De huidige versie heeft geen afzonderlijke server voor DartLog-records.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacybeleid Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacybeleid Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Privacybeleid RevenueCat</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacybeleid Firebase</a></p>
 
-            <h2>8. Beveiliging</h2>
+            <h2>7. Beveiliging</h2>
             <p>Wij nemen redelijke maatregelen die passen bij het huidige ontwerp, waaronder lokale opslag en betaling via de winkels. Absolute veiligheid kan niet worden gegarandeerd. Voor derden gelden hun eigen beveiligings- en privacybeleid.</p>
 
-            <h2>9. Kinderen en minderjarigen</h2>
+            <h2>8. Kinderen en minderjarigen</h2>
             <p>De app is niet specifiek gericht op kinderen. Minderjarigen moeten de app gebruiken met toestemming en toezicht van een ouder of wettelijke vertegenwoordiger wanneer de wet dat vereist.</p>
 
-            <h2>10. Wijzigingen in dit beleid</h2>
+            <h2>9. Wijzigingen in dit beleid</h2>
             <p>Wij kunnen dit beleid wijzigen als de app, diensten van derden, wetgeving of gegevenspraktijken veranderen. De actuele versie en datum worden op deze pagina geplaatst; belangrijke wijzigingen worden gemeld wanneer de wet dat vereist.</p>
 
-            <h2>11. Contact</h2>
+            <h2>10. Contact</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Contactformulier</a></p>
         </section>
 
@@ -753,55 +660,43 @@
                 <li>Wyniki treningów: wybrany cel, liczbę rund, współrzędne trafień, wynik trafienia lub pudła, zamierzony cel i notatki rundy.</li>
                 <li>Wyniki gier X01, Count-Up, Cricket i Around the Clock: punkty, tury, dostępne współrzędne trafień, ustawienia, cele zamierzone lub rekomendowane przez system i notatki.</li>
                 <li>Historię, daty, identyfikatory techniczne oraz statystyki i analizy obliczane lokalnie na podstawie tych danych.</li>
-                <li>Ustawienia aplikacji, takie jak motyw i, gdy jest wyświetlany w trakcie rozwoju, język.</li>
-                <li>Jeśli dostępny jest ekran przyszłej koncepcji Auto Capture: dobrowolne odpowiedzi wyboru dotyczące zainteresowania, miejsca użycia i ceny orientacyjnej. Są zapisywane tylko na urządzeniu; funkcja aparatu nie jest oferowana w pierwszym wydaniu.</li>
+                <li>Ustawienia aplikacji, takie jak motyw.</li>
                 <li>Informacje o zakupach i subskrypcjach potrzebne do działania Premium przez Apple App Store, Google Play i RevenueCat.</li>
                 <li>Informacje wpisane i wysłane dobrowolnie przez użytkownika w formularzu kontaktowym.</li>
             </ul>
             <p>Aplikacja nie wymaga konta i podczas zwykłego używania nie zbiera celowo imienia, adresu e-mail, kontaktów, zdjęć, filmów ani dokładnej lokalizacji.</p>
 
             <h2>2. Dane lokalne i serwer dewelopera</h2>
-            <p>DartLog została zaprojektowana jako aplikacja lokalna. Wyniki treningów i gier, współrzędne, punkty, notatki, cele, historia i analizy są zapisywane w lokalnej bazie danych urządzenia. Pierwsze wydanie nie zawiera konta, synchronizacji z chmurą ani serwera dewelopera do przesyłania tych danych. Surowe wyniki nie są wysyłane do dewelopera przez aplikację.</p>
+            <p>DartLog została zaprojektowana jako aplikacja lokalna. Wyniki treningów i gier, współrzędne, punkty, notatki, cele, historia i analizy są zapisywane w lokalnej bazie danych urządzenia. Aktualna wersja nie zawiera konta, synchronizacji z chmurą ani serwera dewelopera do przesyłania tych danych. Surowe wyniki nie są wysyłane do dewelopera przez aplikację.</p>
             <p>Kopia zapasowa, migracja urządzenia lub udostępnienie rozpoczęte przez użytkownika może przetwarzać dane zgodnie z zasadami systemu operacyjnego lub odbiorcy.</p>
 
             <h2>3. Usługi podmiotów trzecich</h2>
             <p><strong>Apple App Store i Google Play:</strong> Apple lub Google przetwarzają płatności i subskrypcje. Informacje o koncie, zamówieniu, rachunku, subskrypcji i płatności podlegają ich warunkom i politykom prywatności. Aplikacja i deweloper nie przechowują numeru karty ani innych danych uwierzytelniających płatność w sklepie.</p>
             <p><strong>RevenueCat:</strong> służy do zarządzania statusem uprawnień Premium i przywracania zakupów. Może przetwarzać wygenerowany przez SDK identyfikator aplikacji oraz dane sklepu, produktu, zakupu, subskrypcji, uprawnień, odnowienia i wygaśnięcia potrzebne do tego celu. Wyniki treningów i gier nie są wysyłane do RevenueCat.</p>
-            <p><strong>Firebase Analytics i Firebase Crashlytics:</strong> nie są zintegrowane z pierwszym wydaniem. W związku z tym pierwsze wydanie nie wysyła do Firebase zdarzeń użycia ani raportów awarii DartLog. W razie zmiany polityka zostanie zaktualizowana przed rozpoczęciem takiego przetwarzania.</p>
-
+            <p><strong>Firebase Analytics i Firebase Crashlytics:</strong> aplikacja korzysta z tych usług do zagregowanego pomiaru użycia produktu i diagnozowania awarii. Firebase Analytics może otrzymywać zdefiniowane przez aplikację nazwy zdarzeń i wartości enum o małej liczności oraz informacje techniczne potrzebne SDK, takie jak informacje o aplikacji, systemie operacyjnym i urządzeniu. Crashlytics może otrzymywać dane diagnostyczne awarii, takie jak ślady stosu oraz informacje o aplikacji, systemie operacyjnym i urządzeniu. Aplikacja nie wysyła do tych usług surowych wyników treningów ani gier, współrzędnych trafień, punktów, notatek, celów, identyfikatorów celu, sesji ani gry, haseł, informacji płatniczych ani treści zapytań.</p>
             <h2>4. Formularz kontaktowy oraz informacje o urządzeniu i aplikacji</h2>
             <p>Po wybraniu kontaktu aplikacja otwiera wspólny formularz Google do obsługi. Nazwa aplikacji, system operacyjny, wersja systemu, wersja aplikacji, numer kompilacji, sklep i model urządzenia mogą zostać widocznie i edytowalnie uzupełnione. Użytkownik może dobrowolnie wpisać rodzaj i szczegóły zapytania, adres e-mail lub inne informacje oraz sam decyduje o wysłaniu formularza.</p>
             <p>Aplikacja nie dołącza wyników, współrzędnych, punktów, notatek, celów, haseł, danych płatniczych ani ukrytych identyfikatorów. Wysłane informacje trafiają do operatora formularza, obecnie Google, zgodnie z jego warunkami i polityką prywatności.</p>
 
-            <h2>5. Informacje i uprawnienia nieużywane w pierwszym wydaniu</h2>
-            <ul>
-                <li>Brak SDK reklamowych i reklam opartych na zainteresowaniach.</li>
-                <li>Brak zbierania dokładnej lub działającej w tle lokalizacji.</li>
-                <li>Brak zbierania kontaktów ani danych książki adresowej.</li>
-                <li>Brak aparatu, biblioteki zdjęć oraz nagrywania lub analizy wideo.</li>
-                <li>Brak śledzenia między aplikacjami lub stronami.</li>
-            </ul>
-            <p>Opcjonalne odpowiedzi Auto Capture zawierają tylko pokazane wybory, są przechowywane lokalnie i nie przesyłają obrazów ani odpowiedzi do zewnętrznej usługi.</p>
-
-            <h2>6. Okres przechowywania i usuwanie</h2>
+            <h2>5. Okres przechowywania i usuwanie</h2>
             <p>Lokalne wyniki i ustawienia pozostają na urządzeniu do czasu usunięcia danych aplikacji lub odinstalowania aplikacji. Aktualna wersja nie ma konta dewelopera ani kopii serwerowej do usunięcia. Kopie zapasowe systemu operacyjnego podlegają własnym ustawieniom i okresom przechowywania.</p>
-            <p>Apple, Google i RevenueCat przechowują informacje o zakupach i subskrypcjach zgodnie ze swoimi politykami oraz tak długo, jak jest to potrzebne do transakcji, uprawnień, bezpieczeństwa, zapobiegania nadużyciom lub wypełnienia obowiązków prawnych. Odpowiedzi formularza przechowuje jego operator, a jeśli otrzyma je deweloper, tylko przez rozsądnie potrzebny czas na odpowiedź, dokumentację wsparcia i sprawy jakościowe lub prawne; następnie są usuwane lub anonimizowane w rozsądnym zakresie.</p>
+            <p>Apple, Google i RevenueCat przechowują informacje o zakupach i subskrypcjach zgodnie ze swoimi politykami oraz tak długo, jak jest to potrzebne do transakcji, uprawnień, bezpieczeństwa, zapobiegania nadużyciom lub wypełnienia obowiązków prawnych. Firebase Analytics i Firebase Crashlytics mogą przechowywać dane dotyczące użycia i diagnostyki awarii zgodnie ze swoimi politykami oraz tak długo, jak jest to potrzebne do świadczenia, zabezpieczenia i ulepszania ich usług. Odpowiedzi formularza przechowuje jego operator, a jeśli otrzyma je deweloper, tylko przez rozsądnie potrzebny czas na odpowiedź, dokumentację wsparcia i sprawy jakościowe lub prawne; następnie są usuwane lub anonimizowane w rozsądnym zakresie.</p>
             <p>W sprawie odpowiedzi z formularza lub praw wynikających z prawa należy użyć formularza poniżej. Lokalne wyniki użytkownik usuwa na urządzeniu lub w ustawieniach pamięci systemu.</p>
 
-            <h2>7. Udostępnianie i przetwarzanie poza Japonią</h2>
-            <p>Nie sprzedajemy wyników i nie przekazujemy ich podmiotom trzecim do ich własnych reklam. Informacje są ujawniane tylko wtedy, gdy użytkownik wyśle je do zewnętrznej usługi, gdy jest to potrzebne do subskrypcji sklepowych albo gdy wymaga tego prawo lub jest to konieczne do ochrony praw i bezpieczeństwa lub zapobiegania oszustwom. Apple, Google, RevenueCat i Google Forms mogą przetwarzać informacje poza Japonią zgodnie ze swoimi politykami. Pierwsze wydanie nie ma osobnego serwera dla danych DartLog.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Polityka prywatności Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Polityka prywatności Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Polityka prywatności RevenueCat</a></p>
+            <h2>6. Udostępnianie i przetwarzanie poza Japonią</h2>
+            <p>Nie sprzedajemy wyników i nie przekazujemy ich podmiotom trzecim do ich własnych reklam. Informacje są ujawniane tylko wtedy, gdy użytkownik wyśle je do zewnętrznej usługi, gdy jest to potrzebne do subskrypcji sklepowych albo gdy wymaga tego prawo lub jest to konieczne do ochrony praw i bezpieczeństwa lub zapobiegania oszustwom. Apple, Google, RevenueCat, Google Forms, Firebase Analytics i Firebase Crashlytics mogą przetwarzać informacje poza Japonią zgodnie ze swoimi politykami. Aktualna wersja nie ma osobnego serwera dla danych DartLog.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Polityka prywatności Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Polityka prywatności Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Polityka prywatności RevenueCat</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Polityka prywatności Firebase</a></p>
 
-            <h2>8. Bezpieczeństwo</h2>
+            <h2>7. Bezpieczeństwo</h2>
             <p>Stosujemy rozsądne środki odpowiednie do obecnego projektu, w tym lokalne przechowywanie i obsługę płatności przez sklepy. Nie można zagwarantować absolutnego bezpieczeństwa; do praktyk podmiotów trzecich stosują się ich własne polityki.</p>
 
-            <h2>9. Dzieci i osoby małoletnie</h2>
+            <h2>8. Dzieci i osoby małoletnie</h2>
             <p>Aplikacja nie jest kierowana szczególnie do dzieci. Osoby małoletnie powinny korzystać z niej za zgodą i pod nadzorem rodzica lub opiekuna prawnego, gdy wymaga tego prawo.</p>
 
-            <h2>10. Zmiany polityki</h2>
+            <h2>9. Zmiany polityki</h2>
             <p>Możemy zmienić tę politykę, gdy zmieni się aplikacja, usługi podmiotów trzecich, prawo lub sposób przetwarzania danych. Aktualna wersja i data będą publikowane na tej stronie, a istotne zmiany zostaną ogłoszone, gdy wymaga tego prawo.</p>
 
-            <h2>11. Kontakt</h2>
+            <h2>10. Kontakt</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Formularz kontaktowy</a></p>
         </section>
 
@@ -818,55 +713,43 @@
                 <li>Registros de treino, incluindo alvo escolhido, número de rodadas, coordenadas de aterrissagem, acerto ou erro, alvo pretendido e notas da rodada.</li>
                 <li>Registros de X01, Count-Up, Cricket e Around the Clock, incluindo pontuação, turnos, coordenadas disponíveis, configurações, alvos pretendidos ou recomendados pelo sistema e notas.</li>
                 <li>Histórico, datas, identificadores técnicos e estatísticas ou análises calculadas localmente a partir desses registros.</li>
-                <li>Configurações como o tema e, quando exibido durante o desenvolvimento, o idioma.</li>
-                <li>Se a tela do conceito futuro Auto Capture estiver disponível, respostas opcionais de escolha sobre interesse, local de uso e preço indicativo. Elas ficam apenas no dispositivo; a função de câmera não é oferecida no lançamento inicial.</li>
+                <li>Configurações como o tema.</li>
                 <li>Informações de compra e assinatura necessárias ao Premium por meio da Apple App Store, Google Play e RevenueCat.</li>
                 <li>Informações que o usuário escolher inserir e enviar pelo formulário de contato.</li>
             </ul>
             <p>O aplicativo não exige conta e, no uso normal, não coleta intencionalmente nome, e-mail, contatos, fotos, vídeos ou localização precisa.</p>
 
             <h2>2. Registros locais e servidor do desenvolvedor</h2>
-            <p>O DartLog foi projetado para funcionar localmente. Registros de treino e jogos, coordenadas, pontuações, notas, alvos, histórico e análises são armazenados no banco de dados local do dispositivo. O lançamento inicial não possui conta, sincronização em nuvem ou servidor do desenvolvedor para enviar esses registros; o aplicativo não envia os registros brutos ao desenvolvedor.</p>
+            <p>O DartLog foi projetado para funcionar localmente. Registros de treino e jogos, coordenadas, pontuações, notas, alvos, histórico e análises são armazenados no banco de dados local do dispositivo. A versão atual não possui conta, sincronização em nuvem ou servidor do desenvolvedor para enviar esses registros; o aplicativo não envia os registros brutos ao desenvolvedor.</p>
             <p>Backups, migrações ou compartilhamentos iniciados pelo usuário podem tratar dados conforme o sistema operacional ou o destinatário.</p>
 
             <h2>3. Serviços de terceiros</h2>
             <p><strong>Apple App Store e Google Play:</strong> Apple ou Google processam pagamentos e assinaturas. Dados de conta, pedido, recibo, assinatura e cobrança seguem suas condições e políticas de privacidade. O aplicativo e o desenvolvedor não armazenam número de cartão ou outras credenciais de pagamento da loja.</p>
             <p><strong>RevenueCat:</strong> é usado para gerenciar o status Premium e restaurar compras. Pode tratar um identificador específico do aplicativo gerado pelo SDK e dados de loja, produto, compra, assinatura, entitlement, renovação e vencimento necessários para isso. Registros de treino e jogos não são enviados à RevenueCat.</p>
-            <p><strong>Firebase Analytics e Firebase Crashlytics:</strong> não estão integrados no lançamento inicial. Portanto, essa versão não envia eventos de uso nem relatórios de falha do DartLog ao Firebase. Se isso mudar, esta política será atualizada antes do início do tratamento.</p>
-
+            <p><strong>Firebase Analytics e Firebase Crashlytics:</strong> o aplicativo usa esses serviços para medir de forma agregada o uso do produto e diagnosticar falhas. O Firebase Analytics pode receber os nomes de eventos e valores de enumeração de baixa cardinalidade definidos pelo aplicativo, além das informações técnicas necessárias ao SDK, como informações do aplicativo, sistema operacional e dispositivo. O Crashlytics pode receber diagnósticos de falhas, como stack traces e informações do aplicativo, sistema operacional e dispositivo. O aplicativo não envia a esses serviços registros brutos de treino ou jogos, coordenadas de aterrissagem, pontuações, notas, alvos, identificadores de alvo, sessão ou jogo, senhas, informações de pagamento nem o texto das consultas.</p>
             <h2>4. Formulário de contato e informações do dispositivo ou aplicativo</h2>
             <p>Ao escolher Contato, o aplicativo abre o formulário comum do Google para suporte. Nome do aplicativo, sistema operacional, versão do sistema, versão do aplicativo, número da compilação, loja e modelo do dispositivo podem ser preenchidos previamente de forma visível e editável. O usuário pode informar voluntariamente o tipo e os detalhes da solicitação, e-mail ou outros dados, e decide se enviará o formulário.</p>
             <p>O aplicativo não anexa registros, coordenadas, pontuações, notas, alvos, senhas, dados de pagamento ou identificadores ocultos. O conteúdo enviado é encaminhado ao operador do formulário, atualmente o Google, conforme suas condições e política de privacidade.</p>
 
-            <h2>5. Informações e permissões não usadas no lançamento inicial</h2>
-            <ul>
-                <li>Nenhum SDK de publicidade ou publicidade baseada em interesses.</li>
-                <li>Nenhuma coleta de localização precisa ou em segundo plano.</li>
-                <li>Nenhuma coleta de contatos ou agenda.</li>
-                <li>Nenhuma câmera, biblioteca de fotos ou gravação/análise de vídeo.</li>
-                <li>Nenhum rastreamento entre aplicativos ou sites.</li>
-            </ul>
-            <p>As respostas opcionais do Auto Capture contêm apenas as escolhas exibidas, são armazenadas localmente e não enviam imagens ou respostas a um serviço externo.</p>
-
-            <h2>6. Retenção e exclusão</h2>
+            <h2>5. Retenção e exclusão</h2>
             <p>Registros e configurações locais permanecem no dispositivo até que o usuário exclua os dados do aplicativo ou o desinstale. A versão atual não possui conta nem cópia em servidor do desenvolvedor para excluir. Backups do sistema operacional seguem suas próprias configurações e prazos.</p>
-            <p>Apple, Google e RevenueCat mantêm informações de compra e assinatura conforme suas políticas e pelo tempo necessário para transações, direitos, segurança, prevenção de fraude ou obrigações legais. As respostas do formulário são mantidas pelo operador e, quando recebidas pelo desenvolvedor, apenas pelo tempo razoavelmente necessário para responder, manter registros de suporte e tratar questões de qualidade ou legais; depois são excluídas ou anonimizadas quando razoável.</p>
+            <p>Apple, Google e RevenueCat mantêm informações de compra e assinatura conforme suas políticas e pelo tempo necessário para transações, direitos, segurança, prevenção de fraude ou obrigações legais. O Firebase Analytics e o Firebase Crashlytics podem manter dados de uso e diagnóstico de falhas conforme suas políticas e pelo tempo necessário para fornecer, proteger e melhorar seus serviços. As respostas do formulário são mantidas pelo operador e, quando recebidas pelo desenvolvedor, apenas pelo tempo razoavelmente necessário para responder, manter registros de suporte e tratar questões de qualidade ou legais; depois são excluídas ou anonimizadas quando razoável.</p>
             <p>Para dúvidas sobre uma resposta ou solicitações legais, use o formulário abaixo. Os registros locais devem ser excluídos pelo usuário no dispositivo ou nas configurações de armazenamento do sistema.</p>
 
-            <h2>7. Divulgação a terceiros e tratamento fora do Japão</h2>
-            <p>Não vendemos registros nem os fornecemos a terceiros para publicidade própria. As informações são divulgadas somente quando o usuário as envia a um serviço externo, quando necessário para assinaturas das lojas, ou quando exigido por lei ou necessário para proteger direitos e segurança ou prevenir fraude. Apple, Google, RevenueCat e Google Forms podem tratar informações fora do Japão conforme suas políticas. O lançamento inicial não tem servidor separado para registros do DartLog.</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política da Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política do Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Política da RevenueCat</a></p>
+            <h2>6. Divulgação a terceiros e tratamento fora do Japão</h2>
+            <p>Não vendemos registros nem os fornecemos a terceiros para publicidade própria. As informações são divulgadas somente quando o usuário as envia a um serviço externo, quando necessário para assinaturas das lojas, ou quando exigido por lei ou necessário para proteger direitos e segurança ou prevenir fraude. Apple, Google, RevenueCat, Google Forms, Firebase Analytics e Firebase Crashlytics podem tratar informações fora do Japão conforme suas políticas. A versão atual não tem servidor separado para registros do DartLog.</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Política da Apple</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política do Google</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Política da RevenueCat</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Política de privacidade do Firebase</a></p>
 
-            <h2>8. Segurança</h2>
+            <h2>7. Segurança</h2>
             <p>Adotamos medidas razoáveis compatíveis com o design atual, incluindo armazenamento local e pagamentos processados pelas lojas. Não é possível garantir segurança absoluta. Os serviços de terceiros seguem suas próprias políticas.</p>
 
-            <h2>9. Crianças e menores</h2>
+            <h2>8. Crianças e menores</h2>
             <p>O aplicativo não é dirigido especificamente a crianças. Menores devem usá-lo com o consentimento e a supervisão dos pais ou responsáveis quando exigido por lei.</p>
 
-            <h2>10. Alterações nesta política</h2>
+            <h2>9. Alterações nesta política</h2>
             <p>Podemos alterar esta política se mudarem o aplicativo, os serviços de terceiros, a lei ou as práticas de dados. A versão atual e a data serão publicadas nesta página; alterações importantes serão comunicadas quando exigido por lei.</p>
 
-            <h2>11. Contato</h2>
+            <h2>10. Contato</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">Formulário de contato</a></p>
         </section>
 
@@ -883,55 +766,43 @@
                 <li>练习记录，包括所选目标、回合数、飞镖落点坐标、命中或未命中结果、瞄准目标和回合备注。</li>
                 <li>X01、Count-Up、Cricket 和 Around the Clock 游戏记录，包括得分、回合、可用的落点坐标、游戏设置、瞄准目标或系统推荐目标以及备注。</li>
                 <li>历史记录、日期、技术性记录标识，以及根据上述记录在设备上计算的统计和分析结果。</li>
-                <li>应用设置，例如主题，以及在开发期间显示时的语言设置。</li>
-                <li>如果显示未来功能 Auto Capture 的概念页面，用户可选择填写兴趣程度、使用地点和候选价格。回答只保存在设备上；初次发布不提供相机功能。</li>
+                <li>应用设置，例如主题。</li>
                 <li>通过 Apple App Store、Google Play 和 RevenueCat 提供 Premium 所需的购买和订阅状态信息。</li>
                 <li>用户自愿在联系表单中填写并提交的信息。</li>
             </ul>
             <p>本应用不要求注册账户，在正常使用中不会有意收集用户的姓名、电子邮件地址、联系人、照片、视频或精确位置。</p>
 
             <h2>2. 本地记录和开发者服务器</h2>
-            <p>DartLog 以本地处理为主。练习和游戏记录、落点坐标、得分、备注、目标、历史以及分析结果保存在设备的本地数据库中。初次发布不包含开发者运营的账户、云同步或用于上传这些记录的服务器；本应用不会将原始记录发送给开发者。</p>
+            <p>DartLog 以本地处理为主。练习和游戏记录、落点坐标、得分、备注、目标、历史以及分析结果保存在设备的本地数据库中。当前版本不包含开发者运营的账户、云同步或用于上传这些记录的服务器；本应用不会将原始记录发送给开发者。</p>
             <p>用户主动发起的系统备份、设备迁移或分享可能根据操作系统或接收方的规则处理应用数据。</p>
 
             <h2>3. 第三方服务</h2>
             <p><strong>Apple App Store 和 Google Play：</strong>付款和订阅由 Apple 或 Google 处理。账户、订单、收据、订阅和账单信息按照各自的条款和隐私政策处理。本应用和开发者不会保存银行卡号或其他商店付款凭据。</p>
             <p><strong>RevenueCat：</strong>用于管理 Premium 权益状态和恢复购买。RevenueCat 可能处理 SDK 生成的应用专用标识，以及为此目的所需的商店、商品、购买、订阅、权益、续订和到期信息。本应用的练习或游戏记录不会发送给 RevenueCat。</p>
-            <p><strong>Firebase Analytics 和 Firebase Crashlytics：</strong>初次发布未集成这些服务。因此，初次发布不会将 DartLog 的使用事件或崩溃报告发送到 Firebase。如有变化，我们会在开始相关处理前更新本政策。</p>
-
+            <p><strong>Firebase Analytics 和 Firebase Crashlytics：</strong>本应用使用这些服务汇总衡量产品使用情况并诊断崩溃。Firebase Analytics 可能接收本应用定义的低基数事件名称和枚举值，以及 SDK 所需的应用、操作系统和设备等技术信息。Crashlytics 可能接收堆栈跟踪以及应用、操作系统和设备信息等崩溃诊断信息。本应用不会向这些服务发送练习或游戏记录、落点坐标、得分、备注、目标、目标/会话/游戏标识、密码、付款信息或咨询文本等原始数据。</p>
             <h2>4. 联系表单以及设备和应用信息</h2>
             <p>用户选择“联系”时，本应用会打开目前用于应用支持的 Google 公共表单。应用名称、操作系统、系统版本、应用版本、构建号、商店和设备型号可能以可见且可编辑的方式预先填写。用户可以自愿填写咨询类型、详情、电子邮件地址或其他信息，并自行决定是否提交。</p>
             <p>本应用不会向表单附加记录、坐标、得分、备注、目标、密码、付款信息或隐藏标识。提交的信息会发送给目前的表单运营方 Google，并按照其条款和隐私政策处理。</p>
 
-            <h2>5. 初次发布不使用的信息和权限</h2>
-            <ul>
-                <li>不使用广告 SDK 或基于兴趣的广告。</li>
-                <li>不收集精确位置或后台位置。</li>
-                <li>不收集联系人或通讯录数据。</li>
-                <li>不提供或使用相机、照片库以及视频录制或分析。</li>
-                <li>不使用跨应用或跨网站跟踪技术。</li>
-            </ul>
-            <p>可选的 Auto Capture 回答仅包含页面显示的选项，保存在设备上，不会向外部服务发送图像或回答。</p>
-
-            <h2>6. 保存期限和删除</h2>
+            <h2>5. 保存期限和删除</h2>
             <p>本地记录和设置会保存在设备上，直到用户删除应用数据或卸载本应用。当前版本没有需要删除的开发者账户或服务器副本。操作系统备份遵循其自身的设置和保存周期。</p>
-            <p>Apple、Google 和 RevenueCat 会按照各自政策，并在交易、权益、安全、防止欺诈或遵守法律所需的期间保存购买和订阅信息。表单回答由表单运营方保存；开发者收到的回答仅在回复、支持记录以及相关质量或法律事项所合理需要的期间保存，之后会在合理可行的范围内删除或匿名化。</p>
+            <p>Apple、Google 和 RevenueCat 会按照各自政策，并在交易、权益、安全、防止欺诈或遵守法律所需的期间保存购买和订阅信息。Firebase Analytics 和 Firebase Crashlytics 可能会按照各自政策，并在提供、保护和改进服务所需的期间保存使用和崩溃诊断信息。表单回答由表单运营方保存；开发者收到的回答仅在回复、支持记录以及相关质量或法律事项所合理需要的期间保存，之后会在合理可行的范围内删除或匿名化。</p>
             <p>如需询问表单回答或提出法律规定的请求，请使用下方联系表单。本地记录需要由用户在设备上或操作系统的存储设置中删除。</p>
 
-            <h2>7. 第三方提供和日本境外处理</h2>
-            <p>我们不会出售记录，也不会为第三方自身广告提供记录。只有在用户主动向外部服务提交、商店订阅服务需要、法律要求，或为保护权利和安全及防止欺诈而必要时，才会披露信息。Apple、Google、RevenueCat 和 Google Forms 可能按照各自政策在日本境外处理信息。初次发布没有用于 DartLog 记录的独立服务器。</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 隐私政策</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隐私政策</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 隐私政策</a></p>
+            <h2>6. 第三方提供和日本境外处理</h2>
+            <p>我们不会出售记录，也不会为第三方自身广告提供记录。只有在用户主动向外部服务提交、商店订阅服务需要、法律要求，或为保护权利和安全及防止欺诈而必要时，才会披露信息。Apple、Google、RevenueCat、Google Forms、Firebase Analytics 和 Firebase Crashlytics 可能按照各自政策在日本境外处理信息。当前版本没有用于 DartLog 记录的独立服务器。</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 隐私政策</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 隐私政策</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 隐私政策</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 隐私政策</a></p>
 
-            <h2>8. 安全管理</h2>
+            <h2>7. 安全管理</h2>
             <p>我们根据当前设计采取合理措施，例如将记录限制在设备本地并由商店处理付款。但无法保证绝对安全。第三方服务的安全和保存方式由其自身政策规定。</p>
 
-            <h2>9. 儿童和未成年人</h2>
+            <h2>8. 儿童和未成年人</h2>
             <p>本应用并非专门面向儿童。法律要求时，未成年人应在父母或法定监护人同意和监督下使用本应用。</p>
 
-            <h2>10. 政策变更</h2>
+            <h2>9. 政策变更</h2>
             <p>当应用、第三方服务、法律或数据处理方式发生变化时，我们可能修改本政策。最新版本及更新日期会发布在本页面；法律要求时会通过适当方式通知重大变更。</p>
 
-            <h2>11. 联系方式</h2>
+            <h2>10. 联系方式</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">联系表单</a></p>
         </section>
 
@@ -948,55 +819,43 @@
                 <li>練習記錄，包括所選目標、回合數、飛鏢落點座標、命中或失誤結果、瞄準目標及每回合備註。</li>
                 <li>X01、Count-Up、Cricket 及 Around the Clock 遊戲記錄，包括得分、回合、可用的落點座標、遊戲設定、瞄準或系統建議的目標及備註。</li>
                 <li>歷史記錄、日期、技術性記錄識別碼，以及根據上述記錄在裝置上計算的統計和分析結果。</li>
-                <li>應用程式設定，例如主題，以及在開發期間顯示時的語言設定。</li>
-                <li>如果顯示未來功能 Auto Capture 的概念頁面，使用者可選擇填寫興趣程度、使用地點及候選價格。答案只儲存在裝置上；初次發佈不提供相機功能。</li>
+                <li>應用程式設定，例如主題。</li>
                 <li>透過 Apple App Store、Google Play 及 RevenueCat 提供 Premium 所需的購買和訂閱狀態資訊。</li>
                 <li>使用者自願在聯絡表格中輸入並提交的資訊。</li>
             </ul>
             <p>本應用程式不要求註冊帳戶，在一般使用期間不會刻意收集使用者姓名、電子郵件地址、聯絡人、相片、影片或精確位置。</p>
 
             <h2>2. 裝置內記錄和開發者伺服器</h2>
-            <p>DartLog 以裝置內處理為主。練習和遊戲記錄、落點座標、得分、備註、目標、歷史以及分析結果會儲存在裝置的本機資料庫。初次發佈不包含開發者營運的帳戶、雲端同步或用於上傳這些記錄的伺服器；本應用程式不會把原始記錄傳送給開發者。</p>
+            <p>DartLog 以裝置內處理為主。練習和遊戲記錄、落點座標、得分、備註、目標、歷史以及分析結果會儲存在裝置的本機資料庫。現行版本不包含開發者營運的帳戶、雲端同步或用於上傳這些記錄的伺服器；本應用程式不會把原始記錄傳送給開發者。</p>
             <p>使用者主動開始的作業系統備份、裝置轉移或分享可能按照作業系統或接收方的規則處理應用程式資料。</p>
 
             <h2>3. 第三方服務</h2>
             <p><strong>Apple App Store 及 Google Play：</strong>付款和訂閱由 Apple 或 Google 處理。帳戶、訂單、收據、訂閱和帳單資訊按照各自的條款及私隱政策處理。本應用程式和開發者不會儲存信用卡號碼或其他商店付款憑證。</p>
             <p><strong>RevenueCat：</strong>用於管理 Premium 權益狀態和恢復購買。RevenueCat 可能處理 SDK 產生的應用程式專用識別碼，以及為此目的所需的商店、商品、購買、訂閱、權益、續訂和到期資訊。練習或遊戲記錄不會傳送至 RevenueCat。</p>
-            <p><strong>Firebase Analytics 及 Firebase Crashlytics：</strong>初次發佈尚未整合這些服務。因此，初次發佈不會把 DartLog 使用事件或崩潰報告傳送至 Firebase。如有變更，我們會在開始相關處理前更新本政策。</p>
-
+            <p><strong>Firebase Analytics 及 Firebase Crashlytics：</strong>本應用程式使用這些服務彙總衡量產品使用情況並診斷崩潰。Firebase Analytics 可能接收本應用程式定義的低基數事件名稱和列舉值，以及 SDK 所需的應用程式、作業系統和裝置等技術資訊。Crashlytics 可能接收堆疊追蹤以及應用程式、作業系統和裝置資訊等崩潰診斷資訊。本應用程式不會向這些服務傳送練習或遊戲記錄、落點座標、得分、備註、目標、目標／工作階段／遊戲識別碼、密碼、付款資訊或查詢文字等原始資料。</p>
             <h2>4. 聯絡表格以及裝置和應用程式資訊</h2>
             <p>使用者選擇聯絡時，本應用程式會開啟目前用於應用程式支援的 Google 公共表格。應用程式名稱、作業系統、系統版本、應用程式版本、建置號碼、商店和裝置型號可能以可見且可編輯的方式預先填入。使用者可以自願輸入查詢類型、詳情、電子郵件地址或其他資料，並自行決定是否提交。</p>
             <p>本應用程式不會在表格中附加記錄、座標、得分、備註、目標、密碼、付款資訊或隱藏識別碼。提交的資訊會傳送給目前的表格營運方 Google，並按照其條款及私隱政策處理。</p>
 
-            <h2>5. 初次發佈不使用的資訊和權限</h2>
-            <ul>
-                <li>不使用廣告 SDK 或根據興趣的廣告。</li>
-                <li>不收集精確位置或背景位置。</li>
-                <li>不收集聯絡人或通訊錄資料。</li>
-                <li>不提供或使用相機、相片圖庫以及影片錄製或分析。</li>
-                <li>不使用跨應用程式或跨網站追蹤技術。</li>
-            </ul>
-            <p>可選的 Auto Capture 答案只包含頁面顯示的選項，儲存在裝置上，不會向外部服務傳送圖像或答案。</p>
-
-            <h2>6. 保存期限和刪除</h2>
+            <h2>5. 保存期限和刪除</h2>
             <p>本機記錄和設定會保存在裝置上，直到使用者刪除應用程式資料或解除安裝本應用程式。現行版本沒有需要刪除的開發者帳戶或伺服器副本。作業系統備份按照其本身的設定和保存週期處理。</p>
-            <p>Apple、Google 和 RevenueCat 會按照各自政策，並在交易、權益、安全、防止欺詐或法律義務所需的期間保存購買和訂閱資訊。表格答案由表格營運方保存；開發者收到的答案只在回覆、支援記錄以及相關品質或法律事項合理需要的期間保存，之後會在合理可行的範圍內刪除或匿名化。</p>
+            <p>Apple、Google 和 RevenueCat 會按照各自政策，並在交易、權益、安全、防止欺詐或法律義務所需的期間保存購買和訂閱資訊。Firebase Analytics 及 Firebase Crashlytics 可能會按照各自政策，並在提供、保護和改善服務所需的期間保存使用和崩潰診斷資訊。表格答案由表格營運方保存；開發者收到的答案只在回覆、支援記錄以及相關品質或法律事項合理需要的期間保存，之後會在合理可行的範圍內刪除或匿名化。</p>
             <p>如需查詢表格答案或提出法律要求，請使用下方聯絡表格。本機記錄需要由使用者在裝置上或作業系統的儲存設定中刪除。</p>
 
-            <h2>7. 向第三方提供和日本境外處理</h2>
-            <p>我們不會出售記錄，也不會為第三方自身的廣告提供記錄。只有在使用者主動向外部服務提交、商店訂閱服務需要、法律要求，或為保護權利和安全及防止欺詐而有必要時，才會披露資訊。Apple、Google、RevenueCat 和 Google Forms 可能按照各自政策在日本境外處理資訊。初次發佈沒有用於 DartLog 記錄的獨立伺服器。</p>
-            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 私隱政策</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 私隱政策</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 私隱政策</a></p>
+            <h2>6. 向第三方提供和日本境外處理</h2>
+            <p>我們不會出售記錄，也不會為第三方自身的廣告提供記錄。只有在使用者主動向外部服務提交、商店訂閱服務需要、法律要求，或為保護權利和安全及防止欺詐而有必要時，才會披露資訊。Apple、Google、RevenueCat、Google Forms、Firebase Analytics 及 Firebase Crashlytics 可能按照各自政策在日本境外處理資訊。現行版本沒有用於 DartLog 記錄的獨立伺服器。</p>
+            <p><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple 私隱政策</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google 私隱政策</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat 私隱政策</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 私隱政策</a></p>
 
-            <h2>8. 安全管理</h2>
+            <h2>7. 安全管理</h2>
             <p>我們按照目前設計採取合理措施，例如將記錄限制在裝置內並由商店處理付款。但不能保證絕對安全。第三方服務的安全及保存方式由其本身政策規定。</p>
 
-            <h2>9. 兒童及未成年人</h2>
+            <h2>8. 兒童及未成年人</h2>
             <p>本應用程式並非特別面向兒童。法律要求時，未成年人應在父母或法定監護人同意及監督下使用。</p>
 
-            <h2>10. 政策變更</h2>
+            <h2>9. 政策變更</h2>
             <p>當應用程式、第三方服務、法律或資料處理方式有所變更時，我們可能修改本政策。最新版本及更新日期會刊登於本頁；法律要求時會以適當方式通知重大變更。</p>
 
-            <h2>11. 聯絡方式</h2>
+            <h2>10. 聯絡方式</h2>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">聯絡表格</a></p>
         </section>
 
