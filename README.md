@@ -17,6 +17,22 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `baseball-order.html`
 - `baseball-order-terms.html`
 - `comic-merge.html`
+- `dartlog/privacy.html`
+- `dartlog/terms.html`
+
+## DartLog URLs
+
+- Privacy Policy: https://www.so-kuma.com/privacy-policy/dartlog/privacy.html
+- Terms of Use: https://www.so-kuma.com/privacy-policy/dartlog/terms.html
+
+Configure these values in DartLog's release settings:
+
+```json
+{
+  "PRIVACY_POLICY_URL": "https://www.so-kuma.com/privacy-policy/dartlog/privacy.html",
+  "TERMS_URL": "https://www.so-kuma.com/privacy-policy/dartlog/terms.html"
+}
+```
 
 ## Support Form
 
