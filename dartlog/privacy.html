@@ -113,15 +113,16 @@
                 This Privacy Policy describes how SO-KUMA Labs ("we", "us", or "the developer") handles information
                 in DartLog ("the App").
             </p>
-            <p>Last updated: September 6, 2026</p>
+            <p>Last updated: October 4, 2026</p>
 
             <h2>1. Information Handled by the App</h2>
             <p>The App may handle the following information:</p>
             <ul>
                 <li>Practice records, including the selected target, number of rounds, dart landing coordinates, hit or miss results, intended target information, and round notes.</li>
-                <li>Game records for X01, Count-Up, Cricket, and Around the Clock, including scores, turns, dart landing coordinates when available, game settings, intended or system-recommended target information, and notes.</li>
-                <li>History, dates, identifiers, in-progress game data, and statistics or analysis calculated from the records above.</li>
-                <li>App settings such as the selected theme.</li>
+                <li>Game records for X01, Bob's 27, Round the Clock, Scoring (Count-Up), and Cricket, including scores, turns, dart landing coordinates when available, game settings, intended or system-recommended target information, and notes.</li>
+                <li>History, dates, identifiers, in-progress game data, long-term goals and their progress, and statistics or analysis calculated from the records above.</li>
+                <li>App settings such as the selected theme, language, and usage data setting.</li>
+                <li>Usage statistics and crash diagnostics sent to Firebase as described in Section 3, unless the user turns them off.</li>
                 <li>Purchase and subscription status information needed to provide Premium features through Apple App Store, Google Play, and RevenueCat.</li>
                 <li>Information the user chooses to enter and submit through the inquiry form.</li>
             </ul>
@@ -143,6 +144,11 @@
                 the user. Such processing is controlled by the relevant operating system or recipient and is outside
                 the App's ordinary server processing.
             </p>
+            <p>
+                When the user exports records as CSV (Premium) or shares an analysis image, the data is passed to the
+                destination the user chooses, such as a file, email, or another app. After sharing, the data is
+                handled under the terms and policies of that destination.
+            </p>
 
             <h2>3. Third-Party Services</h2>
             <p>
@@ -158,13 +164,22 @@
                 purpose. This service is not used to receive the App's practice or game records.
             </p>
             <p>
-                <strong>Firebase Analytics and Firebase Crashlytics:</strong> The App uses these services for
-                aggregated product-usage measurement and crash diagnosis. Firebase Analytics may receive the
-                low-cardinality event names and enum values defined by the App, together with technical information
-                needed for the SDK, such as app, OS, and device information. Crashlytics may receive crash
-                diagnostics such as stack traces and app, OS, and device information. The App does not send raw
-                practice or game records, dart landing coordinates, scores, notes, intended targets, target,
-                session, or game identifiers, passwords, payment information, or inquiry text to these services.
+                <strong>Firebase Analytics and Firebase Crashlytics (provided by Google):</strong> The App uses these
+                services to improve the App, for example by counting which features are used, how often sessions are
+                completed or abandoned, and how users reach the Premium screen, and to investigate crashes. Firebase
+                Analytics receives the event names and a small set of category values defined by the App (for
+                example, a practice session started or completed, the analysis screen opened, a Premium prompt tapped,
+                or a purchase result), coarse time ranges, and technical information such as app version, OS, device
+                type, and country or region estimated from the IP address, linked to an app instance ID issued by
+                Firebase (on iOS this includes the identifier for vendor). Crashlytics receives stack traces, app, OS,
+                and device information, and a Crashlytics installation ID. The App does not collect the advertising ID
+                and does not use these services for advertising. The App does not send practice or game records, dart
+                landing coordinates, scores, notes, intended targets, goals, target, session, or game identifiers,
+                passwords, payment information, or inquiry text to these services.
+            </p>
+            <p>
+                Sending this information is on by default. The user can stop it at any time by turning off Settings &gt;
+                Share usage data in the App; sending stops from that moment.
             </p>
             <h2>4. Inquiry Form and Device or App Information</h2>
             <p>
@@ -182,10 +197,11 @@
 
             <h2>5. Retention and Deletion</h2>
             <p>
-                Local records and local settings are retained on the device until the user deletes the App data or
-                uninstalls the App. The current version does not provide a developer-side account or server copy to
-                delete. Deleting the App or clearing its storage may remove local records, but records restored from an
-                operating-system backup are subject to that backup's settings and lifecycle.
+                Local records and local settings are retained on the device until the user deletes them. Records can
+                be deleted one by one from History in the App, and goals can be deleted from the goal screen. To delete
+                all records and settings at once, uninstall the App or clear its data in the operating system settings.
+                The current version does not provide a developer-side account or server copy to delete. Data included
+                in an operating-system backup is subject to that backup's settings and lifecycle.
             </p>
             <p>
                 Apple, Google, and RevenueCat retain purchase and subscription information for the periods and purposes
@@ -194,13 +210,13 @@
                 developer, only for as long as reasonably necessary to respond, maintain support records, and address
                 related quality or legal matters; information that is no longer needed is deleted or anonymized where
                 reasonably practicable.
-                Firebase Analytics and Firebase Crashlytics may retain analytics and crash-diagnostic information
-                according to their policies and as needed to provide, secure, and improve their services.
+                Firebase Analytics event data is retained for the period set in our Google Analytics settings, up to
+                14 months. Crashlytics crash data is retained for up to 90 days.
             </p>
             <p>
                 To ask about an inquiry submission or request handling under applicable law, use the Contact Form below.
-                Requests cannot delete local records from the user's device; the user must delete those records on the
-                device or through its operating-system storage controls.
+                Because we do not receive the records stored on the device, we cannot delete them on request; the user
+                can delete them in the App or through the operating system as described above.
             </p>
 
             <h2>6. Third-Party Disclosure and Processing Outside Japan</h2>
@@ -210,7 +226,7 @@
                 provide store-based subscriptions, or when disclosure is required by law or necessary to protect
                 rights, safety, or prevent fraud. Apple, Google, RevenueCat, Google Forms, Firebase Analytics, and
                 Firebase Crashlytics may process information
-                outside Japan in accordance with their own operations and policies. We do not operate a separate server
+                outside Japan, including in the United States, in accordance with their own operations and policies. We do not operate a separate server
                 for DartLog records in the current version.
             </p>
             <p>
@@ -221,7 +237,35 @@
                 <br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy Policy</a>
             </p>
 
-            <h2>7. Security</h2>
+            <h2>7. Users in the EEA and the United Kingdom</h2>
+            <p>
+                For users in the European Economic Area and the United Kingdom, SO-KUMA Labs is the controller for the
+                processing described in this Policy and can be contacted through the Contact Form below. We rely on the
+                following legal bases under the GDPR and the UK GDPR: performance of a contract for providing,
+                verifying, and restoring Premium purchases; our legitimate interest in keeping the App stable for crash
+                diagnostics; our legitimate interest in improving the App for usage statistics, which you can object to
+                at any time by turning off Settings &gt; Share usage data; and responding to your request for inquiries.
+            </p>
+            <p>
+                Google and RevenueCat may transfer information to the United States and other countries. Such
+                transfers rely on safeguards such as the EU-U.S. Data Privacy Framework or standard contractual
+                clauses, as described in their policies.
+            </p>
+            <p>
+                You have the right to request access to, rectification, erasure, or restriction of your personal data,
+                to object to processing, to data portability, and to lodge a complaint with your local data protection
+                authority. Records stored on the device are under your control and can be deleted in the App. Usage
+                statistics and crash data are pseudonymous, and we may not be able to identify you from them; we will
+                handle requests as far as we reasonably can.
+            </p>
+
+            <h2>8. Children</h2>
+            <p>
+                The App is not directed at children under 13, or under the minimum age set by the law of their country
+                in the EEA and the United Kingdom.
+            </p>
+
+            <h2>9. Security</h2>
             <p>
                 We take reasonable measures appropriate to the current design, including limiting records to local
                 storage and keeping payment processing within the stores. No method of storage or transmission is
@@ -229,14 +273,14 @@
                 third-party providers are governed by their policies.
             </p>
 
-            <h2>8. Changes to This Policy</h2>
+            <h2>10. Changes to This Policy</h2>
             <p>
                 We may update this Policy when the App, third-party services, laws, or data practices change. The
                 latest version will be posted on this page with its updated date. Material changes will be announced in
                 the App or by another appropriate method where required by law.
             </p>
 
-            <h2>9. Contact</h2>
+            <h2>11. Contact</h2>
             <p>If you have questions about this Policy or the handling of your information, please contact us through:</p>
             <p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header"
@@ -251,15 +295,16 @@
             <p>
                 SO-KUMA Labs（以下「当方」または「開発者」）は、DartLog（日本語名「ダーツログ」、以下「本アプリ」）における情報の取り扱いについて、以下のとおり定めます。
             </p>
-            <p>最終更新日：2026年9月6日</p>
+            <p>最終更新日：2026年10月4日</p>
 
             <h2>1. 本アプリが取り扱う情報</h2>
             <p>本アプリでは、以下の情報を取り扱うことがあります。</p>
             <ul>
                 <li>練習記録（選択したターゲット、ラウンド数、ダーツの着弾座標、命中・ミスの結果、狙ったターゲット、ラウンドごとのメモ等）</li>
-                <li>X01、カウントアップ、クリケット、アラウンド・ザ・クロックのゲーム記録（得点、ターン、入力可能な着弾座標、ゲーム設定、狙ったターゲットまたはシステムが推奨したターゲット、メモ等）</li>
-                <li>上記の記録に関する履歴、日付、記録を管理するための識別子、および端末内で記録から算出する統計・分析結果</li>
-                <li>選択したテーマなどのアプリ設定</li>
+                <li>X01、Bob's 27、ラウンド・ザ・クロック、カウントアップ（英語表示ではScoring）、クリケットのゲーム記録（得点、ターン、入力可能な着弾座標、ゲーム設定、狙ったターゲットまたはシステムが推奨したターゲット、メモ等）</li>
+                <li>上記の記録に関する履歴、日付、記録を管理するための識別子、中断中のゲーム、長期目標とその進捗、および端末内で記録から算出する統計・分析結果</li>
+                <li>テーマ、言語、利用状況データの送信設定などのアプリ設定</li>
+                <li>第3条に定めるFirebaseへ送信する利用統計およびクラッシュ診断情報（ユーザーがオフにした場合を除く）</li>
                 <li>Premium機能を提供するためにApple App Store、Google PlayおよびRevenueCatを通じて取り扱う購入・サブスクリプション状態の情報</li>
                 <li>ユーザーが問い合わせフォームに任意に入力し、送信する情報</li>
             </ul>
@@ -270,31 +315,41 @@
                 DartLogは端末内保存を基本とするアプリです。練習記録、ゲーム記録、着弾座標、得点、メモ、狙い、履歴および端末内で算出した分析結果は、本アプリの端末内データベースに保存されます。現行版には、開発者が運営するアカウント機能、クラウド同期、これらの記録をアップロードするサーバー機能はありません。本アプリが生の記録を開発者へ送信することはありません。
             </p>
             <p>ユーザーが開始するOSのバックアップ、機種変更・移行、共有操作では、OSまたは共有先の仕組みにより本アプリのデータが取り扱われることがあります。</p>
+            <p>CSVの書き出し（Premium）や分析画像の共有を行うと、ユーザーが選んだ共有先（ファイル、メール、他のアプリ等）へデータが渡されます。共有後のデータは、共有先の規約およびポリシーに従って取り扱われます。</p>
 
             <h2>3. 外部サービスの利用</h2>
             <p><strong>Apple App StoreおよびGoogle Play：</strong> 決済およびサブスクリプションの処理はAppleまたはGoogleが行います。ストアアカウント、注文、レシート、サブスクリプション、請求に関する情報は、各社の規約およびプライバシーポリシーに従って取り扱われます。本アプリおよび開発者は、クレジットカード番号その他のストア決済用認証情報を取得・保存しません。</p>
             <p><strong>RevenueCat：</strong> Premiumの権限状態の管理および購入の復元のためにRevenueCatを利用します。RevenueCatには、SDKが生成するアプリ固有の識別子、ストア、商品、購入、サブスクリプション、権限、更新、有効期限等、目的に必要な情報が取り扱われる場合があります。練習記録やゲーム記録はRevenueCatへ送信しません。</p>
-            <p><strong>Firebase AnalyticsおよびFirebase Crashlytics：</strong> 本アプリでは、利用状況の集計とクラッシュ原因の調査のためにこれらのサービスを利用します。Firebase Analyticsには、本アプリが定義する低カーディナリティのイベント名・列挙値と、SDKの動作に必要なアプリ、OS、端末等の技術情報が送信されることがあります。Crashlyticsには、スタックトレース、アプリ、OS、端末等のクラッシュ診断情報が送信されることがあります。練習・ゲーム記録、着弾座標、得点、メモ、狙い、ターゲットID・セッションID・ゲームID、パスワード、決済情報、問い合わせ本文等の生データは、これらのサービスへ送信しません。</p>
+            <p><strong>Firebase AnalyticsおよびFirebase Crashlytics（Google提供）：</strong> 本アプリの改善（どの機能が使われているか、記録の完了・中断の頻度、Premium画面への導線等の集計）とクラッシュ原因の調査のためにこれらのサービスを利用します。Firebase Analyticsには、本アプリが定義したイベント名と少数の区分値（例：練習の開始・完了、分析画面の表示、Premiumの案内のタップ、購入の結果）、所要時間の大まかな区分、およびアプリのバージョン、OS、端末の種類、IPアドレスから推定される国・地域等の技術情報が、Firebaseが発行するアプリインスタンスID（iOSではベンダー識別子を含みます）と結び付けて送信されます。Crashlyticsには、スタックトレース、アプリ、OS、端末の情報およびCrashlyticsのインストールIDが送信されます。本アプリは広告IDを収集せず、これらのサービスを広告に利用しません。練習・ゲーム記録、着弾座標、得点、メモ、狙い、目標、ターゲットID・セッションID・ゲームID、パスワード、決済情報、問い合わせ本文は、これらのサービスへ送信しません。</p>
+            <p>これらの送信は初期状態で有効です。本アプリの設定の「利用状況データを送信」をオフにすると、その時点から送信を停止できます。</p>
             <h2>4. 問い合わせフォームと端末・アプリ情報</h2>
             <p>ユーザーが「お問い合わせ」を選択すると、本アプリは現在、アプリサポート用の共通Googleフォームを開きます。アプリ名、OS、OSバージョン、アプリバージョン、ビルド番号、ストア、端末名が、ユーザーに見える編集可能な項目として事前入力されることがあります。ユーザーは問い合わせの種類、詳細、メールアドレスその他の情報を任意に入力でき、送信するかどうかを自ら決めます。</p>
             <p>本アプリは、練習記録、ゲーム記録、着弾座標、得点、メモ、狙い、パスワード、決済情報、隠れた識別子を問い合わせフォームに添付しません。送信した情報は、現在のフォーム運営者であるGoogleへ送信され、Googleの規約およびプライバシーポリシーに従って取り扱われます。</p>
 
             <h2>5. 保存期間と削除方法</h2>
-            <p>端末内の記録および設定は、ユーザーが本アプリのデータを削除するか、本アプリをアンインストールするまで端末内に保存されます。現行版には、開発者側のアカウントや削除対象となるサーバー上の記録はありません。OSのバックアップに含まれるデータは、OS側の設定および保存期間に従います。</p>
-            <p>Apple、GoogleおよびRevenueCatが取り扱う購入・サブスクリプション情報は、各社のポリシーおよび取引、権限管理、安全管理、不正利用防止、法令遵守に必要な期間保存されます。Firebase AnalyticsおよびFirebase Crashlyticsが取り扱う利用状況・クラッシュ診断情報は、各社のポリシーおよびサービスの提供、安全管理、改善に必要な期間保存されることがあります。問い合わせフォームの回答は、フォーム運営者が保存します。当方が受領した回答は、問い合わせ対応、サポート記録、関連する品質確認・法務対応に合理的に必要な期間だけ保存し、不要になった情報は合理的な範囲で削除または匿名化します。</p>
-            <p>問い合わせ回答や法令上の取り扱いについて確認・請求を行う場合は、下記フォームからご連絡ください。端末内の記録は、ユーザー自身が端末またはOSのストレージ設定から削除してください。</p>
+            <p>端末内の記録および設定は、ユーザーが削除するまで端末内に保存されます。記録は本アプリの履歴から1件ずつ削除でき、長期目標は目標の画面から削除できます。すべての記録と設定をまとめて削除する場合は、本アプリをアンインストールするか、OSの設定から本アプリのデータを削除してください。現行版には、開発者側のアカウントや削除対象となるサーバー上の記録はありません。OSのバックアップに含まれるデータは、OS側の設定および保存期間に従います。</p>
+            <p>Apple、GoogleおよびRevenueCatが取り扱う購入・サブスクリプション情報は、各社のポリシーおよび取引、権限管理、安全管理、不正利用防止、法令遵守に必要な期間保存されます。Firebase Analyticsのイベントデータは、当方のGoogle Analyticsの設定に従い最長14か月、Crashlyticsのクラッシュデータは最長90日保存されます。問い合わせフォームの回答は、フォーム運営者が保存します。当方が受領した回答は、問い合わせ対応、サポート記録、関連する品質確認・法務対応に合理的に必要な期間だけ保存し、不要になった情報は合理的な範囲で削除または匿名化します。</p>
+            <p>問い合わせ回答や法令上の取り扱いについて確認・請求を行う場合は、下記フォームからご連絡ください。当方は端末内の記録を受け取っていないため、ご依頼により端末内の記録を削除することはできません。上記のとおり、本アプリまたはOSの設定から削除してください。</p>
 
             <h2>6. 第三者提供と国外での処理</h2>
-            <p>当方は本アプリの記録を販売せず、第三者の広告目的で提供しません。第三者提供は、ユーザーが外部サービスへ送信した場合、ストア経由のサブスクリプション提供に必要な場合、または法令上必要な場合、権利・安全の保護や不正利用防止に必要な場合に限ります。Apple、Google、RevenueCat、Google Forms、Firebase AnalyticsおよびFirebase Crashlyticsは、それぞれの運用およびポリシーに従い、日本国外で情報を処理することがあります。現行版では、DartLogの記録のための独自サーバーを運営していません。</p>
+            <p>当方は本アプリの記録を販売せず、第三者の広告目的で提供しません。第三者提供は、ユーザーが外部サービスへ送信した場合、ストア経由のサブスクリプション提供に必要な場合、または法令上必要な場合、権利・安全の保護や不正利用防止に必要な場合に限ります。Apple、Google、RevenueCat、Google Forms、Firebase AnalyticsおよびFirebase Crashlyticsは、それぞれの運用およびポリシーに従い、米国を含む日本国外で情報を処理することがあります。現行版では、DartLogの記録のための独自サーバーを運営していません。</p>
             <p>各サービスの取り扱いは、以下もご確認ください。<br><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleプライバシーポリシー</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCatプライバシーポリシー</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseプライバシーポリシー</a></p>
 
-            <h2>7. 安全管理</h2>
+            <h2>7. 欧州経済領域（EEA）および英国のユーザーの方へ</h2>
+            <p>EEAおよび英国のユーザーについて、本ポリシーに定める処理の管理者はSO-KUMA Labsであり、下記フォームから連絡できます。当方は、GDPRおよび英国GDPRに基づき、Premiumの購入の提供・確認・復元については契約の履行、クラッシュ診断については本アプリを安定して提供する正当な利益、利用統計については本アプリを改善する正当な利益（設定の「利用状況データを送信」をオフにすることでいつでも異議を述べられます）、問い合わせについてはユーザーからの依頼への対応を、それぞれ法的根拠とします。</p>
+            <p>GoogleおよびRevenueCatは、米国その他の国へ情報を移転することがあります。これらの移転は、各社のポリシーに定めるEU-米国データプライバシーフレームワークまたは標準契約条項等の保護措置に基づきます。</p>
+            <p>ユーザーは、個人データへのアクセス、訂正、消去、処理の制限、処理への異議、データポータビリティを求める権利、および居住国のデータ保護監督機関に苦情を申し立てる権利を有します。端末内の記録はユーザー自身が管理しており、本アプリ内で削除できます。利用統計およびクラッシュ情報は仮名化されたデータであり、当方がユーザーを特定できない場合がありますが、合理的に可能な範囲で対応します。</p>
+
+            <h2>8. お子さまの利用</h2>
+            <p>本アプリは、13歳未満（EEAおよび英国では、居住国の法令が定める年齢未満）のお子さまを対象としていません。</p>
+
+            <h2>9. 安全管理</h2>
             <p>現在の設計に応じ、記録を端末内に限定すること、決済を各ストアで処理することなど、合理的な安全管理措置を講じます。ただし、保存・送信の方法について完全な安全性を保証するものではありません。第三者サービスの安全管理および保存については各社のポリシーが適用されます。</p>
 
-            <h2>8. ポリシーの改定</h2>
+            <h2>10. ポリシーの改定</h2>
             <p>本アプリ、外部サービス、法令またはデータの取り扱いに変更がある場合、本ポリシーを改定することがあります。最新版と更新日は本ページに掲載し、法令上必要な場合は重要な変更を本アプリその他適切な方法でお知らせします。</p>
 
-            <h2>9. お問い合わせ</h2>
+            <h2>11. お問い合わせ</h2>
             <p>本ポリシーまたは情報の取り扱いに関するご質問は、以下のフォームよりご連絡ください。</p>
             <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header" target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a></p>
         </section>

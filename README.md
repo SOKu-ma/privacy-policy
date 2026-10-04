@@ -19,11 +19,13 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `comic-merge.html`
 - `dartlog/privacy.html`
 - `dartlog/terms.html`
+- `dartlog/support.html`
 
 ## DartLog URLs
 
 - Privacy Policy: https://www.so-kuma.com/privacy-policy/dartlog/privacy.html
 - Terms of Use: https://www.so-kuma.com/privacy-policy/dartlog/terms.html
+- Support (App Store support URL): https://www.so-kuma.com/privacy-policy/dartlog/support.html
 
 Configure these values in DartLog's release settings:
 
