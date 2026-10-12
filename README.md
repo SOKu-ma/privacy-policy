@@ -20,6 +20,15 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `dartlog/privacy.html`
 - `dartlog/terms.html`
 - `dartlog/support.html`
+- `kansen-album/privacy.html`
+- `kansen-album/terms.html`
+- `kansen-album/support.html`
+
+## Ticket Stub Diary (観戦アルバム) URLs
+
+- Privacy Policy: https://www.so-kuma.com/privacy-policy/kansen-album/privacy.html
+- Terms of Use: https://www.so-kuma.com/privacy-policy/kansen-album/terms.html
+- Support (App Store support URL): https://www.so-kuma.com/privacy-policy/kansen-album/support.html
 
 ## DartLog URLs
 
