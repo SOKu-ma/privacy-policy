@@ -113,14 +113,14 @@
                 This Privacy Policy describes how SO-KUMA Labs ("we", "us", or "the developer") handles information
                 in Ticket Stub Diary (Japanese name: 観戦アルバム, "the App").
             </p>
-            <p>Last updated: October 12, 2026</p>
+            <p>Last updated: October 18, 2026</p>
 
             <h2>1. Information Handled by the App</h2>
             <p>The App may handle the following information:</p>
             <ul>
                 <li>Photo and video metadata read from the device photo library: the identifier, the date and time taken, and the location where it was taken (when the photo has one). The App uses them only to find the venues you visited.</li>
                 <li>Visit records: dates, venues, matchups, scores, results, seats, companions, notes, expenses, favorites, badges, and statistics calculated from them.</li>
-                <li>Photos you add to a visit or choose for a share image, and images you choose for ticket screenshot reading.</li>
+                <li>Photos you add to a visit or choose for a share image, and images the App reads text from when you ask it to find a seat or a setlist (an image you choose, or screenshots taken around the date of that visit).</li>
                 <li>Calendar events, only when you allow calendar access, to import your planned games or add a plan to your calendar.</li>
                 <li>Your current location, only when you choose to check in at a venue, and only while the App is in use.</li>
                 <li>App settings such as the theme, the types of records you want to keep, and notification choices.</li>
@@ -130,8 +130,8 @@
             <p>The App does not require an account and does not collect your name, email address, or contacts.</p>
 
             <h2>2. Processing on the Device and the Developer's Server</h2>
-            <p>Ticket Stub Diary is designed as a local-first app. Reading photo metadata, matching it to venues, reading text in images (such as ticket screenshots), and calculating statistics are all done on your device. Your photos, their locations, and your visit records are not sent to a server operated by the developer, and the developer does not receive them through the App. The current version has no developer-operated account system, cloud sync, or upload feature.</p>
-            <p>Records are stored in the App's storage on the device. The operating system may include App data in a device backup or migration started by the user. You can also export your records to a file and decide where to save it.</p>
+            <p>Ticket Stub Diary is designed as a local-first app. Reading photo metadata, matching it to venues, reading text in images (such as a ticket screenshot or a setlist), and calculating statistics are all done on your device. Your photos, their locations, and your visit records are not sent to a server operated by the developer, and the developer does not receive them through the App. The current version has no developer-operated account system, cloud sync, or upload feature.</p>
+            <p>Records are stored in the App's storage on the device. The operating system may include App data in a device backup or migration started by the user.</p>
             <p>The Android version reads text in images with Google ML Kit on the device. Google Play services may download the recognition model to the device when it is first needed.</p>
             <p>The App asks for the following permissions, only for the purposes below. You can change them in the device settings, and the App keeps working with limited features if you decline.</p>
             <ul>
@@ -145,7 +145,7 @@
             <h2>3. Third-Party Services</h2>
             <p><strong>Apple App Store and Google Play:</strong> These stores process payments and purchase restoration. Store account, order, and receipt information is handled by Apple or Google under their terms and privacy policies. The App and the developer do not receive or store your card number or other payment credentials.</p>
             <p><strong>RevenueCat:</strong> The App uses RevenueCat to manage the Premium entitlement and restore purchases. RevenueCat may handle an SDK-generated app-specific identifier and information such as the store, product, purchase, and entitlement status. It is not used to receive your visit records or photos.</p>
-            <p><strong>Firebase Analytics and Firebase Crashlytics:</strong> The App uses these services in release builds for aggregated usage measurement and crash diagnosis. They may receive technical information such as app, OS, and device information and crash diagnostics (for example, stack traces). The App does not send your photos, locations, visit records, notes, or inquiry text to these services.</p>
+            <p><strong>Firebase Analytics and Firebase Crashlytics:</strong> The App uses these services in release builds for aggregated usage measurement and crash diagnosis. They may receive an app-instance identifier and a Firebase installation identifier generated for the App, app, OS, and device information, screens viewed and features used (as counts and categories, not their content), in-app purchase events, an approximate region that Google derives from the IP address, and crash diagnostics (for example, stack traces). The App does not collect the advertising identifier (IDFA or the Android advertising ID) or the iOS identifier for vendors (IDFV), and does not use this data for advertising. The App does not send your photos, locations, visit records, notes, or inquiry text to these services.</p>
             <p><strong>Maps:</strong> The iOS version shows maps with Apple Maps. The Android version uses Google Maps. To draw the map, the map provider receives requests for the map area shown, together with technical information such as the IP address and device information, under its own policy. The App does not send your visit records to the map provider.</p>
 
             <h2>4. Inquiry Form and Device or App Information</h2>
@@ -163,8 +163,9 @@
 
             <h2>5. Retention and Deletion</h2>
             <p>
-                Local records and local settings are retained on the device until the user deletes them. Records can
-                be deleted one by one from History in the App, and goals can be deleted from the goal screen. To delete
+                Local records and local settings are retained on the device until the user deletes them. Records found from photos
+                can be hidden with "Not a game or show (hide)" in the record's menu (this can be undone), and records
+                you added yourself can be deleted with "Delete this record". To delete
                 all records and settings at once, uninstall the App or clear its data in the operating system settings.
                 The current version does not provide a developer-side account or server copy to delete. Data included
                 in an operating-system backup is subject to that backup's settings and lifecycle.
@@ -210,7 +211,7 @@
                 following legal bases under the GDPR and the UK GDPR: performance of a contract for providing,
                 verifying, and restoring Premium purchases; our legitimate interest in keeping the App stable for crash
                 diagnostics; our legitimate interest in improving the App for usage statistics, which you can object to
-                at any time by turning off Settings &gt; Share usage data; and responding to your request for inquiries.
+                at any time through the Contact Form below; and responding to your request for inquiries.
             </p>
             <p>
                 Google and RevenueCat may transfer information to the United States and other countries. Such
@@ -261,14 +262,14 @@
             <p>
                 SO-KUMA Labs（以下「当方」または「開発者」）は、Ticket Stub Diary（日本語名「観戦アルバム」、以下「本アプリ」）における情報の取り扱いについて、以下のとおり定めます。
             </p>
-            <p>最終更新日：2026年10月12日</p>
+            <p>最終更新日：2026年10月18日</p>
 
             <h2>1. 本アプリが取り扱う情報</h2>
             <p>本アプリでは、以下の情報を取り扱うことがあります。</p>
             <ul>
                 <li>端末の写真ライブラリから読み取る、写真・動画の識別子、撮影日時、撮影場所（位置情報がある場合）。行った会場を見つけるためだけに使います。</li>
                 <li>観戦の記録（日付、会場、対戦カード、得点・結果、座席、一緒に行った人、メモ、費用、推し、バッジ、およびそれらから端末内で算出する統計）</li>
-                <li>観戦に追加した写真、シェア画像に使う写真、チケットのスクリーンショットの読み取りに選んだ画像</li>
+                <li>観戦に追加した写真、シェア画像に使う写真、座席やセトリを読み取るときに文字を読む画像（ユーザーが選んだ画像、またはその観戦の日の前後に撮ったスクリーンショット）</li>
                 <li>カレンダーへのアクセスを許可した場合のみ、観戦予定の取り込みや予定の追加のために扱うカレンダーの予定</li>
                 <li>会場でチェックインを選んだときのみ、アプリを使っているあいだに扱う現在地</li>
                 <li>テーマ、記録したい種類、通知の選択などのアプリ設定</li>
@@ -278,8 +279,8 @@
             <p>本アプリはアカウント登録を必要とせず、氏名、メールアドレス、連絡先を収集しません。</p>
 
             <h2>2. 端末内での処理と開発者のサーバー</h2>
-            <p>観戦アルバムは端末内での処理を基本とするアプリです。写真のメタデータの読み取り、会場との照合、画像内の文字の読み取り（チケットのスクリーンショットなど）、統計の算出は、すべて端末の中で行います。写真、その撮影場所、観戦の記録は、開発者が運営するサーバーへ送信されず、開発者は本アプリを通じてこれらを受け取りません。現在のバージョンには、開発者が運営するアカウント、クラウド同期、アップロードの機能はありません。</p>
-            <p>記録は端末内のアプリ領域に保存されます。ユーザーが開始した端末のバックアップや機種変更で、アプリのデータが各OSの仕組みに含まれることがあります。また、記録をファイルに書き出して、保存先を自分で選ぶこともできます。</p>
+            <p>観戦アルバムは端末内での処理を基本とするアプリです。写真のメタデータの読み取り、会場との照合、画像内の文字の読み取り（チケットのスクリーンショットやセトリなど）、統計の算出は、すべて端末の中で行います。写真、その撮影場所、観戦の記録は、開発者が運営するサーバーへ送信されず、開発者は本アプリを通じてこれらを受け取りません。現在のバージョンには、開発者が運営するアカウント、クラウド同期、アップロードの機能はありません。</p>
+            <p>記録は端末内のアプリ領域に保存されます。ユーザーが開始した端末のバックアップや機種変更で、アプリのデータが各OSの仕組みに含まれることがあります。</p>
             <p>Android版では、画像内の文字をGoogle ML Kitを使って端末内で読み取ります。初めて使うとき、Google Play開発者サービスが認識用のモデルを端末にダウンロードすることがあります。</p>
             <p>本アプリは、次の目的のためにだけ、次の権限を求めます。端末の設定でいつでも変更でき、許可しなくても、使える機能を絞って動きます。</p>
             <ul>
@@ -293,7 +294,7 @@
             <h2>3. 外部サービス</h2>
             <p><strong>Apple App StoreおよびGoogle Play：</strong>購入の決済と復元を処理します。ストアのアカウント、注文、レシートの情報は、AppleまたはGoogleが各社の規約とプライバシーポリシーに基づいて取り扱います。本アプリと開発者は、カード番号などの決済情報を受け取らず、保存しません。</p>
             <p><strong>RevenueCat：</strong>Premiumの権利の管理と購入の復元に使います。RevenueCatは、SDKが生成するアプリ固有の識別子や、ストア、商品、購入、権利の状態などの情報を取り扱うことがあります。観戦の記録や写真を受け取るためには使いません。</p>
-            <p><strong>Firebase AnalyticsおよびFirebase Crashlytics：</strong>リリース版で、利用状況の集計とクラッシュの診断のために使います。アプリ、OS、端末の情報などの技術情報と、クラッシュの診断情報（スタックトレースなど）を受け取ることがあります。写真、位置情報、観戦の記録、メモ、問い合わせの内容はこれらのサービスに送信しません。</p>
+            <p><strong>Firebase AnalyticsおよびFirebase Crashlytics：</strong>リリース版で、利用状況の集計とクラッシュの診断のために使います。本アプリ用に生成されるアプリインスタンスIDとFirebaseのインストールID、アプリ・OS・端末の情報、表示した画面や使った機能（件数や種類のみで、内容は含みません）、アプリ内購入のイベント、GoogleがIPアドレスから推定するおおよその地域、クラッシュの診断情報（スタックトレースなど）を受け取ることがあります。本アプリは、広告ID（IDFAおよびAndroidの広告ID）とiOSのベンダーID（IDFV）を収集せず、これらの情報を広告に使いません。写真、位置情報、観戦の記録、メモ、問い合わせの内容はこれらのサービスに送信しません。</p>
             <p><strong>地図：</strong>iOS版はApple Mapsで、Android版はGoogle Mapsで地図を表示します。地図を描くために、地図の提供元は、表示している範囲の地図のリクエストを、IPアドレスや端末の情報などの技術情報とともに、各社のポリシーに基づいて受け取ります。観戦の記録は地図の提供元へ送信しません。</p>
 
             <h2>4. 問い合わせフォームと端末・アプリ情報</h2>
@@ -301,7 +302,7 @@
             <p>本アプリは、写真、位置情報、観戦の記録、メモ、パスワード、決済情報、隠れた識別子を問い合わせフォームに添付しません。送信した情報は、現在のフォーム運営者であるGoogleへ送信され、Googleの規約およびプライバシーポリシーに従って取り扱われます。</p>
 
             <h2>5. 保存期間と削除方法</h2>
-            <p>端末内の記録および設定は、ユーザーが削除するまで端末内に保存されます。記録は本アプリの履歴から1件ずつ削除でき、長期目標は目標の画面から削除できます。すべての記録と設定をまとめて削除する場合は、本アプリをアンインストールするか、OSの設定から本アプリのデータを削除してください。現行版には、開発者側のアカウントや削除対象となるサーバー上の記録はありません。OSのバックアップに含まれるデータは、OS側の設定および保存期間に従います。</p>
+            <p>端末内の記録および設定は、ユーザーが削除するまで端末内に保存されます。写真から見つけた記録は、記録のメニューの「観戦・ライブではなかった（外す）」で外せ（元に戻せます）、手で追加した記録は「この記録を削除」で消せます。すべての記録と設定をまとめて削除する場合は、本アプリをアンインストールするか、OSの設定から本アプリのデータを削除してください。現行版には、開発者側のアカウントや削除対象となるサーバー上の記録はありません。OSのバックアップに含まれるデータは、OS側の設定および保存期間に従います。</p>
             <p>Apple、GoogleおよびRevenueCatが取り扱う購入情報は、各社のポリシーおよび取引、権限管理、安全管理、不正利用防止、法令遵守に必要な期間保存されます。Firebase Analyticsのイベントデータは、当方のGoogle Analyticsの設定に従い最長14か月、Crashlyticsのクラッシュデータは最長90日保存されます。問い合わせフォームの回答は、フォーム運営者が保存します。当方が受領した回答は、問い合わせ対応、サポート記録、関連する品質確認・法務対応に合理的に必要な期間だけ保存し、不要になった情報は合理的な範囲で削除または匿名化します。</p>
             <p>問い合わせ回答や法令上の取り扱いについて確認・請求を行う場合は、下記フォームからご連絡ください。当方は端末内の記録を受け取っていないため、ご依頼により端末内の記録を削除することはできません。上記のとおり、本アプリまたはOSの設定から削除してください。</p>
 
@@ -310,7 +311,7 @@
             <p>各サービスの取り扱いは、以下もご確認ください。<br><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Appleプライバシーポリシー</a><br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a><br><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCatプライバシーポリシー</a><br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebaseプライバシーポリシー</a></p>
 
             <h2>7. 欧州経済領域（EEA）および英国のユーザーの方へ</h2>
-            <p>EEAおよび英国のユーザーについて、本ポリシーに定める処理の管理者はSO-KUMA Labsであり、下記フォームから連絡できます。当方は、GDPRおよび英国GDPRに基づき、Premiumの購入の提供・確認・復元については契約の履行、クラッシュ診断については本アプリを安定して提供する正当な利益、利用統計については本アプリを改善する正当な利益（設定の「利用状況データを送信」をオフにすることでいつでも異議を述べられます）、問い合わせについてはユーザーからの依頼への対応を、それぞれ法的根拠とします。</p>
+            <p>EEAおよび英国のユーザーについて、本ポリシーに定める処理の管理者はSO-KUMA Labsであり、下記フォームから連絡できます。当方は、GDPRおよび英国GDPRに基づき、Premiumの購入の提供・確認・復元については契約の履行、クラッシュ診断については本アプリを安定して提供する正当な利益、利用統計については本アプリを改善する正当な利益（下記フォームからいつでも異議を述べられます）、問い合わせについてはユーザーからの依頼への対応を、それぞれ法的根拠とします。</p>
             <p>GoogleおよびRevenueCatは、米国その他の国へ情報を移転することがあります。これらの移転は、各社のポリシーに定めるEU-米国データプライバシーフレームワークまたは標準契約条項等の保護措置に基づきます。</p>
             <p>ユーザーは、個人データへのアクセス、訂正、消去、処理の制限、処理への異議、データポータビリティを求める権利、および居住国のデータ保護監督機関に苦情を申し立てる権利を有します。端末内の記録はユーザー自身が管理しており、本アプリ内で削除できます。利用統計およびクラッシュ情報は仮名化されたデータであり、当方がユーザーを特定できない場合がありますが、合理的に可能な範囲で対応します。</p>
 
