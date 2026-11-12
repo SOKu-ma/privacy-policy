@@ -47,6 +47,10 @@
             padding-left: 20px;
         }
 
+        code {
+            overflow-wrap: anywhere;
+        }
+
         a {
             color: #007bff;
             text-decoration: none;
@@ -89,6 +93,7 @@
                 This Privacy Policy describes how Soccer Lineup Board (hereinafter referred to as "the App")
                 handles user information to ensure safe and secure usage.
             </p>
+            <p>Last updated: November 12, 2026</p>
 
             <h2>1. Information We Collect</h2>
             <p>The App may collect the following information:</p>
@@ -103,11 +108,87 @@
                 are not intentionally collected for Firebase Analytics or Firebase Crashlytics.
             </p>
             <p>
-                Data entered in the App is generally stored on the user's device. However, this may not apply when users
-                choose to use operating system sharing features, device backups, or similar functions.
+                Data entered in the App is generally stored on the user's device. If you turn on Sync Across Devices or
+                use Switch Devices, your data is saved to your own iCloud or Google Drive account as described in
+                Section 2. The developer does not receive this data. Data may also leave your device when you choose to
+                use operating system sharing features, device backups, or similar functions.
             </p>
 
-            <h2>2. Use of Third-Party Services</h2>
+            <h2>2. Sync Across Devices and Switch Devices</h2>
+            <p>
+                The App offers features that save your data to your own cloud storage (iCloud or Google Drive) so that
+                you can back it up and use it on your other devices.
+            </p>
+            <ul>
+                <li><strong>What is saved:</strong> A snapshot of all data you created in the App, including lineups,
+                    tactics boards, match records, and player rosters (including player names). The snapshot also
+                    includes a random device ID, the device model name (for example, "iPad Air"), the date and time it
+                    was saved, and a summary of the number of items. Some of your display and input settings in the App
+                    are also saved, such as how players are shown (circles or uniforms), the pitch design and
+                    orientation, the default match length, and the last team format you used. When you use Switch
+                    Devices, a few more settings are included, such as the theme, the selected team, and which one-time
+                    guides you have already seen. These settings are only choices within the App and do not include
+                    information that identifies you. The snapshot does not include the settings of the sync feature
+                    itself (such as whether sync is on and where data is saved), your purchase status, the name you gave
+                    your device, or your email address.</li>
+                <li><strong>Where it is saved:</strong> For iCloud, in the private area of your iCloud account (the
+                    CloudKit private database). For Google Drive, in a hidden folder in your Google Drive that only the
+                    App can use (appDataFolder). The data uses the storage of your iCloud or Google account.</li>
+                <li><strong>The developer cannot access your data:</strong> Data is sent only between your device and
+                    Apple or Google over encrypted connections (HTTPS), and is not sent to any server operated by the
+                    developer. The developer does not receive, view, or store your saved data. Apple and Google store
+                    the data in accordance with their own terms and privacy policies.</li>
+                <li><strong>Only when you choose:</strong> These features work only after you turn them on in the App
+                    and, for Google Drive, after you grant permission on Google's screen.</li>
+                <li><strong>Features:</strong> Moving your data to a new device (Switch Devices) is available for free.
+                    Automatic sync across multiple devices and restoring from history are Premium features.</li>
+                <li><strong>How long data is kept:</strong> The latest snapshot is kept until you delete it. History is
+                    limited to the most recent 10 versions or 30 days, whichever comes first, and older versions are
+                    deleted automatically. A copy of the data replaced by an import, or the data you chose not to keep
+                    in a conflict, is kept only on your device for 7 days.</li>
+                <li><strong>How to turn it off:</strong> Settings → Sync across devices → "Turn off sync on this
+                    device". Your data remains on the device and in the cloud.</li>
+                <li><strong>How to delete it:</strong> Settings → Sync across devices → "Delete data in the cloud"
+                    deletes the sync data, including history, from your iCloud or Google Drive. Data on your devices is
+                    not deleted. You can also manage iCloud data from your device's iCloud storage settings.</li>
+                <li><strong>How to disconnect Google:</strong> When you delete the cloud data for Google Drive, the App
+                    also revokes its access to your Google account. You can also remove the App's access at any time
+                    from "Third-party apps &amp; services" in your Google Account settings
+                    (<a href="https://myaccount.google.com/connections" target="_blank"
+                        rel="noopener noreferrer">myaccount.google.com/connections</a>). When access is removed, Google
+                    may delete the App's hidden folder.</li>
+                <li><strong>Analytics:</strong> For these features, only technical information such as success or
+                    failure, the type of error, and a rough size category is sent to Firebase Analytics and Firebase
+                    Crashlytics. Player names, other content you entered, and access tokens are not sent.</li>
+            </ul>
+            <p>
+                Sharing data with other people (such as team members) is not included at this time. If we add such
+                features in the future, we will update this Privacy Policy before they become available.
+            </p>
+
+            <h2>3. Google User Data</h2>
+            <p>
+                When you choose Google Drive, the App requests only the following permission:
+                <code>https://www.googleapis.com/auth/drive.appdata</code> (see, create, and delete its own
+                configuration data in your Google Drive). The App cannot see your other files in Google Drive.
+            </p>
+            <ul>
+                <li>The App uses this permission only to back up your App data to the hidden folder and to sync it
+                    across your own devices.</li>
+                <li>Data obtained through Google APIs is processed only on your device. It is not sent to the developer
+                    or to any third party other than Google.</li>
+                <li>Data obtained through Google APIs is not used for advertising, is not sold, and is not used to
+                    develop, improve, or train generalized artificial intelligence or machine learning models. The
+                    developer does not read this data.</li>
+            </ul>
+            <p>
+                Soccer Lineup Board's use and transfer to any other app of information received from Google APIs will
+                adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank"
+                    rel="noopener noreferrer">Google API Services User Data Policy</a>, including the Limited Use
+                requirements.
+            </p>
+
+            <h2>4. Use of Third-Party Services</h2>
             <p>
                 <strong>Apple App Store and Google Play:</strong> In-app purchase and subscription payment processing
                 is handled by Apple or Google. Credit card information and other billing information are processed by
@@ -119,19 +200,36 @@
                 data in order to analyze how the App is used and improve features and usability.<br>
                 <strong>Firebase Crashlytics (Google):</strong> The App uses Firebase Crashlytics to collect crash
                 reports and technical diagnostic information for bug fixing and stability improvements. This information
-                is not used to personally identify users.
+                is not used to personally identify users.<br>
+                <strong>iCloud (Apple):</strong> When you choose iCloud for Sync Across Devices or Switch Devices, your
+                data is saved to your own iCloud account.<br>
+                <strong>Google Drive and Google Sign-In (Google):</strong> When you choose Google Drive, the App uses
+                Google Sign-In to obtain your permission and saves your data to the hidden folder in your own Google
+                Drive.
             </p>
 
-            <h2>3. Purpose of Use</h2>
+            <h2>5. Purpose of Use</h2>
             <p>The collected information is used solely for the following purposes:</p>
             <ul>
                 <li>Providing and maintaining the App and premium features</li>
+                <li>Providing Sync Across Devices and Switch Devices at your request</li>
                 <li>Verifying purchase status and restoring purchases</li>
                 <li>Analyzing usage trends and improving functionality</li>
                 <li>Investigating crashes, defects, and abuse</li>
             </ul>
 
-            <h2>4. External Links</h2>
+            <h2>6. Children's Information</h2>
+            <p>
+                The App is intended for coaches, staff, and other people who manage teams. Player names you enter may
+                include the names of children. The developer does not collect player names or other content you enter.
+                Data saved with Sync Across Devices or Switch Devices is stored only on your devices and in your own
+                iCloud or Google account. When you enter information about children, please obtain consent from their
+                parents or guardians where necessary, and enter only the minimum information needed for team
+                management. If you have questions about children's information, please contact us using the form in
+                Section 8.
+            </p>
+
+            <h2>7. External Links</h2>
             <p>
                 For more information on how each provider handles data, please refer to their respective privacy
                 policies.<br>
@@ -139,18 +237,20 @@
                     rel="noopener noreferrer">Apple Privacy Policy</a><br>
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy
                     Policy</a><br>
+                <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank"
+                    rel="noopener noreferrer">Google API Services User Data Policy</a><br>
                 <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat
                     Privacy Policy</a>
             </p>
 
-            <h2>5. Contact Us</h2>
+            <h2>8. Contact Us</h2>
             <p>If you have any questions regarding this Privacy Policy, please contact us via the form below.</p>
             <p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header"
                     target="_blank" rel="noopener noreferrer">Contact Form</a>
             </p>
 
-            <h2>6. Changes to This Policy</h2>
+            <h2>9. Changes to This Policy</h2>
             <p>This policy may be updated without notice in response to changes in laws or service content. If
                 significant changes are made, we will notify users within the App or on this page.</p>
         </section>
@@ -162,6 +262,7 @@
             <p>
                 サッカーフォーメーションボード（以下、「本アプリ」）では、ユーザーの皆様に安心してご利用いただくために、以下の通り個人情報の取り扱いについて定めます。
             </p>
+            <p>最終改定日：2026年11月12日</p>
 
             <h2>1. 収集する情報</h2>
             <p>本アプリでは以下の情報を収集することがあります：</p>
@@ -175,45 +276,88 @@
                 のために意図的に収集しません。
             </p>
             <p>
-                本アプリ内で入力されたデータは、基本的にユーザーの端末内に保存されます。ただし、OS の共有機能、端末のバックアップ機能等をユーザーが利用した場合はこの限りではありません。
+                本アプリ内で入力されたデータは、基本的にユーザーの端末内に保存されます。「端末間の同期」または「機種変更・引き継ぎ」を使う場合は、第2項のとおり、ユーザーご自身の iCloud または Google ドライブに保存されます。開発者はこのデータを受け取りません。また、OS の共有機能、端末のバックアップ機能等をユーザーが利用した場合も、データが端末の外に送られることがあります。
             </p>
 
-            <h2>2. 第三者サービスの利用について</h2>
+            <h2>2. 端末間の同期と機種変更・引き継ぎ</h2>
+            <p>
+                本アプリには、ユーザーご自身のクラウド（iCloud または Google ドライブ）にデータを保存し、バックアップや、ご自身の別の端末での利用に使う機能があります。
+            </p>
+            <ul>
+                <li><strong>保存されるもの：</strong>本アプリで作成したすべてのデータ（ラインナップ、戦術ボード、試合記録、選手名簿（選手名を含みます））をまとめたもの（スナップショット）です。あわせて、ランダムな端末 ID、機種名（「iPad Air」など）、保存した日時、件数の要約を保存します。本アプリの表示や入力の設定の一部（選手の表示（丸／ユニフォーム）、ピッチのデザインと向き、試合時間の既定、前回の人数形式など）も保存します。「機種変更・引き継ぎ」のときは、テーマ、選択中のチーム、一度だけの案内を見たかどうかなど、もう少し多くの設定も含めます。これらの設定はアプリの中の選択肢だけで、個人を特定する情報は含みません。同期の機能そのものの設定（同期のオン・オフ、保存先など）、購入状態、ユーザーが端末に付けた名前、メールアドレスは含みません。</li>
+                <li><strong>保存先：</strong>iCloud の場合は、ユーザーの iCloud の非公開の領域（CloudKit の private データベース）です。Google ドライブの場合は、ユーザーの Google ドライブの、本アプリだけが使える非表示のフォルダ（appDataFolder）です。iCloud または Google アカウントの容量を使います。</li>
+                <li><strong>開発者はデータにアクセスしません：</strong>データは、暗号化された通信（HTTPS）で、端末と Apple または Google の間だけでやり取りされ、開発者のサーバーには送信されません。開発者は、保存されたデータを受け取らず、見ることも保管することもありません。保存先での取り扱いは、Apple または Google の規約とプライバシーポリシーに従います。</li>
+                <li><strong>ユーザーが選んだときだけ動きます：</strong>これらの機能は、ユーザーが本アプリでオンにし、Google ドライブの場合は Google の画面で許可したときだけ動きます。</li>
+                <li><strong>機能の範囲：</strong>新しい端末にデータを移す「機種変更・引き継ぎ」は無料で使えます。複数の端末での自動の同期と、履歴から戻す機能は、プレミアムの機能です。</li>
+                <li><strong>保存期間：</strong>最新のデータは、ユーザーが削除するまで保存されます。履歴は直近10件または30日分のうち少ない方までで、それより古いものは自動で削除されます。取り込みで置き換えた前のデータや、競合のときに残さなかった方のデータは、予備として端末の中だけに7日間残ります。</li>
+                <li><strong>オフにする方法：</strong>設定 → 端末間の同期 →「この端末の同期をオフにする」。データはこの端末にもクラウドにも残ります。</li>
+                <li><strong>削除する方法：</strong>設定 → 端末間の同期 →「クラウドのデータを削除」で、iCloud または Google ドライブに保存した同期用のデータ（履歴を含みます）を削除できます。端末の中のデータは消えません。iCloud のデータは、端末の iCloud ストレージの設定からも管理できます。</li>
+                <li><strong>Google との連携を解除する方法：</strong>Google ドライブのデータを「クラウドのデータを削除」で削除すると、本アプリは Google アカウントへのアクセスの許可もあわせて取り消します。また、Google アカウントの設定の「サードパーティ製のアプリとサービス」（<a href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">myaccount.google.com/connections</a>）からも、いつでも解除できます。解除すると、Google により本アプリの非表示のフォルダが削除されることがあります。</li>
+                <li><strong>計測について：</strong>これらの機能について Firebase Analytics と Firebase Crashlytics に送るのは、成功か失敗か、エラーの種類、おおよそのサイズの区分などの技術的な情報だけです。選手名などユーザーが入力した内容や、アクセストークンは送りません。</li>
+            </ul>
+            <p>
+                現時点では、ほかの人（チームのメンバーなど）とデータを共有する機能はありません。将来この機能を加える場合は、提供を始める前に本ポリシーを改訂します。
+            </p>
+
+            <h2>3. Google のユーザーデータの取り扱い</h2>
+            <p>
+                Google ドライブを選んだ場合、本アプリが求める権限は、<code>https://www.googleapis.com/auth/drive.appdata</code>（Google ドライブ内の、本アプリ専用の設定データの参照・作成・削除）だけです。Google ドライブにあるほかのファイルは見られません。
+            </p>
+            <ul>
+                <li>この権限は、本アプリのデータを非表示のフォルダにバックアップし、ご自身の端末どうしで同期するためだけに使います。</li>
+                <li>Google API を通じて得たデータは、ユーザーの端末の中だけで処理し、開発者や、Google 以外の第三者には送りません。</li>
+                <li>Google API を通じて得たデータを、広告に使うこと、販売すること、汎用の人工知能や機械学習のモデルの開発・改善・学習に使うことはありません。開発者がこのデータを読むこともありません。</li>
+            </ul>
+            <p>
+                サッカーフォーメーションボード（Soccer Lineup Board）が Google API から受け取った情報の使用と、他のアプリへの転送は、Limited Use の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a> に従います。
+            </p>
+
+            <h2>4. 第三者サービスの利用について</h2>
             <p>
                 <strong>Apple App Store および Google Play:</strong> アプリ内課金およびサブスクリプションの決済処理にはAppleまたはGoogleを利用しています。クレジットカード情報その他の決済情報は各ストアにより処理され、本アプリでは保持しません。<br>
                 <strong>RevenueCat:</strong> 購入状態を安全に管理するためにRevenueCatを利用しています。RevenueCatには匿名化されたユーザーIDと購入・サブスクリプション情報が送信・保存される場合があり、個人の特定には使用しません。<br>
                 <strong>Firebase Analytics（Google）:</strong> アプリの利用状況を分析し、機能改善や利便性向上を行うため、匿名のアクセスデータを収集します。<br>
-                <strong>Firebase Crashlytics（Google）:</strong> クラッシュレポートや技術情報を収集し、不具合の調査および安定性向上に役立てます。これらの情報は個人を特定する目的では使用しません。
+                <strong>Firebase Crashlytics（Google）:</strong> クラッシュレポートや技術情報を収集し、不具合の調査および安定性向上に役立てます。これらの情報は個人を特定する目的では使用しません。<br>
+                <strong>iCloud（Apple）:</strong> 「端末間の同期」または「機種変更・引き継ぎ」で iCloud を選んだ場合、データはユーザーご自身の iCloud に保存されます。<br>
+                <strong>Google ドライブ、Google ログイン（Google）:</strong> Google ドライブを選んだ場合、Google ログインで許可を得て、データをユーザーご自身の Google ドライブの非表示のフォルダに保存します。
             </p>
 
-            <h2>3. 利用目的</h2>
+            <h2>5. 利用目的</h2>
             <p>収集した情報は、以下の目的の範囲で利用します。</p>
             <ul>
                 <li>本アプリおよびプレミアム機能の提供、維持のため</li>
+                <li>ユーザーの求めに応じて、端末間の同期と機種変更・引き継ぎを提供するため</li>
                 <li>購入状態の確認および復元のため</li>
                 <li>利用傾向の分析および機能改善のため</li>
                 <li>クラッシュ、不具合、不正利用の調査対応のため</li>
             </ul>
 
-            <h2>4. 外部サービスのポリシー</h2>
+            <h2>6. 子どもの情報について</h2>
+            <p>
+                本アプリは、監督・コーチ・スタッフなど、チームを運営する方が使うことを想定しています。入力する選手名には、子どもの名前が含まれることがあります。開発者は、選手名などユーザーが入力した内容を収集しません。「端末間の同期」や「機種変更・引き継ぎ」で保存したデータも、ユーザーの端末と、ユーザーご自身の iCloud または Google アカウントの中にだけ保存されます。子どもの情報を入力するときは、必要に応じて保護者の同意を得たうえで、チームの運営に必要な範囲にとどめてください。子どもの情報についてのご質問は、第8項のフォームよりご連絡ください。
+            </p>
+
+            <h2>7. 外部サービスのポリシー</h2>
             <p>
                 各事業者によるデータの取り扱いについては、それぞれのプライバシーポリシーをご確認ください。<br>
                 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple
                     プライバシーポリシー</a><br>
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google
                     プライバシーポリシー</a><br>
+                <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank"
+                    rel="noopener noreferrer">Google API Services User Data Policy</a><br>
                 <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat
                     Privacy Policy</a>
             </p>
 
-            <h2>5. お問い合わせ</h2>
+            <h2>8. お問い合わせ</h2>
             <p>プライバシーポリシーに関するご質問は、以下のフォームよりご連絡ください。</p>
             <p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header"
                     target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>
             </p>
 
-            <h2>6. 改訂について</h2>
+            <h2>9. 改訂について</h2>
             <p>本ポリシーは、法令やサービス内容の変更に応じて予告なく更新される場合があります。重要な変更がある場合には、本アプリ内または本ページにて告知いたします。</p>
         </section>
 
