@@ -10,6 +10,7 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `motiontag/terms.html`
 - `batting-log/privacy.html`
 - `batting-log/terms.html`
+- `soccer-lineup-board/index.html` (app homepage / アプリ紹介)
 - `soccer-lineup-board/privacy.html`
 - `soccer-lineup-board/terms.html`
 - `futsal-lineup-board/privacy.html`
