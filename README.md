@@ -24,12 +24,21 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `kansen-album/privacy.html`
 - `kansen-album/terms.html`
 - `kansen-album/support.html`
+- `bowling-note/privacy.html`
+- `bowling-note/terms.html`
 
 ## Ticket Stub Diary (観戦アルバム) URLs
 
 - Privacy Policy: https://www.so-kuma.com/privacy-policy/kansen-album/privacy.html
 - Terms of Use: https://www.so-kuma.com/privacy-policy/kansen-album/terms.html
 - Support (App Store support URL): https://www.so-kuma.com/privacy-policy/kansen-album/support.html
+
+## Bowling Note URLs
+
+- Privacy Policy: https://www.so-kuma.com/privacy-policy/bowling-note/privacy.html
+- Terms of Use: https://www.so-kuma.com/privacy-policy/bowling-note/terms.html
+
+日本国内向けのアプリのため、日本語のみで掲載する。Firebase などの利用状況の送信を導入するときは、プライバシーポリシーの第4条を改定してから配布する。
 
 ## DartLog URLs
 
