@@ -38,7 +38,7 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - Privacy Policy: https://www.so-kuma.com/privacy-policy/bowling-note/privacy.html
 - Terms of Use: https://www.so-kuma.com/privacy-policy/bowling-note/terms.html
 
-日本国内向けのアプリのため、日本語のみで掲載する。Firebase などの利用状況の送信を導入するときは、プライバシーポリシーの第4条を改定してから配布する。
+日本国内向けのアプリのため、日本語のみで掲載する。利用状況は Firebase Analytics で集計する（Crashlytics は未導入）。送る情報を増やすときは、プライバシーポリシーの第4条を改定してから配布する。
 
 ## DartLog URLs
 
