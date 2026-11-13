@@ -26,6 +26,7 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `kansen-album/support.html`
 - `bowling-note/privacy.html`
 - `bowling-note/terms.html`
+- `bowling-note/support.html`
 
 ## Ticket Stub Diary (観戦アルバム) URLs
 
@@ -37,6 +38,7 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 
 - Privacy Policy: https://www.so-kuma.com/privacy-policy/bowling-note/privacy.html
 - Terms of Use: https://www.so-kuma.com/privacy-policy/bowling-note/terms.html
+- Support (App Store support URL): https://www.so-kuma.com/privacy-policy/bowling-note/support.html
 
 日本国内向けのアプリのため、日本語のみで掲載する。利用状況は Firebase Analytics で集計する（Crashlytics は未導入）。送る情報を増やすときは、プライバシーポリシーの第4条を改定してから配布する。
 
