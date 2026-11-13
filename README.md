@@ -33,7 +33,7 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - Terms of Use: https://www.so-kuma.com/privacy-policy/kansen-album/terms.html
 - Support (App Store support URL): https://www.so-kuma.com/privacy-policy/kansen-album/support.html
 
-## Bowling Note URLs
+## ボウリングノート（Bowling Note）URLs
 
 - Privacy Policy: https://www.so-kuma.com/privacy-policy/bowling-note/privacy.html
 - Terms of Use: https://www.so-kuma.com/privacy-policy/bowling-note/terms.html
