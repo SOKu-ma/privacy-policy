@@ -181,9 +181,11 @@
                     such as a random device ID, the device model name, and the date and time it was saved. Your other
                     teams are not shared. When you start sharing, the team moves from your own data to the shared
                     file. When you stop sharing, it moves back to your own data.</li>
-                <li><strong>Where it is saved:</strong> As a regular file in the Owner's own Google Drive, created by
-                    the App. It uses the Owner's Google Drive storage. The Owner can also see this file in Google
-                    Drive.</li>
+                <li><strong>Where it is saved:</strong> As a regular file in a folder the App creates in the Owner's own Google
+                    Drive. The file name includes the team name. Besides the team's data, the App saves only the
+                    technical information described above (in the file's description) and a few internal labels that
+                    the App uses to find the file and to tell whether sharing is paused. It uses the Owner's Google
+                    Drive storage. The Owner can also see this file in Google Drive.</li>
                 <li><strong>Only files the App created or you chose:</strong> For team sharing, the App requests the
                     Google Drive permission <code>https://www.googleapis.com/auth/drive.file</code>. With this
                     permission, the App can access only the files it created and the files you chose to open with the
@@ -198,27 +200,27 @@
                     directly in Google Drive (for example, to "Anyone with the link"), those settings apply.</li>
                 <li><strong>Joining and approval:</strong> A person who wants to join opens the invitation link and
                     uses Google Drive's "Request access". To show the request for approval, the Owner's App reads the
-                    requester's email address and Google Drive display name from Google Drive. Likewise, to show who
-                    has access, the Owner's App reads the email addresses and display names of the Members, and each
-                    Member's App reads the Owner's display name. This information is processed only on the devices of
-                    the Owner and Members, may be kept on those devices to show the member list, and is not sent to the
-                    developer. In Google Drive, people with access to the file may also be able to see the names and
-                    email addresses of the others who have access, according to Google's specifications.</li>
-                <li><strong>Members' copies:</strong> Members can copy some of the shared team's data (such as a
-                    lineup) into their own data in the App. These copies are stored on the Member's own device (and in
-                    their own iCloud or Google Drive if they use Sync Across Devices), and they remain even after the
-                    Member stops being able to see the shared team.</li>
-                <li><strong>When access ends:</strong> If the Owner deletes the shared file, stops sharing, or removes
-                    a Member, the Member can no longer see the team's data, and the App removes the team from the
-                    Member's device. A Member can also leave a team at any time. When the Owner stops sharing, the
-                    Owner chooses whether to keep or delete the file in their Google Drive (keep is the default).</li>
+                    requester's email address from Google Drive. To show who has access, the Owner's App also reads
+                    the email addresses and Google Drive display names of the people who have access to the shared
+                    file. This information is read only on the Owner's device while these screens are shown. It is not
+                    saved on the device and is not sent to the developer. In Google Drive, people with access to the
+                    file may also be able to see the names and email addresses of the others who have access, according
+                    to Google's specifications.</li>
+                <li><strong>Data on Members' devices:</strong> Each Member's device keeps the content of the shared
+                    team as it was last received from the shared file.</li>
+                <li><strong>When sharing stops:</strong> If the Owner deletes the shared file, stops sharing, or removes
+                    a Member, updates to the team no longer reach that Member. A team whose sharing has stopped can
+                    still be viewed (view only) on the Member's device, as last received. When a Member leaves a team,
+                    the App removes that team from the Member's device. A Member can leave a team at any time. When the
+                    Owner stops sharing, the Owner chooses whether to keep or delete the file in their Google Drive
+                    (keep is the default).</li>
                 <li><strong>When the Team Plan ends:</strong> If the Owner's Team Plan ends, updates to the shared team
                     stop and Members can only view the last saved version. The data is not deleted. The Owner can stop
                     sharing to move the team back to their own data.</li>
-                <li><strong>Analytics:</strong> For team sharing, only technical information such as success or
-                    failure, the type of error, and the permission (view or edit) is sent to Firebase Analytics and
-                    Firebase Crashlytics. Email addresses, names, player names, other content you entered, and access
-                    tokens are not sent.</li>
+                <li><strong>Analytics:</strong> For team sharing, the App sends only general usage information to
+                    Firebase Analytics (for example, that the Team Plan purchase screen was shown) and crash reports to
+                    Firebase Crashlytics. Email addresses, names, team names, player names, other content you entered,
+                    and access tokens are not sent.</li>
             </ul>
             <p>
                 The Owner is responsible for deciding whom to invite and what information to include in a shared team.
@@ -239,8 +241,8 @@
                 <li><code>https://www.googleapis.com/auth/drive.file</code> (see, edit, create, and delete only the
                     specific Google Drive files you use with this app): used only for team sharing (Section 3), to
                     create, read, and update the shared team file, to share it with the Members the Owner approves,
-                    and to read the email addresses and display names needed to approve requests and show the member
-                    list.</li>
+                    and to read the email addresses and display names needed to approve requests and show who has
+                    access.</li>
                 <li>Data obtained through Google APIs is processed only on your device. It is not sent to the developer
                     or to any third party other than Google. Team data is shared only with the Members the Owner has
                     approved, through Google Drive, at the Owner's direction.</li>
@@ -377,14 +379,14 @@
             </p>
             <ul>
                 <li><strong>共有されるもの：</strong>共有するチーム1つ分のデータ（ラインナップ、スカッド、選手名鑑（選手名を含みます）、戦術ボード、試合記録、自作のフォーメーションのひな形）です。共有のファイルには、第2項と同じ技術的な情報（ランダムな端末 ID、機種名、保存した日時など）も含まれます。持ち主のほかのチームは共有されません。共有を始めると、そのチームは持ち主自身のデータから共有のファイルへ移ります。共有をやめると、持ち主自身のデータへ戻ります。</li>
-                <li><strong>保存先：</strong>持ち主ご自身の Google ドライブの、本アプリが作った通常のファイルです。持ち主の Google アカウントの容量を使います。持ち主は、Google ドライブでもこのファイルを見られます。</li>
+                <li><strong>保存先：</strong>持ち主ご自身の Google ドライブの、本アプリが作ったフォルダの中の通常のファイルです。ファイル名にはチーム名が入ります。チームのデータのほかに保存するのは、上に書いた技術的な情報（ファイルの説明欄）と、本アプリがファイルを探したり共有が一時停止中かを見分けたりするための内部の目印だけです。持ち主の Google アカウントの容量を使います。持ち主は、Google ドライブでもこのファイルを見られます。</li>
                 <li><strong>本アプリが作ったファイルと、ユーザーが選んだファイルだけ：</strong>チームの共有のために、本アプリは Google ドライブの権限 <code>https://www.googleapis.com/auth/drive.file</code> を求めます。この権限で本アプリが触れるのは、本アプリが作ったファイルと、ユーザーが本アプリで開くことを選んだファイル（招待のリンクから参加した共有のチームのファイルなど）だけです。Google ドライブにあるほかのファイルは見られません。持ち主にはチームを共有するときに、メンバーにはチームに参加するときに、この権限を求めます。「端末間の同期」で iCloud を使っている持ち主も、チームを共有するときは Google でログインします。</li>
                 <li><strong>見られる人：</strong>持ち主と、持ち主が承認したメンバーだけです。持ち主は、Google ドライブの共有の設定で、メンバーごとに閲覧か編集の権限を付け、いつでも変えたり外したりできます。承認されていない人は、招待のリンクを持っていてもデータを見られません。なお、持ち主が Google ドライブで直接ファイルの共有の設定を変えた場合（「リンクを知っている全員」にするなど）は、その設定が適用されます。</li>
-                <li><strong>参加と承認：</strong>参加したい人は、招待のリンクを開き、Google ドライブの「アクセスをリクエスト」で依頼します。承認のために依頼を表示するとき、持ち主の本アプリは、依頼した人のメールアドレスと Google ドライブ上の表示名を Google ドライブから読みます。同じように、共有している相手を表示するために、持ち主の本アプリはメンバーのメールアドレスと表示名を、メンバーの本アプリは持ち主の表示名を読みます。これらの情報は、持ち主とメンバーの端末の中だけで処理し、メンバーの一覧を表示するために端末に保存することがありますが、開発者には送りません。また、Google ドライブでは、Google の仕様により、ファイルにアクセスできる人どうしで名前やメールアドレスが見えることがあります。</li>
-                <li><strong>メンバーによるコピー：</strong>メンバーは、共有のチームのデータの一部（ラインナップなど）を、本アプリの自分のデータへコピーできます。コピーはメンバーの端末（「端末間の同期」を使っている場合は、メンバーご自身の iCloud または Google ドライブ）に保存され、共有のチームを見られなくなったあとも残ります。</li>
-                <li><strong>見られなくなるとき：</strong>持ち主が共有のファイルを削除した場合、共有をやめた場合、またはメンバーを外した場合、そのメンバーはチームのデータを見られなくなり、本アプリはメンバーの端末からそのチームを外します。メンバーは、いつでもチームから抜けられます。持ち主が共有をやめるときは、Google ドライブのファイルを残すか削除するかを選べます（初期値は残す）。</li>
+                <li><strong>参加と承認：</strong>参加したい人は、招待のリンクを開き、Google ドライブの「アクセスをリクエスト」で依頼します。承認のために依頼を表示するとき、持ち主の本アプリは、依頼した人のメールアドレスを Google ドライブから読みます。また、共有している相手を表示するために、持ち主の本アプリは、共有のファイルにアクセスできる人のメールアドレスと Google ドライブ上の表示名を読みます。これらの情報は、これらの画面を表示している間、持ち主の端末の中だけで読み、端末には保存せず、開発者にも送りません。また、Google ドライブでは、Google の仕様により、ファイルにアクセスできる人どうしで名前やメールアドレスが見えることがあります。</li>
+                <li><strong>メンバーの端末に残るもの：</strong>メンバーの端末には、共有のファイルから最後に取り込んだチームの内容が残ります。</li>
+                <li><strong>共有が止まったとき：</strong>持ち主が共有のファイルを削除した場合、共有をやめた場合、またはメンバーを外した場合、そのメンバーにはチームの更新が届かなくなります。共有が止まったチームは、最後に取り込んだ状態のまま、メンバーの端末で閲覧のみで見られます。メンバーがチームから抜けると、本アプリはメンバーの端末からそのチームを消します。メンバーは、いつでもチームから抜けられます。持ち主が共有をやめるときは、Google ドライブのファイルを残すか削除するかを選べます（初期値は残す）。</li>
                 <li><strong>チームプランが終わったとき：</strong>持ち主のチームプランが終わると、共有のチームの更新は止まり、メンバーは最後に保存された状態を閲覧だけできます。データは削除しません。持ち主は、共有をやめて、チームを自分のデータへ戻せます。</li>
-                <li><strong>計測について：</strong>チームの共有について Firebase Analytics と Firebase Crashlytics に送るのは、成功か失敗か、エラーの種類、権限（閲覧／編集）などの技術的な情報だけです。メールアドレス、名前、選手名などユーザーが入力した内容や、アクセストークンは送りません。</li>
+                <li><strong>計測について：</strong>チームの共有について送るのは、Firebase Analytics への一般的な利用状況（チームプランの購入の画面を表示したことなど）と、Firebase Crashlytics へのクラッシュの報告だけです。メールアドレス、名前、チーム名、選手名などユーザーが入力した内容や、アクセストークンは送りません。</li>
             </ul>
             <p>
                 誰を招くか、共有のチームにどの情報を載せるかは、持ち主の責任で決めてください。選手名には、子どもの名前が含まれることがあります。子どもの情報を共有する前に、保護者の同意を得たうえで、チームの運営に必要な範囲にとどめてください（第7項もご覧ください）。
@@ -396,7 +398,7 @@
             </p>
             <ul>
                 <li><code>https://www.googleapis.com/auth/drive.appdata</code>（Google ドライブ内の、本アプリ専用の設定データの参照・作成・削除）：本アプリのデータを非表示のフォルダにバックアップし、ご自身の端末どうしで同期するため（第2項）だけに使います。</li>
-                <li><code>https://www.googleapis.com/auth/drive.file</code>（本アプリで使用する特定の Google ドライブのファイルだけの参照・編集・作成・削除）：チームの共有（第3項）のためだけに使います。共有のチームのファイルを作成・読み込み・更新すること、持ち主が承認したメンバーと共有すること、依頼の承認とメンバーの一覧の表示に必要なメールアドレスと表示名を読むことに使います。</li>
+                <li><code>https://www.googleapis.com/auth/drive.file</code>（本アプリで使用する特定の Google ドライブのファイルだけの参照・編集・作成・削除）：チームの共有（第3項）のためだけに使います。共有のチームのファイルを作成・読み込み・更新すること、持ち主が承認したメンバーと共有すること、依頼の承認と、共有している相手の表示に必要なメールアドレスと表示名を読むことに使います。</li>
                 <li>Google API を通じて得たデータは、ユーザーの端末の中だけで処理し、開発者や、Google 以外の第三者には送りません。チームのデータは、持ち主の指示により、Google ドライブを通じて、持ち主が承認したメンバーとだけ共有します。</li>
                 <li>Google API を通じて得たデータを、広告に使うこと、販売すること、汎用の人工知能や機械学習のモデルの開発・改善・学習に使うことはありません。開発者がこのデータを読むこともありません。</li>
             </ul>
