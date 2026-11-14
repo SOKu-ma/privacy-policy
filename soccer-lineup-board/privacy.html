@@ -93,7 +93,7 @@
                 This Privacy Policy describes how Soccer Lineup Board (hereinafter referred to as "the App")
                 handles user information to ensure safe and secure usage.
             </p>
-            <p>Last updated: November 12, 2026</p>
+            <p>Last updated: November 30, 2026</p>
 
             <h2>1. Information We Collect</h2>
             <p>The App may collect the following information:</p>
@@ -110,7 +110,9 @@
             <p>
                 Data entered in the App is generally stored on the user's device. If you turn on Sync Across Devices or
                 use Switch Devices, your data is saved to your own iCloud or Google Drive account as described in
-                Section 2. The developer does not receive this data. Data may also leave your device when you choose to
+                Section 2. If you share a team with the Team Plan, the team's data is saved to the Google Drive of the
+                person who shares it and can be seen by the people they invite, as described in Section 3. The
+                developer does not receive this data. Data may also leave your device when you choose to
                 use operating system sharing features, device backups, or similar functions.
             </p>
 
@@ -162,21 +164,88 @@
                     Crashlytics. Player names, other content you entered, and access tokens are not sent.</li>
             </ul>
             <p>
-                Sharing data with other people (such as team members) is not included at this time. If we add such
-                features in the future, we will update this Privacy Policy before they become available.
+                Sharing a team with other people (such as coaches, players, and parents) is described in Section 3.
             </p>
 
-            <h2>3. Google User Data</h2>
+            <h2>3. Team Sharing (Team Plan)</h2>
             <p>
-                When you choose Google Drive, the App requests only the following permission:
-                <code>https://www.googleapis.com/auth/drive.appdata</code> (see, create, and delete its own
-                configuration data in your Google Drive). The App cannot see your other files in Google Drive.
+                With the Team Plan, the person who shares a team (hereinafter the "Owner", such as a manager or coach)
+                can share one team's data with the people they invite (hereinafter "Members", such as coaches, players,
+                and parents) through Google Drive. The developer does not operate a server for this feature and does
+                not receive, view, or store the shared data.
             </p>
             <ul>
-                <li>The App uses this permission only to back up your App data to the hidden folder and to sync it
-                    across your own devices.</li>
+                <li><strong>What is shared:</strong> The data of the one team being shared, including its lineups,
+                    squads, player directory (including player names), tactics boards, match records, and custom
+                    formation templates. The shared file also includes the same technical information as in Section 2,
+                    such as a random device ID, the device model name, and the date and time it was saved. Your other
+                    teams are not shared. When you start sharing, the team moves from your own data to the shared
+                    file. When you stop sharing, it moves back to your own data.</li>
+                <li><strong>Where it is saved:</strong> As a regular file in a folder the App creates in the Owner's own Google
+                    Drive. The file name includes the team name. Besides the team's data, the App saves only the
+                    technical information described above (in the file's description) and a few internal labels that
+                    the App uses to find the file and to tell whether sharing is paused. It uses the Owner's Google
+                    Drive storage. The Owner can also see this file in Google Drive.</li>
+                <li><strong>Only files the App created or you chose:</strong> For team sharing, the App requests the
+                    Google Drive permission <code>https://www.googleapis.com/auth/drive.file</code>. With this
+                    permission, the App can access only the files it created and the files you chose to open with the
+                    App (such as a shared team file you joined from an invitation link). The App cannot see your other
+                    files in Google Drive. The Owner is asked for this permission when sharing a team, and Members are
+                    asked when joining one. Owners who use iCloud for Sync Across Devices also sign in with Google to
+                    share a team.</li>
+                <li><strong>Who can see it:</strong> Only the Owner and the Members the Owner has approved. The Owner
+                    gives each Member permission to view or to edit through Google Drive's sharing settings, and can
+                    change or remove it at any time. People who are not approved cannot see the data, even if they
+                    have the invitation link. Please note that if the Owner changes the file's sharing settings
+                    directly in Google Drive (for example, to "Anyone with the link"), those settings apply.</li>
+                <li><strong>Joining and approval:</strong> A person who wants to join opens the invitation link and
+                    uses Google Drive's "Request access". To show the request for approval, the Owner's App reads the
+                    requester's email address from Google Drive. To show who has access, the Owner's App also reads
+                    the email addresses and Google Drive display names of the people who have access to the shared
+                    file. This information is read only on the Owner's device while these screens are shown. It is not
+                    saved on the device and is not sent to the developer. In Google Drive, people with access to the
+                    file may also be able to see the names and email addresses of the others who have access, according
+                    to Google's specifications.</li>
+                <li><strong>Data on Members' devices:</strong> Each Member's device keeps the content of the shared
+                    team as it was last received from the shared file.</li>
+                <li><strong>When sharing stops:</strong> If the Owner deletes the shared file, stops sharing, or removes
+                    a Member, updates to the team no longer reach that Member. A team whose sharing has stopped can
+                    still be viewed (view only) on the Member's device, as last received. When a Member leaves a team,
+                    the App removes that team from the Member's device. A Member can leave a team at any time. When the
+                    Owner stops sharing, the Owner chooses whether to keep or delete the file in their Google Drive
+                    (keep is the default).</li>
+                <li><strong>When the Team Plan ends:</strong> If the Owner's Team Plan ends, updates to the shared team
+                    stop and Members can only view the last saved version. The data is not deleted. The Owner can stop
+                    sharing to move the team back to their own data.</li>
+                <li><strong>Analytics:</strong> For team sharing, the App sends only general usage information to
+                    Firebase Analytics (for example, that the Team Plan purchase screen was shown) and crash reports to
+                    Firebase Crashlytics. Email addresses, names, team names, player names, other content you entered,
+                    and access tokens are not sent.</li>
+            </ul>
+            <p>
+                The Owner is responsible for deciding whom to invite and what information to include in a shared team.
+                Player names may include the names of children. Before sharing information about children, please
+                obtain consent from their parents or guardians, and share only the minimum information needed for
+                team management (see also Section 7).
+            </p>
+
+            <h2>4. Google User Data</h2>
+            <p>
+                The App requests only the following Google Drive permissions, and only when you use the related
+                feature. The App cannot see your other files in Google Drive.
+            </p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/drive.appdata</code> (see, create, and delete its own
+                    configuration data in your Google Drive): used only to back up your App data to the hidden folder
+                    and to sync it across your own devices (Section 2).</li>
+                <li><code>https://www.googleapis.com/auth/drive.file</code> (see, edit, create, and delete only the
+                    specific Google Drive files you use with this app): used only for team sharing (Section 3), to
+                    create, read, and update the shared team file, to share it with the Members the Owner approves,
+                    and to read the email addresses and display names needed to approve requests and show who has
+                    access.</li>
                 <li>Data obtained through Google APIs is processed only on your device. It is not sent to the developer
-                    or to any third party other than Google.</li>
+                    or to any third party other than Google. Team data is shared only with the Members the Owner has
+                    approved, through Google Drive, at the Owner's direction.</li>
                 <li>Data obtained through Google APIs is not used for advertising, is not sold, and is not used to
                     develop, improve, or train generalized artificial intelligence or machine learning models. The
                     developer does not read this data.</li>
@@ -188,7 +257,7 @@
                 requirements.
             </p>
 
-            <h2>4. Use of Third-Party Services</h2>
+            <h2>5. Use of Third-Party Services</h2>
             <p>
                 <strong>Apple App Store and Google Play:</strong> In-app purchase and subscription payment processing
                 is handled by Apple or Google. Credit card information and other billing information are processed by
@@ -205,31 +274,36 @@
                 data is saved to your own iCloud account.<br>
                 <strong>Google Drive and Google Sign-In (Google):</strong> When you choose Google Drive, the App uses
                 Google Sign-In to obtain your permission and saves your data to the hidden folder in your own Google
-                Drive.
+                Drive. When you share a team, the App saves the team's data as a file in the Owner's Google Drive and
+                shares it with the approved Members through Google Drive.
             </p>
 
-            <h2>5. Purpose of Use</h2>
+            <h2>6. Purpose of Use</h2>
             <p>The collected information is used solely for the following purposes:</p>
             <ul>
                 <li>Providing and maintaining the App and premium features</li>
                 <li>Providing Sync Across Devices and Switch Devices at your request</li>
+                <li>Providing team sharing at the request of the Owner and Members</li>
                 <li>Verifying purchase status and restoring purchases</li>
                 <li>Analyzing usage trends and improving functionality</li>
                 <li>Investigating crashes, defects, and abuse</li>
             </ul>
 
-            <h2>6. Children's Information</h2>
+            <h2>7. Children's Information</h2>
             <p>
                 The App is intended for coaches, staff, and other people who manage teams. Player names you enter may
                 include the names of children. The developer does not collect player names or other content you enter.
                 Data saved with Sync Across Devices or Switch Devices is stored only on your devices and in your own
-                iCloud or Google account. When you enter information about children, please obtain consent from their
-                parents or guardians where necessary, and enter only the minimum information needed for team
-                management. If you have questions about children's information, please contact us using the form in
-                Section 8.
+                iCloud or Google account. When you share a team, its data, including player names, is stored in the
+                Owner's Google Drive and can be seen by the Members the Owner invites. When you enter information about
+                children, please obtain consent from their parents or guardians where necessary, and enter only the
+                minimum information needed for team management. The Owner is responsible for handling children's
+                information in a shared team, such as obtaining consent from parents or guardians before sharing it
+                with Members. If you have questions about children's information, please contact us using the form in
+                Section 9.
             </p>
 
-            <h2>7. External Links</h2>
+            <h2>8. External Links</h2>
             <p>
                 For more information on how each provider handles data, please refer to their respective privacy
                 policies.<br>
@@ -243,14 +317,14 @@
                     Privacy Policy</a>
             </p>
 
-            <h2>8. Contact Us</h2>
+            <h2>9. Contact Us</h2>
             <p>If you have any questions regarding this Privacy Policy, please contact us via the form below.</p>
             <p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header"
                     target="_blank" rel="noopener noreferrer">Contact Form</a>
             </p>
 
-            <h2>9. Changes to This Policy</h2>
+            <h2>10. Changes to This Policy</h2>
             <p>This policy may be updated without notice in response to changes in laws or service content. If
                 significant changes are made, we will notify users within the App or on this page.</p>
         </section>
@@ -262,7 +336,7 @@
             <p>
                 サッカーフォーメーションボード（以下、「本アプリ」）では、ユーザーの皆様に安心してご利用いただくために、以下の通り個人情報の取り扱いについて定めます。
             </p>
-            <p>最終改定日：2026年11月12日</p>
+            <p>最終改定日：2026年11月30日</p>
 
             <h2>1. 収集する情報</h2>
             <p>本アプリでは以下の情報を収集することがあります：</p>
@@ -276,7 +350,7 @@
                 のために意図的に収集しません。
             </p>
             <p>
-                本アプリ内で入力されたデータは、基本的にユーザーの端末内に保存されます。「端末間の同期」または「機種変更・引き継ぎ」を使う場合は、第2項のとおり、ユーザーご自身の iCloud または Google ドライブに保存されます。開発者はこのデータを受け取りません。また、OS の共有機能、端末のバックアップ機能等をユーザーが利用した場合も、データが端末の外に送られることがあります。
+                本アプリ内で入力されたデータは、基本的にユーザーの端末内に保存されます。「端末間の同期」または「機種変更・引き継ぎ」を使う場合は、第2項のとおり、ユーザーご自身の iCloud または Google ドライブに保存されます。チームプランでチームを共有する場合は、第3項のとおり、そのチームのデータは共有した人の Google ドライブに保存され、その人が招いた人から見られます。開発者はこのデータを受け取りません。また、OS の共有機能、端末のバックアップ機能等をユーザーが利用した場合も、データが端末の外に送られることがあります。
             </p>
 
             <h2>2. 端末間の同期と機種変更・引き継ぎ</h2>
@@ -296,48 +370,69 @@
                 <li><strong>計測について：</strong>これらの機能について Firebase Analytics と Firebase Crashlytics に送るのは、成功か失敗か、エラーの種類、おおよそのサイズの区分などの技術的な情報だけです。選手名などユーザーが入力した内容や、アクセストークンは送りません。</li>
             </ul>
             <p>
-                現時点では、ほかの人（チームのメンバーなど）とデータを共有する機能はありません。将来この機能を加える場合は、提供を始める前に本ポリシーを改訂します。
+                ほかの人（コーチ・選手・保護者など）とチームを共有する機能については、第3項をご覧ください。
             </p>
 
-            <h2>3. Google のユーザーデータの取り扱い</h2>
+            <h2>3. チームの共有（チームプラン）</h2>
             <p>
-                Google ドライブを選んだ場合、本アプリが求める権限は、<code>https://www.googleapis.com/auth/drive.appdata</code>（Google ドライブ内の、本アプリ専用の設定データの参照・作成・削除）だけです。Google ドライブにあるほかのファイルは見られません。
+                チームプランでは、チームを共有する人（以下、「持ち主」。監督・コーチなど）が、チーム1つ分のデータを、Google ドライブを通じて、持ち主が招いた人（以下、「メンバー」。コーチ・選手・保護者など）と共有できます。開発者はこの機能のためのサーバーを持たず、共有されたデータを受け取らず、見ることも保管することもありません。
             </p>
             <ul>
-                <li>この権限は、本アプリのデータを非表示のフォルダにバックアップし、ご自身の端末どうしで同期するためだけに使います。</li>
-                <li>Google API を通じて得たデータは、ユーザーの端末の中だけで処理し、開発者や、Google 以外の第三者には送りません。</li>
+                <li><strong>共有されるもの：</strong>共有するチーム1つ分のデータ（ラインナップ、スカッド、選手名鑑（選手名を含みます）、戦術ボード、試合記録、自作のフォーメーションのひな形）です。共有のファイルには、第2項と同じ技術的な情報（ランダムな端末 ID、機種名、保存した日時など）も含まれます。持ち主のほかのチームは共有されません。共有を始めると、そのチームは持ち主自身のデータから共有のファイルへ移ります。共有をやめると、持ち主自身のデータへ戻ります。</li>
+                <li><strong>保存先：</strong>持ち主ご自身の Google ドライブの、本アプリが作ったフォルダの中の通常のファイルです。ファイル名にはチーム名が入ります。チームのデータのほかに保存するのは、上に書いた技術的な情報（ファイルの説明欄）と、本アプリがファイルを探したり共有が一時停止中かを見分けたりするための内部の目印だけです。持ち主の Google アカウントの容量を使います。持ち主は、Google ドライブでもこのファイルを見られます。</li>
+                <li><strong>本アプリが作ったファイルと、ユーザーが選んだファイルだけ：</strong>チームの共有のために、本アプリは Google ドライブの権限 <code>https://www.googleapis.com/auth/drive.file</code> を求めます。この権限で本アプリが触れるのは、本アプリが作ったファイルと、ユーザーが本アプリで開くことを選んだファイル（招待のリンクから参加した共有のチームのファイルなど）だけです。Google ドライブにあるほかのファイルは見られません。持ち主にはチームを共有するときに、メンバーにはチームに参加するときに、この権限を求めます。「端末間の同期」で iCloud を使っている持ち主も、チームを共有するときは Google でログインします。</li>
+                <li><strong>見られる人：</strong>持ち主と、持ち主が承認したメンバーだけです。持ち主は、Google ドライブの共有の設定で、メンバーごとに閲覧か編集の権限を付け、いつでも変えたり外したりできます。承認されていない人は、招待のリンクを持っていてもデータを見られません。なお、持ち主が Google ドライブで直接ファイルの共有の設定を変えた場合（「リンクを知っている全員」にするなど）は、その設定が適用されます。</li>
+                <li><strong>参加と承認：</strong>参加したい人は、招待のリンクを開き、Google ドライブの「アクセスをリクエスト」で依頼します。承認のために依頼を表示するとき、持ち主の本アプリは、依頼した人のメールアドレスを Google ドライブから読みます。また、共有している相手を表示するために、持ち主の本アプリは、共有のファイルにアクセスできる人のメールアドレスと Google ドライブ上の表示名を読みます。これらの情報は、これらの画面を表示している間、持ち主の端末の中だけで読み、端末には保存せず、開発者にも送りません。また、Google ドライブでは、Google の仕様により、ファイルにアクセスできる人どうしで名前やメールアドレスが見えることがあります。</li>
+                <li><strong>メンバーの端末に残るもの：</strong>メンバーの端末には、共有のファイルから最後に取り込んだチームの内容が残ります。</li>
+                <li><strong>共有が止まったとき：</strong>持ち主が共有のファイルを削除した場合、共有をやめた場合、またはメンバーを外した場合、そのメンバーにはチームの更新が届かなくなります。共有が止まったチームは、最後に取り込んだ状態のまま、メンバーの端末で閲覧のみで見られます。メンバーがチームから抜けると、本アプリはメンバーの端末からそのチームを消します。メンバーは、いつでもチームから抜けられます。持ち主が共有をやめるときは、Google ドライブのファイルを残すか削除するかを選べます（初期値は残す）。</li>
+                <li><strong>チームプランが終わったとき：</strong>持ち主のチームプランが終わると、共有のチームの更新は止まり、メンバーは最後に保存された状態を閲覧だけできます。データは削除しません。持ち主は、共有をやめて、チームを自分のデータへ戻せます。</li>
+                <li><strong>計測について：</strong>チームの共有について送るのは、Firebase Analytics への一般的な利用状況（チームプランの購入の画面を表示したことなど）と、Firebase Crashlytics へのクラッシュの報告だけです。メールアドレス、名前、チーム名、選手名などユーザーが入力した内容や、アクセストークンは送りません。</li>
+            </ul>
+            <p>
+                誰を招くか、共有のチームにどの情報を載せるかは、持ち主の責任で決めてください。選手名には、子どもの名前が含まれることがあります。子どもの情報を共有する前に、保護者の同意を得たうえで、チームの運営に必要な範囲にとどめてください（第7項もご覧ください）。
+            </p>
+
+            <h2>4. Google のユーザーデータの取り扱い</h2>
+            <p>
+                本アプリが求める Google ドライブの権限は、次のものだけです。それぞれ、関係する機能を使うときだけ求めます。Google ドライブにあるほかのファイルは見られません。
+            </p>
+            <ul>
+                <li><code>https://www.googleapis.com/auth/drive.appdata</code>（Google ドライブ内の、本アプリ専用の設定データの参照・作成・削除）：本アプリのデータを非表示のフォルダにバックアップし、ご自身の端末どうしで同期するため（第2項）だけに使います。</li>
+                <li><code>https://www.googleapis.com/auth/drive.file</code>（本アプリで使用する特定の Google ドライブのファイルだけの参照・編集・作成・削除）：チームの共有（第3項）のためだけに使います。共有のチームのファイルを作成・読み込み・更新すること、持ち主が承認したメンバーと共有すること、依頼の承認と、共有している相手の表示に必要なメールアドレスと表示名を読むことに使います。</li>
+                <li>Google API を通じて得たデータは、ユーザーの端末の中だけで処理し、開発者や、Google 以外の第三者には送りません。チームのデータは、持ち主の指示により、Google ドライブを通じて、持ち主が承認したメンバーとだけ共有します。</li>
                 <li>Google API を通じて得たデータを、広告に使うこと、販売すること、汎用の人工知能や機械学習のモデルの開発・改善・学習に使うことはありません。開発者がこのデータを読むこともありません。</li>
             </ul>
             <p>
                 サッカーフォーメーションボード（Soccer Lineup Board）が Google API から受け取った情報の使用と、他のアプリへの転送は、Limited Use の要件を含む <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer">Google API Services User Data Policy</a> に従います。
             </p>
 
-            <h2>4. 第三者サービスの利用について</h2>
+            <h2>5. 第三者サービスの利用について</h2>
             <p>
                 <strong>Apple App Store および Google Play:</strong> アプリ内課金およびサブスクリプションの決済処理にはAppleまたはGoogleを利用しています。クレジットカード情報その他の決済情報は各ストアにより処理され、本アプリでは保持しません。<br>
                 <strong>RevenueCat:</strong> 購入状態を安全に管理するためにRevenueCatを利用しています。RevenueCatには匿名化されたユーザーIDと購入・サブスクリプション情報が送信・保存される場合があり、個人の特定には使用しません。<br>
                 <strong>Firebase Analytics（Google）:</strong> アプリの利用状況を分析し、機能改善や利便性向上を行うため、匿名のアクセスデータを収集します。<br>
                 <strong>Firebase Crashlytics（Google）:</strong> クラッシュレポートや技術情報を収集し、不具合の調査および安定性向上に役立てます。これらの情報は個人を特定する目的では使用しません。<br>
                 <strong>iCloud（Apple）:</strong> 「端末間の同期」または「機種変更・引き継ぎ」で iCloud を選んだ場合、データはユーザーご自身の iCloud に保存されます。<br>
-                <strong>Google ドライブ、Google ログイン（Google）:</strong> Google ドライブを選んだ場合、Google ログインで許可を得て、データをユーザーご自身の Google ドライブの非表示のフォルダに保存します。
+                <strong>Google ドライブ、Google ログイン（Google）:</strong> Google ドライブを選んだ場合、Google ログインで許可を得て、データをユーザーご自身の Google ドライブの非表示のフォルダに保存します。チームを共有する場合は、チームのデータを持ち主の Google ドライブにファイルとして保存し、Google ドライブを通じて、承認したメンバーと共有します。
             </p>
 
-            <h2>5. 利用目的</h2>
+            <h2>6. 利用目的</h2>
             <p>収集した情報は、以下の目的の範囲で利用します。</p>
             <ul>
                 <li>本アプリおよびプレミアム機能の提供、維持のため</li>
                 <li>ユーザーの求めに応じて、端末間の同期と機種変更・引き継ぎを提供するため</li>
+                <li>持ち主とメンバーの求めに応じて、チームの共有を提供するため</li>
                 <li>購入状態の確認および復元のため</li>
                 <li>利用傾向の分析および機能改善のため</li>
                 <li>クラッシュ、不具合、不正利用の調査対応のため</li>
             </ul>
 
-            <h2>6. 子どもの情報について</h2>
+            <h2>7. 子どもの情報について</h2>
             <p>
-                本アプリは、監督・コーチ・スタッフなど、チームを運営する方が使うことを想定しています。入力する選手名には、子どもの名前が含まれることがあります。開発者は、選手名などユーザーが入力した内容を収集しません。「端末間の同期」や「機種変更・引き継ぎ」で保存したデータも、ユーザーの端末と、ユーザーご自身の iCloud または Google アカウントの中にだけ保存されます。子どもの情報を入力するときは、必要に応じて保護者の同意を得たうえで、チームの運営に必要な範囲にとどめてください。子どもの情報についてのご質問は、第8項のフォームよりご連絡ください。
+                本アプリは、監督・コーチ・スタッフなど、チームを運営する方が使うことを想定しています。入力する選手名には、子どもの名前が含まれることがあります。開発者は、選手名などユーザーが入力した内容を収集しません。「端末間の同期」や「機種変更・引き継ぎ」で保存したデータも、ユーザーの端末と、ユーザーご自身の iCloud または Google アカウントの中にだけ保存されます。チームを共有する場合は、選手名を含むそのチームのデータが持ち主の Google ドライブに保存され、持ち主が招いたメンバーから見られます。子どもの情報を入力するときは、必要に応じて保護者の同意を得たうえで、チームの運営に必要な範囲にとどめてください。共有のチームでの子どもの情報は、メンバーに共有する前に保護者の同意を得るなど、持ち主の責任で取り扱ってください。子どもの情報についてのご質問は、第9項のフォームよりご連絡ください。
             </p>
 
-            <h2>7. 外部サービスのポリシー</h2>
+            <h2>8. 外部サービスのポリシー</h2>
             <p>
                 各事業者によるデータの取り扱いについては、それぞれのプライバシーポリシーをご確認ください。<br>
                 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple
@@ -350,14 +445,14 @@
                     Privacy Policy</a>
             </p>
 
-            <h2>8. お問い合わせ</h2>
+            <h2>9. お問い合わせ</h2>
             <p>プライバシーポリシーに関するご質問は、以下のフォームよりご連絡ください。</p>
             <p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXp5cAOJq2tXp3apMVFXlDvcrSBMcM8Q_7Ysnpou1ofqeg5Q/viewform?usp=header"
                     target="_blank" rel="noopener noreferrer">お問い合わせフォーム</a>
             </p>
 
-            <h2>9. 改訂について</h2>
+            <h2>10. 改訂について</h2>
             <p>本ポリシーは、法令やサービス内容の変更に応じて予告なく更新される場合があります。重要な変更がある場合には、本アプリ内または本ページにて告知いたします。</p>
         </section>
 
