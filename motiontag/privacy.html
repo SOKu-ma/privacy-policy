@@ -82,7 +82,7 @@
                 This Privacy Policy describes how MotionTagger (hereinafter referred to as "the App") handles user
                 information.
             </p>
-            <p>Last updated: July 29, 2026</p>
+            <p>Last updated: November 15, 2026</p>
 
             <h2>1. Information Handled by the App</h2>
             <p>The App may handle the following information:</p>
@@ -107,8 +107,36 @@
             </p>
             <p>
                 This does not apply when a user explicitly uses an operating system sharing feature, saves or exports
-                content outside the App, enables a device backup, or uses another service provided by the operating
+                content outside the App, enables the optional cloud backup described below or a device backup, or uses another service provided by the operating
                 system or device manufacturer.
+            </p>
+
+            <h2>2.1. Optional iCloud and Google Drive Backup</h2>
+            <p>
+                Cloud backup is optional. After the user connects a provider and starts a backup, the App sends saved
+                projects, videos, thumbnails, notes, annotations, markers, and related project settings directly from
+                the device to the user's own iCloud (CloudKit private database, iOS only) or Google Drive account
+                (application data folder). These backups use the user's cloud storage quota. The developer does not
+                receive these files on a developer-operated server. Other users cannot access the backups through the App.
+            </p>
+            <p>
+                Google authorization is used only to connect to the selected account and back up or restore the App's
+                data. The App requests the drive.appdata permission; it does not request access to ordinary Drive files.
+                Google Sign-In manages the account authorization and credentials on the device. The App does not send
+                Google authorization tokens, account details, or backup content to Firebase or RevenueCat.
+            </p>
+            <p>
+                Automatic backup is off by default. If enabled, it runs after changes, app startup, or return to the
+                foreground while the App can run. Wi-Fi-only backup is on by default. It is not a guarantee of backup
+                while the App is closed. Restoring downloads the selected backup and replaces the saved project data
+                on that device. Connection and automatic backup can be disabled in Settings → Backup and restore.
+            </p>
+            <p>
+                Data obtained through Google APIs is used only to provide this backup and restore feature, and is not
+                sold, used for advertising, or used to train AI models. MotionTagger's use and transfer of information
+                received from Google APIs adheres to the
+                <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+                including the Limited Use requirements.
             </p>
 
             <h2>3. Camera, Media, Export, and Sharing</h2>
@@ -153,6 +181,7 @@
             <p>The App may use the following third-party services:</p>
             <ul>
                 <li>Apple App Store and Google Play for app distribution and payment processing</li>
+                <li>Apple iCloud (CloudKit), Google Drive, and Google Sign-In for optional cloud backup and restore</li>
                 <li>Firebase Analytics and Firebase Crashlytics (Google) for usage analysis and diagnostics</li>
                 <li>RevenueCat for purchase and subscription status management if paid features are offered</li>
             </ul>
@@ -170,7 +199,7 @@
             <p>The information handled by the App is used for the following purposes:</p>
             <ul>
                 <li>Loading, recording, playing, comparing, annotating, saving, exporting, and sharing videos</li>
-                <li>Saving and restoring projects and user settings on the device</li>
+                <li>Saving and restoring projects and user settings on the device, and optional cloud backup and restore</li>
                 <li>Providing, verifying, and restoring premium features</li>
                 <li>Analyzing usage trends and improving features and usability</li>
                 <li>Investigating crashes, defects, abuse, and security issues</li>
@@ -183,6 +212,15 @@
                 deletes it through device or operating system functions. Content exported or shared outside the App
                 must be managed or deleted at its destination. Analytics, diagnostics, and purchase-related data are
                 retained by the applicable service provider according to its policy and settings.
+            </p>
+
+            <p>
+                Cloud backup history is not automatically removed when local projects are deleted, automatic backup
+                is disabled, the provider is disconnected, or the mobile App is uninstalled. This version does not
+                automatically expire old backups. To remove cloud data, use the provider's storage/app-data management
+                controls: iCloud storage settings for iCloud, or Google Drive Settings → Manage apps → MotionTagger →
+                Delete hidden app data for Drive. Google access can also be revoked from Google Account connections;
+                revoking access alone does not delete backups. Deletion of cloud backups prevents later restoration.
             </p>
 
             <h2>9. Contact Us</h2>
@@ -206,7 +244,7 @@
             <p>
                 モーションタグ（以下、「本アプリ」）におけるユーザー情報の取り扱いについて、以下のとおり定めます。
             </p>
-            <p>最終更新日：2026年7月29日</p>
+            <p>最終更新日：2026年11月15日</p>
 
             <h2>1. 本アプリが取り扱う情報</h2>
             <p>本アプリでは、以下の情報を取り扱うことがあります。</p>
@@ -225,7 +263,25 @@
                 本アプリは、動画ファイル、書き出した画像、プロジェクト名、注釈、メモを、開発者が運営するサーバーへ意図的にアップロードしません。
             </p>
             <p>
-                ただし、ユーザーがOSの共有機能を明示的に利用した場合、本アプリ外へ保存・書き出しを行った場合、端末のバックアップ機能を有効にした場合、またはOS・端末メーカーが提供する別のサービスを利用した場合は、この限りではありません。
+                ただし、ユーザーがOSの共有機能を明示的に利用した場合、本アプリ外へ保存・書き出しを行った場合、以下の任意のクラウドバックアップまたは端末のバックアップ機能を有効にした場合、またはOS・端末メーカーが提供する別のサービスを利用した場合は、この限りではありません。
+            </p>
+
+            <h2>2.1. 任意のiCloud・Google Driveバックアップ</h2>
+            <p>
+                クラウドバックアップは任意の機能です。ユーザーが保存先へ接続してバックアップを開始すると、保存済みプロジェクト、動画、サムネイル、メモ、注釈、マーカーおよび関連するプロジェクト設定を、端末からユーザー自身のiCloud（iOSのみ、CloudKitのユーザー専用データベース）またはGoogle Drive（アプリ専用領域）へ直接送信します。
+                保存にはユーザーのクラウドストレージ容量を使用します。開発者のサーバーではこれらのファイルを受け取りません。本アプリを通じて他のユーザーがバックアップへアクセスすることはできません。
+            </p>
+            <p>
+                Googleの認可は、選択したアカウントへの接続と本アプリのデータのバックアップ・復元のためだけに使用します。要求するDrive権限はdrive.appdataで、通常のDriveファイルへのアクセスは要求しません。
+                Google Sign-Inが端末上でアカウントの認可と認証情報を管理します。Googleの認証トークン、アカウント情報、バックアップ内容をFirebaseやRevenueCatへ送信しません。
+            </p>
+            <p>
+                自動バックアップは初期状態でオフです。有効にした場合、変更後、アプリ起動後、フォアグラウンド復帰後など、アプリを実行できる間に保存します。Wi-Fiのみでの保存は初期状態でオンです。アプリを閉じたままの保存を保証する機能ではありません。
+                復元時は、選択したバックアップをダウンロードし、その端末の保存済みプロジェクトデータを置き換えます。接続と自動バックアップは「設定 → バックアップと復元」で停止できます。
+            </p>
+            <p>
+                Google APIから取得したデータは、このバックアップ・復元機能の提供だけに利用し、販売、広告、AIモデルの学習には利用しません。本アプリによるGoogle APIから取得した情報の利用および転送は、Limited Useの要件を含む
+                <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。
             </p>
 
             <h2>3. カメラ、メディア、書き出しおよび共有</h2>
@@ -260,6 +316,7 @@
             <p>本アプリでは、以下の第三者サービスを利用することがあります。</p>
             <ul>
                 <li>アプリの配信および決済処理のための Apple App Store、Google Play</li>
+                <li>任意のクラウドバックアップ・復元のための Apple iCloud（CloudKit）、Google Drive、Google Sign-In</li>
                 <li>利用状況分析および技術情報収集のための Firebase Analytics、Firebase Crashlytics（Google）</li>
                 <li>有料機能を提供する場合の購入・サブスクリプション状態管理のための RevenueCat</li>
             </ul>
@@ -277,7 +334,7 @@
             <p>本アプリが取り扱う情報は、以下の目的で利用します。</p>
             <ul>
                 <li>動画の読み込み、撮影、再生、比較、注釈、保存、書き出しおよび共有機能を提供するため</li>
-                <li>プロジェクトおよびユーザー設定を端末内に保存・復元するため</li>
+                <li>プロジェクトおよびユーザー設定を端末内に保存・復元し、任意のクラウドバックアップ・復元を提供するため</li>
                 <li>プレミアム機能の提供、購入状態の確認および復元のため</li>
                 <li>利用傾向の分析、機能および利便性の改善のため</li>
                 <li>クラッシュ、不具合、不正利用、セキュリティ上の問題を調査するため</li>
@@ -288,6 +345,12 @@
             <p>
                 端末内のデータは、ユーザーが本アプリ内で削除する、アプリを削除する、または端末・OSの機能により削除するまで保存されます。本アプリ外へ書き出し・共有したコンテンツは、保存先または共有先で管理・削除する必要があります。
                 分析、技術情報および購入関連のデータは、各サービス事業者のポリシーおよび設定に従って保存されます。
+            </p>
+
+            <p>
+                端末内のプロジェクトの削除、自動バックアップの停止、保存先との接続解除、スマートフォンからのアプリ削除では、クラウドの履歴は自動削除されません。このバージョンでは過去のバックアップの自動期限切れも行いません。
+                クラウドデータを削除する場合は、iCloudのストレージ管理、またはGoogle Driveの「設定 → アプリの管理 → MotionTagger → 非表示のアプリデータを削除」など、保存先のデータ管理機能を使用してください。
+                Googleアカウントの接続管理からアクセスを取り消すこともできますが、アクセスの取り消しだけではバックアップは削除されません。クラウドのバックアップを削除すると、その内容は復元できなくなります。
             </p>
 
             <h2>9. お問い合わせ</h2>
