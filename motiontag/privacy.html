@@ -122,7 +122,11 @@
             <p>
                 Google authorization is used only to connect to the selected account and back up or restore the App's
                 data. The App requests the drive.appdata permission; it does not request access to ordinary Drive files.
-                Google Sign-In manages the account authorization and credentials on the device. The App does not send
+                Google Sign-In manages the account authorization and credentials on the device. As part of
+                authentication, security, and SDK operation, Google may process account information (such as name,
+                email address, phone number, and user ID), IP-based approximate location, device identifiers, usage
+                information, and other technical data under its own policy. The App does not request access to the
+                user's contacts or phone book. The App does not send
                 Google authorization tokens, account details, or backup content to Firebase or RevenueCat.
             </p>
             <p>
@@ -132,7 +136,7 @@
                 on that device. Connection and automatic backup can be disabled in Settings → Backup and restore.
             </p>
             <p>
-                Data obtained through Google APIs is used only to provide this backup and restore feature, and is not
+                Backup data accessed through Google Drive APIs is used only to provide this backup and restore feature, and is not
                 sold, used for advertising, or used to train AI models. MotionTagger's use and transfer of information
                 received from Google APIs adheres to the
                 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
@@ -273,14 +277,14 @@
             </p>
             <p>
                 Googleの認可は、選択したアカウントへの接続と本アプリのデータのバックアップ・復元のためだけに使用します。要求するDrive権限はdrive.appdataで、通常のDriveファイルへのアクセスは要求しません。
-                Google Sign-Inが端末上でアカウントの認可と認証情報を管理します。Googleの認証トークン、アカウント情報、バックアップ内容をFirebaseやRevenueCatへ送信しません。
+                Google Sign-Inが端末上でアカウントの認可と認証情報を管理します。認証、不正防止およびSDKの動作のため、Googleは氏名・メールアドレス・電話番号・ユーザーID等のアカウント情報、IPアドレスに基づくおおよその位置、端末識別子、利用情報その他の技術情報を、自社のポリシーに従って処理することがあります。本アプリは連絡先や電話帳へのアクセスを要求しません。Googleの認証トークン、アカウント情報、バックアップ内容をFirebaseやRevenueCatへ送信しません。
             </p>
             <p>
                 自動バックアップは初期状態でオフです。有効にした場合、変更後、アプリ起動後、フォアグラウンド復帰後など、アプリを実行できる間に保存します。Wi-Fiのみでの保存は初期状態でオンです。アプリを閉じたままの保存を保証する機能ではありません。
                 復元時は、選択したバックアップをダウンロードし、その端末の保存済みプロジェクトデータを置き換えます。接続と自動バックアップは「設定 → バックアップと復元」で停止できます。
             </p>
             <p>
-                Google APIから取得したデータは、このバックアップ・復元機能の提供だけに利用し、販売、広告、AIモデルの学習には利用しません。本アプリによるGoogle APIから取得した情報の利用および転送は、Limited Useの要件を含む
+                Google Drive APIでアクセスするバックアップデータは、このバックアップ・復元機能の提供だけに利用し、販売、広告、AIモデルの学習には利用しません。本アプリによるGoogle APIから取得した情報の利用および転送は、Limited Useの要件を含む
                 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。
             </p>
 
