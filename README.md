@@ -18,6 +18,7 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `baseball-order.html`
 - `baseball-order-terms.html`
 - `comic-merge.html`
+- `dartlog/index.html` (app homepage / アプリ紹介)
 - `dartlog/privacy.html`
 - `dartlog/terms.html`
 - `dartlog/support.html`
@@ -43,6 +44,8 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 日本国内向けのアプリのため、日本語のみで掲載する。利用状況は Firebase Analytics で集計する（Crashlytics は未導入）。送る情報を増やすときは、プライバシーポリシーの第4条を改定してから配布する。
 
 ## DartLog URLs
+
+- App homepage: https://www.so-kuma.com/privacy-policy/dartlog/
 
 - Privacy Policy: https://www.so-kuma.com/privacy-policy/dartlog/privacy.html
 - Terms of Use: https://www.so-kuma.com/privacy-policy/dartlog/terms.html
