@@ -28,6 +28,9 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - `bowling-note/privacy.html`
 - `bowling-note/terms.html`
 - `bowling-note/support.html`
+- `volley-scoreboard/privacy.html`
+- `volley-scoreboard/terms.html`
+- `volley-scoreboard/support.html`
 
 ## Ticket Stub Diary (観戦アルバム) URLs
 
@@ -42,6 +45,14 @@ GitHub Pages publishes files from the repository root, so existing public HTML p
 - Support (App Store support URL): https://www.so-kuma.com/privacy-policy/bowling-note/support.html
 
 日本国内向けのアプリのため、日本語のみで掲載する。利用状況は Firebase Analytics で集計する（Crashlytics は未導入）。送る情報を増やすときは、プライバシーポリシーの第4条を改定してから配布する。
+
+## バレー得点板（Volleyball Scoreboard）URLs
+
+- Privacy Policy: https://www.so-kuma.com/privacy-policy/volley-scoreboard/privacy.html
+- Terms of Use: https://www.so-kuma.com/privacy-policy/volley-scoreboard/terms.html
+- Support (App Store support URL): https://www.so-kuma.com/privacy-policy/volley-scoreboard/support.html
+
+英日併記（`#en` / `#ja`）。アプリからは、端末の言語に合わせて `#ja` または `#en` を付けて開く。利用状況は Firebase Analytics、クラッシュ報告は Firebase Crashlytics で扱う。送る情報を増やすときは、プライバシーポリシーを改定してから配布する。
 
 ## DartLog URLs
 
