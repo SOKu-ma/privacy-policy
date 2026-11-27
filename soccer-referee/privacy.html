@@ -100,11 +100,19 @@
             <ul>
                 <li>An anonymized user ID and purchase or subscription information required to manage purchase status
                     through RevenueCat</li>
+                <li>App usage data collected through Firebase Analytics on the iPhone app (screens opened and features
+                    used, such as saving a match, opening the promotion screen, exporting a report, or opening the
+                    subscription screen, with categories and counts only)</li>
+                <li>Crash reports and technical information about your device collected through Firebase Crashlytics on
+                    the iPhone app</li>
                 <li>Information you choose to send through the contact form (see Section 8)</li>
             </ul>
             <p>
-                The App does not include analytics or advertising SDKs. Match records, schedules, team rosters, goals,
-                health data, and location data that you create or record in the App are not sent to the developer.
+                The App does not include advertising SDKs and does not use the advertising identifier (IDFA). The text you
+                enter (competition and team names, player names, notes), match dates and scores, shirt numbers, your name
+                and referee registration number, your prefecture, health data, and location data are not sent to
+                Firebase. Match records, schedules, team rosters, goals, health data, and location data that you create
+                or record in the App are not sent to the developer.
             </p>
 
             <h2>2. Data You Create and Where It Is Stored</h2>
@@ -135,8 +143,8 @@
                     match to show a heatmap. The locations are saved with the match record and as the workout route in
                     the Health app. You can turn this off at any time.</li>
                 <li>Health and location data are stored only on your devices, in the Health app, and in your own iCloud
-                    account. They are not sent to the developer or to RevenueCat, are not used for advertising, and are
-                    not sold.</li>
+                    account. They are not sent to the developer, RevenueCat, or Firebase, are not used for advertising,
+                    and are not sold.</li>
                 <li>You can change permissions at any time in the Health app and in Settings → Privacy &amp; Security on
                     your iPhone and Apple Watch.</li>
                 <li>The App is not a medical device. Health information is shown for reference only.</li>
@@ -155,7 +163,13 @@
                 the area where the match was played from Apple.<br>
                 <strong>Google Forms (Google):</strong> The contact form is provided by Google Forms. When you open it from
                 the App, the App name, OS, OS version, App version, build number, store, and device model are filled in
-                in advance so that you can review and edit them before sending.
+                in advance so that you can review and edit them before sending.<br>
+                <strong>Firebase Analytics and Firebase Crashlytics (Google):</strong> The iPhone app uses Firebase to
+                understand how features are used and to find and fix problems. Firebase may process usage events, an
+                app instance identifier, device and OS information, App version, and approximate location derived from
+                the IP address, as well as crash logs and stack traces. This information is used only for usage
+                analysis, troubleshooting, and improving stability, and not to identify you personally. The Apple Watch
+                app does not use Firebase.
             </p>
 
             <h2>5. Purpose of Use</h2>
@@ -164,12 +178,13 @@
                 <li>Providing and maintaining the App and premium features</li>
                 <li>Verifying purchase status and restoring purchases</li>
                 <li>Responding to inquiries and improving the App</li>
+                <li>Analyzing how features are used, investigating problems, and improving stability (Firebase)</li>
             </ul>
 
             <h2>6. Children's Information</h2>
             <p>
                 The App is intended for referees. Team rosters and match records may include the names of players who
-                are children. The developer does not collect this information; it is stored only on your devices and in
+                are children. The developer does not collect this information (it is not sent to Firebase either); it is stored only on your devices and in
                 your own iCloud account. Please enter only the minimum information needed and, where necessary, obtain
                 consent from parents or guardians. If you have questions about children's information, please contact us
                 using the form in Section 8.
@@ -206,10 +221,12 @@
             <p>開発者が受け取る情報は、次のものだけです：</p>
             <ul>
                 <li>RevenueCat による購入状態の管理に必要な、匿名化されたユーザーID と購入・サブスクリプションの情報</li>
+                <li>iPhone アプリでの、Firebase Analytics による利用状況のデータ（開いた画面や、試合の保存・昇級画面の表示・報告書の書き出し・有料プランの画面を開いたことなど。区分と数だけ）</li>
+                <li>iPhone アプリでの、Firebase Crashlytics によるクラッシュレポートと端末の技術情報</li>
                 <li>お問い合わせフォームから、ご自身で送信された情報（8. を参照）</li>
             </ul>
             <p>
-                本アプリには、利用状況の分析や広告のための SDK は入っていません。本アプリで作成・記録した試合の記録・予定・チームの名簿・目標・健康データ・位置情報は、開発者に送られません。
+                本アプリには、広告のための SDK は入っておらず、広告識別子（IDFA）も使いません。入力した文字（大会名・チーム名・選手の名前・メモ）、試合の日時と得点、背番号、氏名と審判登録番号、都道府県、健康データ、位置情報は、Firebase に送りません。本アプリで作成・記録した試合の記録・予定・チームの名簿・目標・健康データ・位置情報は、開発者に送られません。
             </p>
 
             <h2>2. 作成したデータと保存場所</h2>
@@ -225,7 +242,7 @@
             <ul>
                 <li>許可をいただいた場合、Apple Watch アプリは HealthKit を使って試合中のワークアウトを記録し、心拍数と走行距離を読み取ります。平均心拍数と走行距離は試合の記録に保存します。ワークアウトはヘルスケアアプリに保存されます。</li>
                 <li>設定の「走った位置を記録（GPS）」がオンのとき、Apple Watch アプリは試合中の位置を記録し、ヒートマップの表示に使います。位置は試合の記録と、ヘルスケアアプリのワークアウトの経路に保存します。この設定はいつでもオフにできます。</li>
-                <li>健康データと位置情報は、端末の中・ヘルスケアアプリ・ご自身の iCloud アカウントにだけ保存します。開発者や RevenueCat には送らず、広告に使ったり、販売したりしません。</li>
+                <li>健康データと位置情報は、端末の中・ヘルスケアアプリ・ご自身の iCloud アカウントにだけ保存します。開発者・RevenueCat・Firebase には送らず、広告に使ったり、販売したりしません。</li>
                 <li>許可は、ヘルスケアアプリと、iPhone・Apple Watch の「設定」→「プライバシーとセキュリティ」から、いつでも変更できます。</li>
                 <li>本アプリは医療機器ではありません。健康に関する表示は参考情報です。</li>
             </ul>
@@ -237,6 +254,8 @@
                 <strong>iCloud（Apple）：</strong>2. のとおり、データをご自身の iCloud アカウントに保存します。<br>
                 <strong>Apple マップ（Apple）：</strong>航空写真の上にヒートマップを表示するため、試合をした場所の地図の画像を Apple から取得します。<br>
                 <strong>Google フォーム（Google）：</strong>お問い合わせフォームは Google フォームを利用しています。本アプリから開くと、アプリ名・OS・OS のバージョン・アプリのバージョン・ビルド番号・ストア・端末名を事前に入力します。送信の前に、ご自身で確認・修正できます。
+            <br>
+                <strong>Firebase Analytics・Firebase Crashlytics（Google）：</strong>iPhone アプリでは、機能の使われ方を知り、不具合を見つけて直すために Firebase を利用しています。Firebase は、利用状況のイベント、アプリのインスタンス ID、端末と OS の情報、アプリのバージョン、IP アドレスから推定されるおおよその地域、クラッシュログとスタックトレースを処理することがあります。これらは利用状況の分析、不具合の調査、安定性の向上のためだけに使い、個人を特定するためには使用しません。Apple Watch アプリでは Firebase を使いません。
             </p>
 
             <h2>5. 利用目的</h2>
@@ -245,11 +264,12 @@
                 <li>本アプリとプレミアム機能の提供・維持</li>
                 <li>購入状態の確認と、購入の復元</li>
                 <li>お問い合わせへの対応と、本アプリの改善</li>
+                <li>機能の使われ方の分析、不具合の調査、安定性の向上（Firebase）</li>
             </ul>
 
             <h2>6. 子どもの情報について</h2>
             <p>
-                本アプリは審判員の方を対象としています。チームの名簿や試合の記録には、子どもの選手の名前が含まれることがあります。開発者はこれらの情報を収集せず、端末の中とご自身の iCloud アカウントにだけ保存されます。入力する情報は必要な範囲にとどめ、必要に応じて保護者の同意を得てください。子どもの情報について質問がある場合は、8. のフォームからお問い合わせください。
+                本アプリは審判員の方を対象としています。チームの名簿や試合の記録には、子どもの選手の名前が含まれることがあります。開発者はこれらの情報を収集せず（Firebase にも送りません）、端末の中とご自身の iCloud アカウントにだけ保存されます。入力する情報は必要な範囲にとどめ、必要に応じて保護者の同意を得てください。子どもの情報について質問がある場合は、8. のフォームからお問い合わせください。
             </p>
 
             <h2>7. 外部サービスのポリシー</h2>
